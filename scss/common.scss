@@ -1,0 +1,109 @@
+//검은색 #0f0d0d;
+//연두색 #93ED51
+
+
+
+header {
+    width: 12.5vw;
+    background-color: #0f0d0d;
+    border-radius: 30px;
+
+    &:hover {
+        background-color: #93ED51;
+        .logo{
+            .logo_w{
+                display: none;
+            }
+            .logo_b{
+                display: block;
+            }
+        }
+        .join li a{
+            color: #0f0d0d;
+        }
+    }
+
+    .logo {
+        width: 100%;
+        height: 11.11vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position:relative;
+        img{
+            width: 45.83%;
+        }
+        .logo_w {
+            display: block;
+        }
+        .logo_b{
+            display: none;
+        }
+        a{
+            position:absolute;
+            top: 0;left: 0;
+            display: block;
+            width: 100%;height: 100%;
+        }
+    }
+
+    .mainMenuList {
+        background-color: #fff;
+        border-radius: 30px;
+
+        &>li {
+            text-align: center;
+            background-color: #0f0d0d;
+            border-radius: 30px;
+            line-height: 5.5vh;
+            a{
+                color:#fff;
+                font-size: 1.125em;
+            }
+            &:hover{
+                background-color: #3C6EBE;
+                border-radius: 30px;
+                .subMenuList{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    padding: 2.77vh 0;
+                    border-top:solid 1px #fff;
+                    width: 83.3%;
+                    margin: 0 auto;
+                    li {
+                        a{
+                            display: block;
+                            width: 100%;
+                            font-size: 1em;
+                            line-height:  3.7vh;
+                        
+                        }
+                        
+                    }
+                }
+            }
+            
+            .subMenuList {
+                display: none;
+            }
+        }
+    }
+
+    .join {
+        width: 100%;
+        display: flex;
+        padding: 0 10%;
+        li{
+            width: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            a{
+                color: #fff;
+                font-size: 1.2em;
+                line-height:  5.5vh;
+            }
+        }
+    }
+}

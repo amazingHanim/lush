@@ -1,0 +1,134 @@
+header {
+  width: 12.5vw;
+  background-color: #0f0d0d;
+  border-radius: 30px;
+}
+
+header:hover {
+  background-color: #93ED51;
+}
+
+header:hover .logo .logo_w {
+  display: none;
+}
+
+header:hover .logo .logo_b {
+  display: block;
+}
+
+header:hover .join li a {
+  color: #0f0d0d;
+}
+
+header .logo {
+  width: 100%;
+  height: 11.11vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+}
+
+header .logo img {
+  width: 45.83%;
+}
+
+header .logo .logo_w {
+  display: block;
+}
+
+header .logo .logo_b {
+  display: none;
+}
+
+header .logo a {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+header .mainMenuList {
+  background-color: #fff;
+  border-radius: 30px;
+}
+
+header .mainMenuList > li {
+  text-align: center;
+  background-color: #0f0d0d;
+  border-radius: 30px;
+  line-height: 5.5vh;
+}
+
+header .mainMenuList > li a {
+  color: #fff;
+  font-size: 1.125em;
+}
+
+header .mainMenuList > li:hover {
+  background-color: #3C6EBE;
+  border-radius: 30px;
+}
+
+header .mainMenuList > li:hover .subMenuList {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 2.77vh 0;
+  border-top: solid 1px #fff;
+  width: 83.3%;
+  margin: 0 auto;
+}
+
+header .mainMenuList > li:hover .subMenuList li a {
+  display: block;
+  width: 100%;
+  font-size: 1em;
+  line-height: 3.7vh;
+}
+
+header .mainMenuList > li .subMenuList {
+  display: none;
+}
+
+header .join {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0 10%;
+}
+
+header .join li {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header .join li a {
+  color: #fff;
+  font-size: 1.2em;
+  line-height: 5.5vh;
+}
