@@ -1,7 +1,25 @@
+@charset "UTF-8";
+@import url(../css/jquery-ui.css);
+/*색상변수 시작*/
+/*font 시작*/
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;500;700;900&family=Noto+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+@font-face {
+  src: url(../font/Lush.ttf);
+  font-family: "lush";
+}
+
+/*font-family mixins*/
+/*font 믹신을 include할 때 (폰트)*/
+body {
+  background-color: #0f0d0d;
+}
+
 header {
   width: 12.5vw;
   background-color: #0f0d0d;
   border-radius: 30px;
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
 }
 
 header:hover {
@@ -58,19 +76,23 @@ header .logo a {
 
 header .mainMenuList {
   background-color: #fff;
-  border-radius: 30px;
+  border-radius: 31px;
 }
 
 header .mainMenuList > li {
   text-align: center;
   background-color: #0f0d0d;
   border-radius: 30px;
-  line-height: 5.5vh;
+  line-height: 5vh;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
 }
 
 header .mainMenuList > li a {
-  color: #fff;
+  /*폰트 고민*/
+  font-family: "Noto Sans", sans-serif;
   font-size: 1.125em;
+  color: #fff;
 }
 
 header .mainMenuList > li:hover {
@@ -98,8 +120,11 @@ header .mainMenuList > li:hover .subMenuList {
 header .mainMenuList > li:hover .subMenuList li a {
   display: block;
   width: 100%;
-  font-size: 1em;
   line-height: 3.7vh;
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 1em;
+  color: #fff;
+  font-weight: 300;
 }
 
 header .mainMenuList > li .subMenuList {
@@ -128,7 +153,8 @@ header .join li {
 }
 
 header .join li a {
-  color: #fff;
-  font-size: 1.2em;
   line-height: 5.5vh;
+  font-family: "Noto Sans", sans-serif;
+  font-size: 1.2em;
+  color: #fff;
 }

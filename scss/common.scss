@@ -1,15 +1,36 @@
-//검은색 #0f0d0d;
-//연두색 #93ED51
+@import url(../css/jquery-ui.css);
+/*색상변수 시작*/
+$black : #0f0d0d;
+$green : #93ED51;
+/*font 시작*/
+@font-face{
+    src: url(../font/Lush.ttf);
+    font-family: "lush";
+}
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;500;700;900&family=Noto+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+/*font-family mixins*/
+$notoSans :'Noto Sans', sans-serif;
+$notoSansKR :'Noto Sans KR', sans-serif;
+$lush:"lush";
+/*font 믹신을 include할 때 (폰트)*/
+@mixin font($family,$size,$color){
+    font-family: $family;
+    font-size: $size;
+    color: $color;
+}
 
 
-
+body{
+    background-color: $black;
+}
 header {
     width: 12.5vw;
     background-color: #0f0d0d;
     border-radius: 30px;
+    transition: all 0.3s ease-out;
 
     &:hover {
-        background-color: #93ED51;
+        background-color: $green;
         .logo{
             .logo_w{
                 display: none;
@@ -19,7 +40,7 @@ header {
             }
         }
         .join li a{
-            color: #0f0d0d;
+            color: $black;
         }
     }
 
@@ -49,16 +70,16 @@ header {
 
     .mainMenuList {
         background-color: #fff;
-        border-radius: 30px;
-
+        border-radius: 31px;
         &>li {
             text-align: center;
-            background-color: #0f0d0d;
+            background-color: $black;
             border-radius: 30px;
-            line-height: 5.5vh;
+            line-height: 5vh;
+            transition: all 0.3s;
             a{
-                color:#fff;
-                font-size: 1.125em;
+                /*폰트 고민*/
+                @include font($notoSans,1.125em,#fff);
             }
             &:hover{
                 background-color: #3C6EBE;
@@ -75,8 +96,9 @@ header {
                         a{
                             display: block;
                             width: 100%;
-                            font-size: 1em;
                             line-height:  3.7vh;
+                            @include font($notoSansKR,1em,#fff);
+                            font-weight: 300;
                         
                         }
                         
@@ -100,9 +122,8 @@ header {
             justify-content: center;
             align-items: center;
             a{
-                color: #fff;
-                font-size: 1.2em;
                 line-height:  5.5vh;
+                @include font($notoSans,1.2em,#fff);
             }
         }
     }
