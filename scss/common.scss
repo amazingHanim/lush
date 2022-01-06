@@ -1,4 +1,4 @@
-@import url(../css/jquery-ui.css);
+@import url('../css/jquery-ui.css');
 @import url('all.css');
 /*폰트어썸*/
 /*색상변수 시작*/
@@ -126,6 +126,34 @@ header {
             a{
                 line-height:  5.5vh;
                 @include font($notoSans,1.2em,#fff);
+            }
+        }
+    }
+}
+
+div.content{
+    width: 100%;
+    & > header{
+        display: flex;
+        justify-content: space-between;
+        background-color: transparent;
+        width: 100%;
+        color: #fff;
+        .location{
+            font-size: 0.875em;
+        }
+        .cHeaderRight{
+            display: flex;
+            .icons{
+                img{
+                    width: 44px;
+                    height: 44px;
+                }
+            }
+            .search{
+                p{
+                    display: inline-flex;
+                }
             }
         }
     }
