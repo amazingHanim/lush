@@ -174,11 +174,14 @@ div.content > header {
           justify-content: space-between;
   background-color: transparent;
   width: 100%;
+  height: 11.1vh;
+  padding: 5.55vh 3.125vw 0 3.125vw;
   color: #fff;
 }
 
 div.content > header .location {
   font-size: 0.875em;
+  line-height: 5.55vh;
 }
 
 div.content > header .cHeaderRight {
@@ -187,13 +190,21 @@ div.content > header .cHeaderRight {
   display: flex;
 }
 
-div.content > header .cHeaderRight .icons img {
+div.content > header .cHeaderRight .icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+div.content > header .cHeaderRight .icons li img {
   width: 44px;
   height: 44px;
 }
 
-div.content > header .cHeaderRight .search p {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+div.content > header .cHeaderRight .search {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 25vw;
+  border-bottom: 1px solid #fff;
 }

@@ -138,22 +138,28 @@ div.content{
         justify-content: space-between;
         background-color: transparent;
         width: 100%;
+        height: 11.1vh;
+        padding: 5.55vh 3.125vw 0 3.125vw;
         color: #fff;
         .location{
             font-size: 0.875em;
+            line-height: 5.55vh;
         }
         .cHeaderRight{
             display: flex;
             .icons{
-                img{
-                    width: 44px;
-                    height: 44px;
+                display: flex;
+                li{
+                    img{
+                        width: 44px;
+                        height: 44px;
+                    }
                 }
             }
             .search{
-                p{
-                    display: inline-flex;
-                }
+                display: flex;
+                width: 25vw;
+                border-bottom: 1px solid #fff;
             }
         }
     }
