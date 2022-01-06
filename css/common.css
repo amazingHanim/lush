@@ -229,3 +229,86 @@ body div.content > header .cHeaderRight .search a {
   height: 100%;
   border-bottom: 1px solid #fff;
 }
+
+body div.content.products section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 60px;
+}
+
+body div.content.products section article {
+  width: 25%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 6fr 1fr;
+      grid-template-columns: 6fr 1fr;
+  -ms-grid-rows: calc(5fr - 3px) 1fr 1fr 1fr;
+      grid-template-rows: calc(5fr - 3px) 1fr 1fr 1fr;
+  line-height: 3.750em;
+  border: solid 1px #fff;
+}
+
+body div.content.products section article .img {
+  grid-column: span 2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 300px;
+  position: relative;
+  background-color: #fff;
+}
+
+body div.content.products section article .img img {
+  height: 100%;
+}
+
+body div.content.products section article .img a {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+body div.content.products section article .pName {
+  grid-column: span 2;
+  text-align: center;
+  font-family: "lush";
+  font-size: 1.688em;
+  color: #fff;
+}
+
+body div.content.products section article .img, body div.content.products section article .pName, body div.content.products section article .cate, body div.content.products section article .like {
+  border-bottom: solid 1px #fff;
+}
+
+body div.content.products section article span:not(.pName) {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 20px;
+  letter-spacing: 3px;
+}
+
+body div.content.products section article .cate, body div.content.products section article .price {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  border-right: solid 1px #fff;
+}
+
+body div.content.products section article i {
+  cursor: pointer;
+  font-size: 1.313em;
+}

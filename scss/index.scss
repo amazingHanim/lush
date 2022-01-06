@@ -3,88 +3,129 @@
 .contentWrap {
     width: 100%;
     height: 200vh;
+
     .content {
         width: 100%;
-        header{
+        margin-top: 120px;
+
+        header {
             display: block;
             text-align: center;
             height: inherit;
             padding: 0;
-            margin:0;
+            margin: 0;
+
+            h2 {
+                @include font($lush, 3.438em, #fff);
+                line-height: 120px;
+            }
+
+            h3 {
+                @include font($notoSansKR, 1.125em, #fff);
+                line-height: 3.750em;
+
+            }
         }
+
         &.main {}
 
-        &.bestProduct {
+        &.bestProduct {}
+
+        &.lips {
+            display: flex;
+            height: 37.500em;
+
             header {
+                width: 50%;
+                border-radius: 30px;
+                position: relative;
+                overflow: hidden;
+
+                &::before {
+                    z-index: -10;
+                    opacity: 40%;
+                    content: "";
+                    display: block;
+                    width: 100%;
+                    height: 100%;
+                    top: 0;
+                    left: 0;
+                    position: absolute;
+                    background-image: url(../images/lips.jpeg);
+                    background-repeat: no-repeat;
+                    background-size: 110vh;
+                    background-position:center;
+                }
+
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-end;
+                text-align:start;
+                padding: 30px;
+
                 h2 {
-                    @include font($lush, 3.438em, #fff);
-                    line-height: 120px;
+                    color: $green;
                 }
 
                 h3 {
-                    @include font($notoSansKR, 1.125em, #fff);
-                    line-height: 60px;
+                    color: $green;
+                    font-weight: 300;
                 }
             }
 
             section {
+                width: 50%;
+                border-radius: 30px;
+                padding: 30px;
                 display: flex;
-                margin-top: 60px;
-                article{
-                    width: 25%;
-                    display: grid;
-                    grid-template-columns: 6fr 1fr;
-                    grid-template-rows: calc(5fr - 3px) 1fr 1fr 1fr;
-                    line-height: 60px;
-                    border: solid 1px #fff;
-                    .img{
-                        grid-column: span 2;
-                        display: flex;
-                        justify-content: center;
-                        align-items: center;
-                        height: 300px;
-                        position: relative;
-                        background-color: #fff;
-                        img{
-                            height: 100%;
-                        }
-                        a{
+                justify-content: flex-end;
+                align-items: center;
+
+                ul.lip_tabContent {
+                    width: 50%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    border-right: solid 1px #fff;
+                    li {
+                        &.on {
                             display: block;
-                            position: absolute;
-                            width: 100%;height: 100%;
-                            top: 0;left: 0;
+                        }
+
+                        display: none;
+
+                    }
+                }
+
+                ul.lip_tabMenu {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    width: 50%;
+                    
+                    li {
+                        a {
+                            line-height: 40px;
+                            @include font($notoSans, 16px, rgb(200, 200, 200));
+                            text-shadow: 3px 3px 3px rgba(0,0,0,0.3);
+                            transition: all 0.3s ease-out;
+                            display: block;
+                            height: 100%;
+                            width: 100%;
+                        }
+
+                        &.on {
+                            
+                            a {
+                                line-height: 180px;
+                                color: $green;font-size: 18px;
+                                letter-spacing: 1px;
+                            }
                         }
                     }
-                    .pName{
-                        grid-column: span 2;
-                        text-align: center;
-                        @include font($lush,1.688em,#fff);
-                    }
-                    .img,.pName,.cate,.like{
-                        border-bottom: solid 1px #fff;
-                    }
-                    span{
-                        display: flex;
-                        justify-content: center;
-                        align-items: center;
-                        padding: 0 20px;
-                    }
-                    .cate,.price{
-                        justify-content: flex-end;
-                        border-right: solid 1px #fff;
-                    }
-                    i{
-                        cursor: pointer;
-                        font-size: 1.313em;
-                    }
-
-                    
-
                 }
             }
         }
-
-        &.lips {}
 
         &.about {}
 

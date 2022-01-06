@@ -230,45 +230,14 @@ body div.content > header .cHeaderRight .search a {
   border-bottom: 1px solid #fff;
 }
 
-.contentWrap {
-  width: 100%;
-  height: 200vh;
-}
-
-.contentWrap .content {
-  width: 100%;
-}
-
-.contentWrap .content header {
-  display: block;
-  text-align: center;
-  height: inherit;
-  padding: 0;
-  margin: 0;
-}
-
-.contentWrap .content.bestProduct header h2 {
-  font-family: "lush";
-  font-size: 3.438em;
-  color: #fff;
-  line-height: 120px;
-}
-
-.contentWrap .content.bestProduct header h3 {
-  font-family: "Noto Sans KR", sans-serif;
-  font-size: 1.125em;
-  color: #fff;
-  line-height: 60px;
-}
-
-.contentWrap .content.bestProduct section {
+body div.content.products section {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   margin-top: 60px;
 }
 
-.contentWrap .content.bestProduct section article {
+body div.content.products section article {
   width: 25%;
   display: -ms-grid;
   display: grid;
@@ -276,11 +245,11 @@ body div.content > header .cHeaderRight .search a {
       grid-template-columns: 6fr 1fr;
   -ms-grid-rows: calc(5fr - 3px) 1fr 1fr 1fr;
       grid-template-rows: calc(5fr - 3px) 1fr 1fr 1fr;
-  line-height: 60px;
+  line-height: 3.750em;
   border: solid 1px #fff;
 }
 
-.contentWrap .content.bestProduct section article .img {
+body div.content.products section article .img {
   grid-column: span 2;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -296,11 +265,11 @@ body div.content > header .cHeaderRight .search a {
   background-color: #fff;
 }
 
-.contentWrap .content.bestProduct section article .img img {
+body div.content.products section article .img img {
   height: 100%;
 }
 
-.contentWrap .content.bestProduct section article .img a {
+body div.content.products section article .img a {
   display: block;
   position: absolute;
   width: 100%;
@@ -309,7 +278,7 @@ body div.content > header .cHeaderRight .search a {
   left: 0;
 }
 
-.contentWrap .content.bestProduct section article .pName {
+body div.content.products section article .pName {
   grid-column: span 2;
   text-align: center;
   font-family: "lush";
@@ -317,31 +286,183 @@ body div.content > header .cHeaderRight .search a {
   color: #fff;
 }
 
-.contentWrap .content.bestProduct section article .img, .contentWrap .content.bestProduct section article .pName, .contentWrap .content.bestProduct section article .cate, .contentWrap .content.bestProduct section article .like {
+body div.content.products section article .img, body div.content.products section article .pName, body div.content.products section article .cate, body div.content.products section article .like {
   border-bottom: solid 1px #fff;
 }
 
-.contentWrap .content.bestProduct section article span {
+body div.content.products section article span:not(.pName) {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   padding: 0 20px;
+  letter-spacing: 3px;
 }
 
-.contentWrap .content.bestProduct section article .cate, .contentWrap .content.bestProduct section article .price {
+body div.content.products section article .cate, body div.content.products section article .price {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
   border-right: solid 1px #fff;
 }
 
-.contentWrap .content.bestProduct section article i {
+body div.content.products section article i {
   cursor: pointer;
   font-size: 1.313em;
+}
+
+.contentWrap {
+  width: 100%;
+  height: 200vh;
+}
+
+.contentWrap .content {
+  width: 100%;
+  margin-top: 120px;
+}
+
+.contentWrap .content header {
+  display: block;
+  text-align: center;
+  height: inherit;
+  padding: 0;
+  margin: 0;
+}
+
+.contentWrap .content header h2 {
+  font-family: "lush";
+  font-size: 3.438em;
+  color: #fff;
+  line-height: 120px;
+}
+
+.contentWrap .content header h3 {
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 1.125em;
+  color: #fff;
+  line-height: 3.750em;
+}
+
+.contentWrap .content.lips {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 37.500em;
+}
+
+.contentWrap .content.lips header {
+  width: 50%;
+  border-radius: 30px;
+  position: relative;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  text-align: start;
+  padding: 30px;
+}
+
+.contentWrap .content.lips header::before {
+  z-index: -10;
+  opacity: 40%;
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  position: absolute;
+  background-image: url(../images/lips.jpeg);
+  background-repeat: no-repeat;
+  background-size: 110vh;
+  background-position: center;
+}
+
+.contentWrap .content.lips header h2 {
+  color: #93ED51;
+}
+
+.contentWrap .content.lips header h3 {
+  color: #93ED51;
+  font-weight: 300;
+}
+
+.contentWrap .content.lips section {
+  width: 50%;
+  border-radius: 30px;
+  padding: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.contentWrap .content.lips section ul.lip_tabContent {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-right: solid 1px #fff;
+}
+
+.contentWrap .content.lips section ul.lip_tabContent li {
+  display: none;
+}
+
+.contentWrap .content.lips section ul.lip_tabContent li.on {
+  display: block;
+}
+
+.contentWrap .content.lips section ul.lip_tabMenu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 50%;
+}
+
+.contentWrap .content.lips section ul.lip_tabMenu li a {
+  line-height: 40px;
+  font-family: "Noto Sans", sans-serif;
+  font-size: 16px;
+  color: #c8c8c8;
+  text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.3);
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+  display: block;
+  height: 100%;
+  width: 100%;
+}
+
+.contentWrap .content.lips section ul.lip_tabMenu li.on a {
+  line-height: 180px;
+  color: #93ED51;
+  font-size: 18px;
+  letter-spacing: 1px;
 }
