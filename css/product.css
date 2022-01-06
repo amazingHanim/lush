@@ -1,0 +1,16 @@
+@charset "UTF-8";
+/*색상변수 시작*/
+/*font 시작*/
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;500;700;900&family=Noto+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+@font-face {
+  src: url(../font/Lush.ttf);
+  font-family: "lush";
+}
+
+/*font-family mixins*/
+/*font 믹신을 include할 때 (폰트)*/
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}

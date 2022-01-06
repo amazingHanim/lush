@@ -1,5 +1,7 @@
 @charset "UTF-8";
-@import url(../css/jquery-ui.css);
+@import url("../css/jquery-ui.css");
+@import url("all.css");
+/*폰트어썸*/
 /*색상변수 시작*/
 /*font 시작*/
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;500;700;900&family=Noto+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap");
@@ -157,4 +159,41 @@ header .join li a {
   font-family: "Noto Sans", sans-serif;
   font-size: 1.2em;
   color: #fff;
+}
+
+div.content {
+  width: 100%;
+}
+
+div.content > header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: transparent;
+  width: 100%;
+  color: #fff;
+}
+
+div.content > header .location {
+  font-size: 0.875em;
+}
+
+div.content > header .cHeaderRight {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+div.content > header .cHeaderRight .icons img {
+  width: 44px;
+  height: 44px;
+}
+
+div.content > header .cHeaderRight .search p {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
 }
