@@ -188,6 +188,9 @@ div.content > section .filter .order {
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 div.content > section .filter .order li::before {
