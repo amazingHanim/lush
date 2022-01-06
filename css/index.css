@@ -19,7 +19,8 @@ body {
   display: flex;
 }
 
-
+body > header {
+  width: 240px;
   background-color: #0f0d0d;
   border-radius: 30px;
   -webkit-transition: all 0.3s ease-out;
@@ -168,12 +169,12 @@ body > header .join li a {
   color: #fff;
 }
 
-div.content {
-  width: calc(100% - 240px);
+body div.content {
+  width: 100%;
   padding-left: 240px;
 }
 
-div.content > header {
+body div.content > header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -188,33 +189,33 @@ div.content > header {
   color: #fff;
 }
 
-div.content > header .location {
+body div.content > header .location {
   font-size: 0.875em;
   line-height: 5.55vh;
 }
 
-div.content > header .cHeaderRight {
+body div.content > header .cHeaderRight {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-div.content > header .cHeaderRight .icons {
+body div.content > header .cHeaderRight .icons {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-div.content > header .cHeaderRight .icons li {
+body div.content > header .cHeaderRight .icons li {
   margin-right: 10px;
 }
 
-div.content > header .cHeaderRight .icons li img {
+body div.content > header .cHeaderRight .icons li img {
   width: 44px;
   height: 44px;
 }
 
-div.content > header .cHeaderRight .search a {
+body div.content > header .cHeaderRight .search a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

@@ -5,174 +5,205 @@
 /*색상변수 시작*/
 $black : #0f0d0d;
 $green : #93ED51;
+
 /*font 시작*/
-@font-face{
+@font-face {
     src: url(../font/Lush.ttf);
     font-family: "lush";
 }
+
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;500;700;900&family=Noto+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 /*font-family mixins*/
-$notoSans :'Noto Sans', sans-serif;
-$notoSansKR :'Noto Sans KR', sans-serif;
+$notoSans :'Noto Sans',
+sans-serif;
+$notoSansKR :'Noto Sans KR',
+sans-serif;
 $lush:"lush";
+
 /*font 믹신을 include할 때 (폰트)*/
-@mixin font($family,$size,$color){
+@mixin font($family, $size, $color) {
     font-family: $family;
     font-size: $size;
     color: $color;
 }
 
-
-body{
+body {
     background-color: $black;
     display: flex;
-}
 
-    background-color: #0f0d0d;
-    border-radius: 30px;
-    transition: all 0.3s ease-out;
-    position: fixed;
+    &>header {
+        width: 240px;
+        background-color: #0f0d0d;
+        border-radius: 30px;
+        transition: all 0.3s ease-out;
+        position: fixed;
 
-    &:hover {
-        background-color: $green;
-        .logo{
-            .logo_w{
-                display: none;
-            }
-            .logo_b{
-                display: block;
-            }
-        }
-        .join li a{
-            color: $black;
-        }
-    }
+        &:hover {
+            background-color: $green;
 
-    .logo {
-        width: 100%;
-        height: 11.11vh;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        position:relative;
-        img{
-            width: 45.83%;
-        }
-        .logo_w {
-            display: block;
-        }
-        .logo_b{
-            display: none;
-        }
-        a{
-            position:absolute;
-            top: 0;left: 0;
-            display: block;
-            width: 100%;height: 100%;
-        }
-    }
+            .logo {
+                .logo_w {
+                    display: none;
+                }
 
-    .mainMenuList {
-        background-color: #fff;
-        border-radius: 31px;
-        &>li {
-            text-align: center;
-            background-color: $black;
-            border-radius: 30px;
-            line-height: 5vh;
-            transition: all 0.3s;
-            a{
-                /*폰트 고민*/
-                @include font($notoSans,1.125em,#fff);
-            }
-            &.on{
-                background-color: $green;
-            }
-            &:hover{
-                background-color: #3C6EBE;
-                border-radius: 30px;
-                .subMenuList{
-                    display: flex;
-                    flex-direction: column;
-                    align-items: center;
-                    padding: 2.77vh 0;
-                    border-top:solid 1px #fff;
-                    width: 83.3%;
-                    margin: 0 auto;
-                    li {
-                        a{
-                            display: block;
-                            width: 100%;
-                            line-height:  3.7vh;
-                            @include font($notoSansKR,1em,#fff);
-                            font-weight: 300;
-                        
-                        }
-                        
-                    }
+                .logo_b {
+                    display: block;
                 }
             }
-            
-            .subMenuList {
-                display: none;
+
+            .join li a {
+                color: $black;
             }
         }
-    }
 
-    .join {
-        width: 100%;
-        display: flex;
-        padding: 0 10%;
-        li{
-            width: 50%;
+        .logo {
+            width: 100%;
+            height: 11.11vh;
             display: flex;
             justify-content: center;
             align-items: center;
-            a{
-                line-height:  5.5vh;
-                @include font($notoSans,0.875em,#fff);
+            position: relative;
+
+            img {
+                width: 45.83%;
+            }
+
+            .logo_w {
+                display: block;
+            }
+
+            .logo_b {
+                display: none;
+            }
+
+            a {
+                position: absolute;
+                top: 0;
+                left: 0;
+                display: block;
+                width: 100%;
+                height: 100%;
+            }
+        }
+
+        .mainMenuList {
+            background-color: #fff;
+            border-radius: 31px;
+
+            &>li {
+                text-align: center;
+                background-color: $black;
+                border-radius: 30px;
+                line-height: 5vh;
+                transition: all 0.3s;
+
+                a {
+                    /*폰트 고민*/
+                    @include font($notoSans, 1.125em, #fff);
+                }
+
+                &.on {
+                    background-color: $green;
+                }
+
+                &:hover {
+                    background-color: #3C6EBE;
+                    border-radius: 30px;
+
+                    .subMenuList {
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        padding: 2.77vh 0;
+                        border-top: solid 1px #fff;
+                        width: 83.3%;
+                        margin: 0 auto;
+
+                        li {
+                            a {
+                                display: block;
+                                width: 100%;
+                                line-height: 3.7vh;
+                                @include font($notoSansKR, 1em, #fff);
+                                font-weight: 300;
+
+                            }
+
+                        }
+                    }
+                }
+
+                .subMenuList {
+                    display: none;
+                }
+            }
+        }
+
+        .join {
+            width: 100%;
+            display: flex;
+            padding: 0 10%;
+
+            li {
+                width: 50%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                a {
+                    line-height: 5.5vh;
+                    @include font($notoSans, 0.875em, #fff);
+                }
             }
         }
     }
-}
 
-div.content{
-    // width: calc(100% - 240px);
-    width: 100%;
-    padding-left: 240px;
-    & > header{
-        display: flex;
-        justify-content: space-between;
-        background-color: transparent;
+
+    div.content {
+        // width: calc(100% - 240px);
         width: 100%;
-        height: 11.1vh;
-        padding: 5.55vh 3.125vw 0 3.125vw;
-        margin-bottom: 3.7vh;
-        color: #fff;
-        .location{
-            font-size: 0.875em;
-            line-height: 5.55vh;
-        }
-        .cHeaderRight{
+        padding-left: 240px;
+
+        &>header {
             display: flex;
-            .icons{
+            justify-content: space-between;
+            background-color: transparent;
+            width: 100%;
+            height: 11.1vh;
+            padding: 5.55vh 3.125vw 0 3.125vw;
+            margin-bottom: 3.7vh;
+            color: #fff;
+
+            .location {
+                font-size: 0.875em;
+                line-height: 5.55vh;
+            }
+
+            .cHeaderRight {
                 display: flex;
-                li{
-                    margin-right: 10px;
-                    img{
-                        width: 44px;
-                        height: 44px;
+
+                .icons {
+                    display: flex;
+
+                    li {
+                        margin-right: 10px;
+
+                        img {
+                            width: 44px;
+                            height: 44px;
+                        }
                     }
                 }
-            }
-            .search{
-                a{
-                    display: flex;
-                    align-items: center;
-                    justify-content: space-between;
-                    width: 25vw;
-                    height: 100%;
-                    border-bottom: 1px solid #fff;
+
+                .search {
+                    a {
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+                        width: 25vw;
+                        height: 100%;
+                        border-bottom: 1px solid #fff;
+                    }
                 }
             }
         }
