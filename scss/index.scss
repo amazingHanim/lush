@@ -2,7 +2,9 @@
 
 .contentWrap {
     width: 100%;
+    height: 200vh;
     .content {
+        width: 100%;
         header{
             display: block;
             text-align: center;
@@ -27,19 +29,56 @@
 
             section {
                 display: flex;
+                margin-top: 60px;
                 article{
                     width: 25%;
                     display: grid;
                     grid-template-columns: 6fr 1fr;
+                    grid-template-rows: calc(5fr - 3px) 1fr 1fr 1fr;
+                    line-height: 60px;
+                    border: solid 1px #fff;
                     .img{
                         grid-column: span 2;
                         display: flex;
                         justify-content: center;
                         align-items: center;
+                        height: 300px;
+                        position: relative;
+                        background-color: #fff;
+                        img{
+                            height: 100%;
+                        }
+                        a{
+                            display: block;
+                            position: absolute;
+                            width: 100%;height: 100%;
+                            top: 0;left: 0;
+                        }
                     }
                     .pName{
                         grid-column: span 2;
+                        text-align: center;
+                        @include font($lush,1.688em,#fff);
                     }
+                    .img,.pName,.cate,.like{
+                        border-bottom: solid 1px #fff;
+                    }
+                    span{
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        padding: 0 20px;
+                    }
+                    .cate,.price{
+                        justify-content: flex-end;
+                        border-right: solid 1px #fff;
+                    }
+                    i{
+                        cursor: pointer;
+                        font-size: 1.313em;
+                    }
+
+                    
 
                 }
             }

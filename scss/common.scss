@@ -27,11 +27,11 @@ body{
     background-color: $black;
     display: flex;
 }
-body>header {
-    width: 12.5vw;
+
     background-color: #0f0d0d;
     border-radius: 30px;
     transition: all 0.3s ease-out;
+    position: fixed;
 
     &:hover {
         background-color: $green;
@@ -137,7 +137,9 @@ body>header {
 }
 
 div.content{
+    // width: calc(100% - 240px);
     width: 100%;
+    padding-left: 240px;
     & > header{
         display: flex;
         justify-content: space-between;
