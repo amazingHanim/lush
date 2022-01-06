@@ -1,0 +1,54 @@
+@import "./common.scss";
+
+.contentWrap {
+    width: 100%;
+    .content {
+        header{
+            display: block;
+            text-align: center;
+            height: inherit;
+            padding: 0;
+            margin:0;
+        }
+        &.main {}
+
+        &.bestProduct {
+            header {
+                h2 {
+                    @include font($lush, 3.438em, #fff);
+                    line-height: 120px;
+                }
+
+                h3 {
+                    @include font($notoSansKR, 1.125em, #fff);
+                    line-height: 60px;
+                }
+            }
+
+            section {
+                display: flex;
+                article{
+                    width: 25%;
+                    display: grid;
+                    grid-template-columns: 6fr 1fr;
+                    .img{
+                        grid-column: span 2;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                    }
+                    .pName{
+                        grid-column: span 2;
+                    }
+
+                }
+            }
+        }
+
+        &.lips {}
+
+        &.about {}
+
+        &.bestReview {}
+    }
+}

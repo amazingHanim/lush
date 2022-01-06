@@ -1,1 +1,287 @@
-/* No CSS */
+@charset "UTF-8";
+@import url("../css/jquery-ui.css");
+@import url("../css/all.css");
+/*폰트어썸*/
+/*색상변수 시작*/
+/*font 시작*/
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;500;700;900&family=Noto+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+@font-face {
+  src: url(../font/Lush.ttf);
+  font-family: "lush";
+}
+
+/*font-family mixins*/
+/*font 믹신을 include할 때 (폰트)*/
+body {
+  background-color: #0f0d0d;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+body > header {
+  width: 12.5vw;
+  min-width: 240px;
+  background-color: #0f0d0d;
+  border-radius: 30px;
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+
+body > header:hover {
+  background-color: #93ED51;
+}
+
+body > header:hover .logo .logo_w {
+  display: none;
+}
+
+body > header:hover .logo .logo_b {
+  display: block;
+}
+
+body > header:hover .join li a {
+  color: #0f0d0d;
+}
+
+body > header .logo {
+  width: 100%;
+  height: 11.11vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+}
+
+body > header .logo img {
+  width: 45.83%;
+}
+
+body > header .logo .logo_w {
+  display: block;
+}
+
+body > header .logo .logo_b {
+  display: none;
+}
+
+body > header .logo a {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+body > header .mainMenuList {
+  background-color: #fff;
+  border-radius: 31px;
+}
+
+body > header .mainMenuList > li {
+  text-align: center;
+  background-color: #0f0d0d;
+  border-radius: 30px;
+  line-height: 5vh;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+body > header .mainMenuList > li a {
+  /*폰트 고민*/
+  font-family: "Noto Sans", sans-serif;
+  font-size: 1.125em;
+  color: #fff;
+}
+
+body > header .mainMenuList > li.on {
+  background-color: #93ED51;
+}
+
+body > header .mainMenuList > li:hover {
+  background-color: #3C6EBE;
+  border-radius: 30px;
+}
+
+body > header .mainMenuList > li:hover .subMenuList {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 2.77vh 0;
+  border-top: solid 1px #fff;
+  width: 83.3%;
+  margin: 0 auto;
+}
+
+body > header .mainMenuList > li:hover .subMenuList li a {
+  display: block;
+  width: 100%;
+  line-height: 3.7vh;
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 1em;
+  color: #fff;
+  font-weight: 300;
+}
+
+body > header .mainMenuList > li .subMenuList {
+  display: none;
+}
+
+body > header .join {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0 10%;
+}
+
+body > header .join li {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body > header .join li a {
+  line-height: 5.5vh;
+  font-family: "Noto Sans", sans-serif;
+  font-size: 0.875em;
+  color: #fff;
+}
+
+div.content {
+  width: 100%;
+}
+
+div.content > header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: transparent;
+  width: 100%;
+  height: 11.1vh;
+  padding: 5.55vh 3.125vw 0 3.125vw;
+  margin-bottom: 3.7vh;
+  color: #fff;
+}
+
+div.content > header .location {
+  font-size: 0.875em;
+  line-height: 5.55vh;
+}
+
+div.content > header .cHeaderRight {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+div.content > header .cHeaderRight .icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+div.content > header .cHeaderRight .icons li {
+  margin-right: 10px;
+}
+
+div.content > header .cHeaderRight .icons li img {
+  width: 44px;
+  height: 44px;
+}
+
+div.content > header .cHeaderRight .search a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 25vw;
+  height: 100%;
+  border-bottom: 1px solid #fff;
+}
+
+.contentWrap {
+  width: 100%;
+}
+
+.contentWrap .content header {
+  display: block;
+  text-align: center;
+  height: inherit;
+  padding: 0;
+  margin: 0;
+}
+
+.contentWrap .content.bestProduct header h2 {
+  font-family: "lush";
+  font-size: 3.438em;
+  color: #fff;
+  line-height: 120px;
+}
+
+.contentWrap .content.bestProduct header h3 {
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 1.125em;
+  color: #fff;
+  line-height: 60px;
+}
+
+.contentWrap .content.bestProduct section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.contentWrap .content.bestProduct section article {
+  width: 25%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 6fr 1fr;
+      grid-template-columns: 6fr 1fr;
+}
+
+.contentWrap .content.bestProduct section article .img {
+  grid-column: span 2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.contentWrap .content.bestProduct section article .pName {
+  grid-column: span 2;
+}
