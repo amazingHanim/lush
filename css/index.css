@@ -19,8 +19,7 @@ body {
   display: flex;
 }
 
-body > header {
-  width: 240px;
+
   background-color: #0f0d0d;
   border-radius: 30px;
   -webkit-transition: all 0.3s ease-out;

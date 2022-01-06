@@ -105,20 +105,22 @@ div.content{
                 padding:0;
                 li{
                     color: #fff;
-                    line-height: 5.55vh;
+                    line-height: 3.75em;
                     cursor: pointer;
                 }
             }
             .filterSlider{
                 padding: 2.77vh 0;
+                display: flex;
+                justify-content: space-between;
                 &>li{
                     h4{
                         font-weight: bold;
                         font-size: 1em;
+                        line-height: 2.45em;
                     }
                     .filterDetails{
                         display: flex;
-                        justify-content: space-between;
                         ul{
                             li::before{
                                 content:'○ ';
@@ -129,7 +131,7 @@ div.content{
                             li{
                                 cursor: pointer;
                                 font-size: 0.875em;
-                                line-height: 40px;
+                                line-height: 2.45em;
                             }
                             li.on{
                                 color: $green;
@@ -142,6 +144,29 @@ div.content{
                             margin-right: 3.125vw;
                         }
                     }
+                }
+            }
+            .order{
+                display: flex;
+                flex-direction: column;
+                align-items: flex-end;
+                justify-content: center;
+                li::before{
+                    content:'○ ';
+                }
+                li.on::before{
+                    content:'● ';
+                }
+                li{
+                    cursor: pointer;
+                    font-size: 0.875em;
+                    line-height: 2.45em;
+                }
+                li.on{
+                    color: $green;
+                }
+                li:hover{
+                    color: $green;
                 }
             }
         }
