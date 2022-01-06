@@ -21,7 +21,7 @@ body {
 
 body > header {
   width: 12.5vw;
-  min-width: 240px;
+  min-width: 180px;
   background-color: #0f0d0d;
   border-radius: 30px;
   -webkit-transition: all 0.3s ease-out;
