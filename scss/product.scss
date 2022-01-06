@@ -21,3 +21,129 @@ $lush:"lush";
 body{
     display: flex;
 }
+div.content{
+
+    & > section{
+        .subMenuList2{
+            padding: 0 3.125vw;
+            ul{
+                display: flex;
+                align-items: baseline;
+                &:first-child{
+                    justify-content: start;
+                    li{
+                        margin-right: 2.08vw;
+                    }
+                }
+                &:last-child{
+                    justify-content: end;
+                    li{
+                        margin-left: 2.08vw;
+                    }
+                }
+                li{
+                    font-family: $lush;
+                    line-height: 11.11vh;
+                    color: #fff;
+                    font-size: 2.45em;
+                    transition: color,font-size 0.3s;
+                    &:hover{
+                        font-size: 3.43em;
+                        color: $green;
+                        background-image: url(../images/line.png);
+                        background-repeat: no-repeat;
+                        background-position: left bottom;
+                    }
+                }
+                li.on{
+                    font-size: 3.43em;
+                    color: $green;
+                    background-image: url(../images/line.png);
+                    background-repeat: no-repeat;
+                    background-position: left bottom;
+                }
+            }
+        }
+        .details{
+            &>ul{
+                display: flex;
+                align-items: center;
+                background-color: #fff;
+                border-radius: 30px;
+                margin: 3.7vh 3.125vw 0 ;
+                height: 5.8vh;
+                li{
+                    a{
+                        display: block;
+                        line-height: 5.55vh;
+                        box-sizing: border-box;
+                        padding: 0 2.08vw;
+                        color: #fff;
+                        background-color: $black;
+                        border: 1px solid #fff;
+                        border-radius: 30px;
+                        &:hover{
+                            background-color: #3C6EBE;
+                            font-weight: bold;
+                        }
+                    }
+                    &.on{
+                        a{
+                            background-color: $green;
+                            color: $black;
+                            font-weight: bold;
+                        }
+                    }
+                }
+            }
+        }
+        .filter{
+            padding: 0 3.125vw;
+            .filterTitle{
+                display: flex;
+                justify-content: space-between;
+                padding:0;
+                li{
+                    color: #fff;
+                    line-height: 5.55vh;
+                    cursor: pointer;
+                }
+            }
+            .filterSlider{
+                padding: 2.77vh 0;
+                &>li{
+                    h4{
+                        font-weight: bold;
+                        font-size: 1em;
+                    }
+                    .filterDetails{
+                        display: flex;
+                        justify-content: space-between;
+                        ul{
+                            li::before{
+                                content:'○ ';
+                            }
+                            li.on::before{
+                                content:'● ';
+                            }
+                            li{
+                                cursor: pointer;
+                                font-size: 0.875em;
+                                line-height: 40px;
+                            }
+                            li.on{
+                                color: $green;
+                            }
+                            li:hover{
+                                color: $green;
+                            }
+                        }
+                        ul:not(:last-child){
+                            margin-right: 3.125vw;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

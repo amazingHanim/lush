@@ -25,6 +25,7 @@ $lush:"lush";
 
 body{
     background-color: $black;
+    display: flex;
 }
 header {
     width: 12.5vw;
@@ -84,6 +85,9 @@ header {
                 /*폰트 고민*/
                 @include font($notoSans,1.125em,#fff);
             }
+            &.on{
+                background-color: $green;
+            }
             &:hover{
                 background-color: #3C6EBE;
                 border-radius: 30px;
@@ -126,7 +130,7 @@ header {
             align-items: center;
             a{
                 line-height:  5.5vh;
-                @include font($notoSans,1.2em,#fff);
+                @include font($notoSans,0.875em,#fff);
             }
         }
     }
@@ -139,21 +143,34 @@ div.content{
         justify-content: space-between;
         background-color: transparent;
         width: 100%;
+        height: 11.1vh;
+        padding: 5.55vh 3.125vw 0 3.125vw;
+        margin-bottom: 3.7vh;
         color: #fff;
         .location{
             font-size: 0.875em;
+            line-height: 5.55vh;
         }
         .cHeaderRight{
             display: flex;
             .icons{
-                img{
-                    width: 44px;
-                    height: 44px;
+                display: flex;
+                li{
+                    margin-right: 10px;
+                    img{
+                        width: 44px;
+                        height: 44px;
+                    }
                 }
             }
             .search{
-                p{
-                    display: inline-flex;
+                a{
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    width: 25vw;
+                    height: 100%;
+                    border-bottom: 1px solid #fff;
                 }
             }
         }
