@@ -109,17 +109,66 @@ div.content > section .details > ul li.on a {
   font-weight: bold;
 }
 
-div.content > section .filter > ul {
+div.content > section .filter {
+  padding: 0 3.125vw;
+}
+
+div.content > section .filter .filterTitle {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding: 0 3.125vw;
+  padding: 0;
 }
 
-div.content > section .filter > ul li {
+div.content > section .filter .filterTitle li {
   color: #fff;
   line-height: 5.55vh;
+  cursor: pointer;
+}
+
+div.content > section .filter .filterSlider {
+  padding: 2.77vh 0;
+}
+
+div.content > section .filter .filterSlider > li h4 {
+  font-weight: bold;
+  font-size: 1em;
+}
+
+div.content > section .filter .filterSlider > li .filterDetails {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+div.content > section .filter .filterSlider > li .filterDetails ul li::before {
+  content: '○ ';
+}
+
+div.content > section .filter .filterSlider > li .filterDetails ul li.on::before {
+  content: '● ';
+}
+
+div.content > section .filter .filterSlider > li .filterDetails ul li {
+  cursor: pointer;
+  font-size: 0.875em;
+  line-height: 40px;
+}
+
+div.content > section .filter .filterSlider > li .filterDetails ul li.on {
+  color: #93ED51;
+}
+
+div.content > section .filter .filterSlider > li .filterDetails ul li:hover {
+  color: #93ED51;
+}
+
+div.content > section .filter .filterSlider > li .filterDetails ul:not(:last-child) {
+  margin-right: 3.125vw;
 }

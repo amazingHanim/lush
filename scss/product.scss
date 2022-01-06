@@ -98,13 +98,50 @@ div.content{
             }
         }
         .filter{
-            &>ul{
+            padding: 0 3.125vw;
+            .filterTitle{
                 display: flex;
                 justify-content: space-between;
-                padding: 0 3.125vw;
+                padding:0;
                 li{
                     color: #fff;
                     line-height: 5.55vh;
+                    cursor: pointer;
+                }
+            }
+            .filterSlider{
+                padding: 2.77vh 0;
+                &>li{
+                    h4{
+                        font-weight: bold;
+                        font-size: 1em;
+                    }
+                    .filterDetails{
+                        display: flex;
+                        justify-content: space-between;
+                        ul{
+                            li::before{
+                                content:'○ ';
+                            }
+                            li.on::before{
+                                content:'● ';
+                            }
+                            li{
+                                cursor: pointer;
+                                font-size: 0.875em;
+                                line-height: 40px;
+                            }
+                            li.on{
+                                color: $green;
+                            }
+                            li:hover{
+                                color: $green;
+                            }
+                        }
+                        ul:not(:last-child){
+                            margin-right: 3.125vw;
+                        }
+                    }
                 }
             }
         }
