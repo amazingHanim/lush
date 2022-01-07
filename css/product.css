@@ -130,6 +130,7 @@ div.content > section .filter .filterSlider {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  padding-bottom: 20px;
 }
 
 div.content > section .filter .filterSlider > li h4 {
@@ -184,6 +185,7 @@ div.content > section .filter .order {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  padding-bottom: 20px;
 }
 
 div.content > section .filter .order li::before {
