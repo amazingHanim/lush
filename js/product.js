@@ -32,7 +32,8 @@ $(function(){
         });
         // filter 항목 선택 기능
 
-    var $productImg = $('.products section article').find('.img');
+    var $product = $('.products section article'),
+        $productImg = $product.find('.img');
 
     $productImg.mouseenter(
         function(){
@@ -43,4 +44,19 @@ $(function(){
             $(this).children('img').toggle();
         });
         // product image 마우스 오버 이벤트
+
+    var $emptyHeart = $product.find('.emptyHeart'),
+        $fullHeart = $product.find('.fullHeart');
+
+        $fullHeart.hide();
+        $emptyHeart.click(function(){
+            $(this).toggle();
+            $(this).next().toggle();
+        })
+        $fullHeart.click(function(){
+            $(this).toggle();
+            $(this).prev().toggle();
+        })
+        
+        
 });

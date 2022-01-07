@@ -74,10 +74,20 @@ div.content > section .details > ul {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: #fff;
-  border-radius: 30px;
   margin: 3.7vh 3.125vw 0;
   height: 5.8vh;
+}
+
+div.content > section .details > ul li {
+  background-color: #fff;
+}
+
+div.content > section .details > ul li:first-child {
+  border-radius: 30px 0 0 30px;
+}
+
+div.content > section .details > ul li:last-child {
+  border-radius: 0 30px 30px 0;
 }
 
 div.content > section .details > ul li a {
@@ -208,4 +218,34 @@ div.content > section .filter .order li.on {
 
 div.content > section .filter .order li:hover {
   color: #93ED51;
+}
+
+.products i.fa-heart {
+  color: #93ED51;
+}
+
+.products div.more {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 3.75em 0;
+}
+
+.products div.more button {
+  background-color: #93ED51;
+  padding: 0 4.16vw;
+  line-height: 2.5em;
+  color: #0f0d0d;
+  font-size: 1.125em;
+  border-radius: 30px;
+  border: none;
+  cursor: pointer;
+}
+
+.products div.more button:hover {
+  background-color: #3C6EBE;
+  color: #fff;
 }
