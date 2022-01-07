@@ -14,9 +14,6 @@
 /*font 믹신을 include할 때 (폰트)*/
 body {
   background-color: #0f0d0d;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
 }
 
 body > header {
@@ -28,23 +25,23 @@ body > header {
   position: fixed;
 }
 
-header:hover {
+body > header:hover {
   background-color: #93ED51;
 }
 
-header:hover .logo .logo_w {
+body > header:hover .logo .logo_w {
   display: none;
 }
 
-header:hover .logo .logo_b {
+body > header:hover .logo .logo_b {
   display: block;
 }
 
-header:hover .join li a {
+body > header:hover .join li a {
   color: #0f0d0d;
 }
 
-header .logo {
+body > header .logo {
   width: 100%;
   height: 11.11vh;
   display: -webkit-box;
@@ -59,19 +56,19 @@ header .logo {
   position: relative;
 }
 
-header .logo img {
+body > header .logo img {
   width: 45.83%;
 }
 
-header .logo .logo_w {
+body > header .logo .logo_w {
   display: block;
 }
 
-header .logo .logo_b {
+body > header .logo .logo_b {
   display: none;
 }
 
-header .logo a {
+body > header .logo a {
   position: absolute;
   top: 0;
   left: 0;
@@ -80,12 +77,12 @@ header .logo a {
   height: 100%;
 }
 
-header .mainMenuList {
+body > header .mainMenuList {
   background-color: #fff;
   border-radius: 31px;
 }
 
-header .mainMenuList > li {
+body > header .mainMenuList > li {
   text-align: center;
   background-color: #0f0d0d;
   border-radius: 30px;
@@ -94,23 +91,23 @@ header .mainMenuList > li {
   transition: all 0.3s;
 }
 
-header .mainMenuList > li a {
+body > header .mainMenuList > li a {
   /*폰트 고민*/
   font-family: "Noto Sans", sans-serif;
   font-size: 1.125em;
   color: #fff;
 }
 
-header .mainMenuList > li.on {
+body > header .mainMenuList > li.on {
   background-color: #93ED51;
 }
 
-header .mainMenuList > li:hover {
+body > header .mainMenuList > li:hover {
   background-color: #3C6EBE;
   border-radius: 30px;
 }
 
-header .mainMenuList > li:hover .subMenuList {
+body > header .mainMenuList > li:hover .subMenuList {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -127,7 +124,7 @@ header .mainMenuList > li:hover .subMenuList {
   margin: 0 auto;
 }
 
-header .mainMenuList > li:hover .subMenuList li a {
+body > header .mainMenuList > li:hover .subMenuList li a {
   display: block;
   width: 100%;
   line-height: 3.7vh;
@@ -137,11 +134,11 @@ header .mainMenuList > li:hover .subMenuList li a {
   font-weight: 300;
 }
 
-header .mainMenuList > li .subMenuList {
+body > header .mainMenuList > li .subMenuList {
   display: none;
 }
 
-header .join {
+body > header .join {
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -149,7 +146,7 @@ header .join {
   padding: 0 10%;
 }
 
-header .join li {
+body > header .join li {
   width: 50%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -162,7 +159,7 @@ header .join li {
           align-items: center;
 }
 
-header .join li a {
+body > header .join li a {
   line-height: 5.5vh;
   font-family: "Noto Sans", sans-serif;
   font-size: 0.875em;
@@ -234,7 +231,6 @@ body div.content.products section {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-top: 60px;
 }
 
 body div.content.products section article {

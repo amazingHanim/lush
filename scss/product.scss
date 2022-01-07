@@ -18,9 +18,6 @@ $lush:"lush";
     color: $color;
 }
 
-body{
-    display: flex;
-}
 div.content{
     & > section{
         .subMenuList2{
@@ -76,7 +73,7 @@ div.content{
                         display: block;
                         line-height: 5.55vh;
                         box-sizing: border-box;
-                        padding: 0 10px;
+                        padding: 0 20px;
                         color: #fff;
                         background-color: $black;
                         border: 1px solid #fff;
@@ -102,7 +99,6 @@ div.content{
             .filterTitle{
                 display: flex;
                 justify-content: space-between;
-                padding:0;
                 li{
                     color: #fff;
                     line-height: 3.75em;
@@ -110,7 +106,6 @@ div.content{
                 }
             }
             .filterSlider{
-                padding: 2.77vh 0;
                 display: flex;
                 justify-content: space-between;
                 &>li{

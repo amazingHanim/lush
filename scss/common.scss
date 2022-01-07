@@ -29,7 +29,7 @@ $lush:"lush";
 
 body {
     background-color: $black;
-    display: flex;
+    // display: flex;
     
     &>header {
         width: 240px;
@@ -210,7 +210,7 @@ body {
         &.products {
             section {
                 display: flex;
-                margin-top: 60px;
+                // margin-top: 60px;
 
                 article {
                     width: 25%;
