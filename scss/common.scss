@@ -29,15 +29,14 @@ $lush:"lush";
 
 body {
     background-color: $black;
-    display: flex;
-
+    // display: flex;
+    
     &>header {
         width: 240px;
         background-color: #0f0d0d;
         border-radius: 30px;
         transition: all 0.3s ease-out;
         position: fixed;
-
         &:hover {
             background-color: $green;
 
@@ -162,17 +161,21 @@ body {
     div.content {
         // width: calc(100% - 240px);
         width: 100%;
+        overflow: hidden;
         padding-left: 240px;
 
         &>header {
+            position: fixed;
+            z-index: 9999;
             display: flex;
             justify-content: space-between;
             background-color: transparent;
-            width: 100%;
-            height: 11.1vh;
-            padding: 5.55vh 3.125vw 0 3.125vw;
+            width: calc(100% - 240px);
+            height: 12vh;
+            padding: 5.55vh 3.125vw 1vh 3.125vw;
             margin-bottom: 3.7vh;
             color: #fff;
+            background-color: $black;
 
             .location {
                 font-size: 0.875em;
@@ -211,7 +214,7 @@ body {
         &.products {
             section {
                 display: flex;
-                margin-top: 60px;
+                // margin-top: 60px;
 
                 article {
                     width: 25%;
@@ -229,6 +232,7 @@ body {
                         height: 300px;
                         position: relative;
                         background-color: #fff;
+                        overflow: hidden;
 
                         img {
                             height: 100%;

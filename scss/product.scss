@@ -18,11 +18,9 @@ $lush:"lush";
     color: $color;
 }
 
-body{
-    display: flex;
-}
-div.content{
+div.content:first-of-type{
     & > section{
+            padding-top: 12vh;
         .subMenuList2{
             padding: 0 3.125vw;
             ul{
@@ -67,20 +65,26 @@ div.content{
             &>ul{
                 display: flex;
                 align-items: center;
-                background-color: #fff;
-                border-radius: 30px;
                 margin: 3.7vh 3.125vw 0 ;
                 height: 5.8vh;
                 li{
+                    background-color: #fff;
+                    &:first-child{
+                        border-radius: 30px 0 0 30px;
+                    }
+                    &:last-child{
+                        border-radius: 0 30px 30px 0;
+                    }
                     a{
                         display: block;
                         line-height: 5.55vh;
                         box-sizing: border-box;
-                        padding: 0 2.08vw;
+                        padding: 0 20px;
                         color: #fff;
                         background-color: $black;
                         border: 1px solid #fff;
                         border-radius: 30px;
+                        font-size: 1em;
                         &:hover{
                             background-color: #3C6EBE;
                             font-weight: bold;
@@ -101,7 +105,6 @@ div.content{
             .filterTitle{
                 display: flex;
                 justify-content: space-between;
-                padding:0;
                 li{
                     color: #fff;
                     line-height: 3.75em;
@@ -109,9 +112,9 @@ div.content{
                 }
             }
             .filterSlider{
-                padding: 2.77vh 0;
                 display: flex;
                 justify-content: space-between;
+                padding-bottom: 20px;
                 &>li{
                     h4{
                         font-weight: bold;
@@ -150,6 +153,7 @@ div.content{
                 flex-direction: column;
                 align-items: flex-end;
                 justify-content: center;
+                padding-bottom: 20px;
                 li::before{
                     content:'○ ';
                 }
@@ -167,6 +171,31 @@ div.content{
                 li:hover{
                     color: $green;
                 }
+            }
+        }
+    }
+}
+.products{
+    i.fa-heart{
+        color:$green;
+    }
+    div.more{
+        display: flex;
+        justify-content: center;
+        margin: 3.75em 0;
+        button{
+            background-color: $green;
+            padding: 0 4.16vw;
+            line-height: 2.5em;
+            color: $black;
+            font-size: 1.125em;
+            border-radius: 30px;
+            border: none;
+            cursor: pointer;
+            &:hover{
+                background-color: #3C6EBE;
+                color: #fff;
+                transition: all ease-in 0.2s;
             }
         }
     }
