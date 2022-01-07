@@ -19,8 +19,7 @@ $lush:"lush";
 }
 
 div.content{
-    width: clac(100vw - 240px);
-    overflow: hidden;
+    
     & > section{
         .subMenuList2{
             padding: 0 3.125vw;

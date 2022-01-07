@@ -260,6 +260,7 @@ body div.content.products section article .img {
   height: 300px;
   position: relative;
   background-color: #fff;
+  overflow: hidden;
 }
 
 body div.content.products section article .img img {

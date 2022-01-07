@@ -31,4 +31,16 @@ $(function(){
             $(this).toggleClass("on");
         });
         // filter 항목 선택 기능
+
+    var $productImg = $('.products section article').find('.img');
+
+    $productImg.mouseenter(
+        function(){
+            $(this).children('img').toggle();
+        });
+    $productImg.mouseleave(
+        function(){
+            $(this).children('img').toggle();
+        });
+        // product image 마우스 오버 이벤트
 });
