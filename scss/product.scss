@@ -21,6 +21,9 @@ $lush:"lush";
 div.content{
     
     & > section{
+        &:first-of-type{
+            padding-top: 12vh;
+        }
         .subMenuList2{
             padding: 0 3.125vw;
             ul{

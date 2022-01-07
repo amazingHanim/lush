@@ -9,6 +9,10 @@
 
 /*font-family mixins*/
 /*font 믹신을 include할 때 (폰트)*/
+div.content > section:first-of-type {
+  padding-top: 12vh;
+}
+
 div.content > section .subMenuList2 {
   padding: 0 3.125vw;
 }
