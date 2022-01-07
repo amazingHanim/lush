@@ -195,6 +195,7 @@ div.content:first-of-type{
             &:hover{
                 background-color: #3C6EBE;
                 color: #fff;
+                transition: all ease-in 0.2s;
             }
         }
     }

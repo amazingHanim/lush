@@ -252,4 +252,6 @@ div.content:first-of-type > section .filter .order li:hover {
 .products div.more button:hover {
   background-color: #3C6EBE;
   color: #fff;
+  -webkit-transition: all ease-in 0.2s;
+  transition: all ease-in 0.2s;
 }

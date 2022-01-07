@@ -57,6 +57,6 @@ $(function(){
             $(this).toggle();
             $(this).prev().toggle();
         })
-        
-        
+        //heart 아이콘 클릭 이벤트
+
 });
