@@ -9,15 +9,15 @@
 
 /*font-family mixins*/
 /*font 믹신을 include할 때 (폰트)*/
-div.content > section:first-of-type {
+div.content:first-of-type > section {
   padding-top: 12vh;
 }
 
-div.content > section .subMenuList2 {
+div.content:first-of-type > section .subMenuList2 {
   padding: 0 3.125vw;
 }
 
-div.content > section .subMenuList2 ul {
+div.content:first-of-type > section .subMenuList2 ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -26,27 +26,27 @@ div.content > section .subMenuList2 ul {
           align-items: baseline;
 }
 
-div.content > section .subMenuList2 ul:first-child {
+div.content:first-of-type > section .subMenuList2 ul:first-child {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: start;
 }
 
-div.content > section .subMenuList2 ul:first-child li {
+div.content:first-of-type > section .subMenuList2 ul:first-child li {
   margin-right: 2.08vw;
 }
 
-div.content > section .subMenuList2 ul:last-child {
+div.content:first-of-type > section .subMenuList2 ul:last-child {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: end;
 }
 
-div.content > section .subMenuList2 ul:last-child li {
+div.content:first-of-type > section .subMenuList2 ul:last-child li {
   margin-left: 2.08vw;
 }
 
-div.content > section .subMenuList2 ul li {
+div.content:first-of-type > section .subMenuList2 ul li {
   font-family: "lush";
   line-height: 11.11vh;
   color: #fff;
@@ -55,7 +55,7 @@ div.content > section .subMenuList2 ul li {
   transition: color,font-size 0.3s;
 }
 
-div.content > section .subMenuList2 ul li:hover {
+div.content:first-of-type > section .subMenuList2 ul li:hover {
   font-size: 3.43em;
   color: #93ED51;
   background-image: url(../images/line.png);
@@ -63,7 +63,7 @@ div.content > section .subMenuList2 ul li:hover {
   background-position: left bottom;
 }
 
-div.content > section .subMenuList2 ul li.on {
+div.content:first-of-type > section .subMenuList2 ul li.on {
   font-size: 3.43em;
   color: #93ED51;
   background-image: url(../images/line.png);
@@ -71,7 +71,7 @@ div.content > section .subMenuList2 ul li.on {
   background-position: left bottom;
 }
 
-div.content > section .details > ul {
+div.content:first-of-type > section .details > ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -82,19 +82,19 @@ div.content > section .details > ul {
   height: 5.8vh;
 }
 
-div.content > section .details > ul li {
+div.content:first-of-type > section .details > ul li {
   background-color: #fff;
 }
 
-div.content > section .details > ul li:first-child {
+div.content:first-of-type > section .details > ul li:first-child {
   border-radius: 30px 0 0 30px;
 }
 
-div.content > section .details > ul li:last-child {
+div.content:first-of-type > section .details > ul li:last-child {
   border-radius: 0 30px 30px 0;
 }
 
-div.content > section .details > ul li a {
+div.content:first-of-type > section .details > ul li a {
   display: block;
   line-height: 5.55vh;
   -webkit-box-sizing: border-box;
@@ -107,22 +107,22 @@ div.content > section .details > ul li a {
   font-size: 1em;
 }
 
-div.content > section .details > ul li a:hover {
+div.content:first-of-type > section .details > ul li a:hover {
   background-color: #3C6EBE;
   font-weight: bold;
 }
 
-div.content > section .details > ul li.on a {
+div.content:first-of-type > section .details > ul li.on a {
   background-color: #93ED51;
   color: #0f0d0d;
   font-weight: bold;
 }
 
-div.content > section .filter {
+div.content:first-of-type > section .filter {
   padding: 0 3.125vw;
 }
 
-div.content > section .filter .filterTitle {
+div.content:first-of-type > section .filter .filterTitle {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -131,13 +131,13 @@ div.content > section .filter .filterTitle {
           justify-content: space-between;
 }
 
-div.content > section .filter .filterTitle li {
+div.content:first-of-type > section .filter .filterTitle li {
   color: #fff;
   line-height: 3.75em;
   cursor: pointer;
 }
 
-div.content > section .filter .filterSlider {
+div.content:first-of-type > section .filter .filterSlider {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -147,45 +147,45 @@ div.content > section .filter .filterSlider {
   padding-bottom: 20px;
 }
 
-div.content > section .filter .filterSlider > li h4 {
+div.content:first-of-type > section .filter .filterSlider > li h4 {
   font-weight: bold;
   font-size: 1em;
   line-height: 2.45em;
 }
 
-div.content > section .filter .filterSlider > li .filterDetails {
+div.content:first-of-type > section .filter .filterSlider > li .filterDetails {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-div.content > section .filter .filterSlider > li .filterDetails ul li::before {
+div.content:first-of-type > section .filter .filterSlider > li .filterDetails ul li::before {
   content: '○ ';
 }
 
-div.content > section .filter .filterSlider > li .filterDetails ul li.on::before {
+div.content:first-of-type > section .filter .filterSlider > li .filterDetails ul li.on::before {
   content: '● ';
 }
 
-div.content > section .filter .filterSlider > li .filterDetails ul li {
+div.content:first-of-type > section .filter .filterSlider > li .filterDetails ul li {
   cursor: pointer;
   font-size: 0.875em;
   line-height: 2.45em;
 }
 
-div.content > section .filter .filterSlider > li .filterDetails ul li.on {
+div.content:first-of-type > section .filter .filterSlider > li .filterDetails ul li.on {
   color: #93ED51;
 }
 
-div.content > section .filter .filterSlider > li .filterDetails ul li:hover {
+div.content:first-of-type > section .filter .filterSlider > li .filterDetails ul li:hover {
   color: #93ED51;
 }
 
-div.content > section .filter .filterSlider > li .filterDetails ul:not(:last-child) {
+div.content:first-of-type > section .filter .filterSlider > li .filterDetails ul:not(:last-child) {
   margin-right: 3.125vw;
 }
 
-div.content > section .filter .order {
+div.content:first-of-type > section .filter .order {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -202,25 +202,25 @@ div.content > section .filter .order {
   padding-bottom: 20px;
 }
 
-div.content > section .filter .order li::before {
+div.content:first-of-type > section .filter .order li::before {
   content: '○ ';
 }
 
-div.content > section .filter .order li.on::before {
+div.content:first-of-type > section .filter .order li.on::before {
   content: '● ';
 }
 
-div.content > section .filter .order li {
+div.content:first-of-type > section .filter .order li {
   cursor: pointer;
   font-size: 0.875em;
   line-height: 2.45em;
 }
 
-div.content > section .filter .order li.on {
+div.content:first-of-type > section .filter .order li.on {
   color: #93ED51;
 }
 
-div.content > section .filter .order li:hover {
+div.content:first-of-type > section .filter .order li:hover {
   color: #93ED51;
 }
 
