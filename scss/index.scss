@@ -1,6 +1,6 @@
 @import "./common.scss";
 
-$padding: 3%;
+$padding: 3vw;
 
 .contentWrap {
     width: 100%;
@@ -24,9 +24,11 @@ $padding: 3%;
             }
 
             h3 {
-                @include font($notoSansKR, 1.125em, #fff);
+                @include font($notoSansKR, 1em, #fff);
                 line-height: 3.750em;
                 font-weight: 400;
+                font-weight: 400;
+                opacity: 0.6;
 
             }
         }
@@ -37,7 +39,8 @@ $padding: 3%;
 
         &.main {
             padding-top: 0;
-            height: 60.000em;
+            // height: 60.000em;
+            height: 100vh;
             display: flex;
 
             main {
@@ -90,8 +93,11 @@ $padding: 3%;
 
                         }
 
+
                         p {
                             display: block;
+                            @include font($notoSansKR, 0.875em, #707070);
+                            font-weight: 300;
                         }
 
                         button {
@@ -123,18 +129,18 @@ $padding: 3%;
                         display: flex;
                         flex-direction: column;
                         justify-content: space-between;
-                        padding: $padding;
+                        padding: 2vh $padding;
                         border-right: solid 1px $black;
 
 
                         h4 {
-                            @include font($notoSans, 1.688em, $black);
+                            @include font($notoSans, 1.313em, $black);
                         }
 
                         p {
-                            // @include font($notoSansKR,1.125em,$black);
-                            font-weight: 400;
+                            @include font($notoSansKR, 0.875em, $black);
                             color: #000;
+                            font-weight: 300;
                         }
                     }
 
@@ -145,6 +151,7 @@ $padding: 3%;
 
                         overflow: hidden;
                         position: relative;
+
                         button {
                             width: 100%;
                             height: 100%;
@@ -159,6 +166,7 @@ $padding: 3%;
                                 color: $black;
                             }
                         }
+
                         /*.btn에 호버할 시 효과 시작*/
                         &::after {
                             transition: all 0.2s ease-out;
@@ -172,15 +180,19 @@ $padding: 3%;
                             height: 0;
                             background-color: $black;
                             border-radius: 50%;
+                            cursor: pointer;
+
 
                         }
+
                         &:hover {
-                            button>span{
+                            button>span {
                                 color: #fff;
                                 z-index: 10;
                                 font-size: 1.125em;
 
                             }
+
                             &::after {
                                 width: 200%;
                                 height: 200%;
@@ -196,7 +208,7 @@ $padding: 3%;
                         overflow: hidden;
 
                         img {
-                            width: 100%;
+                            height: 100%;
                         }
                     }
                 }
@@ -228,7 +240,6 @@ $padding: 3%;
                     position: absolute;
                     background-image: url(../images/lips.jpeg);
                     background-repeat: no-repeat;
-                    background-size: 100%;
                     background-position: center;
                 }
 
@@ -273,6 +284,10 @@ $padding: 3%;
                     li {
                         &.on {
                             display: block;
+
+                            img {
+                                width: 80%;
+                            }
                         }
 
                         display: none;
@@ -289,7 +304,8 @@ $padding: 3%;
                     li {
                         a {
                             line-height: 40px;
-                            @include font($notoSans, 16px, rgb(200, 200, 200));
+                            @include font($notoSans, 0.875em, rgb(200, 200, 200));
+                            font-weight: 300;
                             text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.3);
                             transition: all 0.3s ease-out;
                             display: block;
@@ -300,7 +316,7 @@ $padding: 3%;
                         &.on {
 
                             a {
-                                line-height: 180px;
+                                line-height: 140px;
                                 color: $green;
                                 font-size: 18px;
                                 letter-spacing: 1px;
@@ -423,7 +439,7 @@ $padding: 3%;
                         height: 15.000em;
                         border-radius: 30px;
                         background-color: #fff;
-                        padding: $padding;
+                        padding: 0 $padding;
                         display: flex;
                         justify-content: center;
                         align-items: center;
@@ -445,9 +461,13 @@ $padding: 3%;
                         }
 
                         .pName {
-                            text-align: center;
+                            text-align: start;
                             @include font($lush, 1.688em, $black);
                             line-height: 1.875em;
+                            overflow: hidden;
+                            text-overflow: ellipsis;
+                            white-space: nowrap;
+                            display: block;
                         }
 
                         .cate {

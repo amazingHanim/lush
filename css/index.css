@@ -18,6 +18,7 @@ body {
 
 body > header {
   width: 240px;
+  height: 100%;
   background-color: #0f0d0d;
   border-radius: 30px;
   -webkit-transition: all 0.3s ease-out;
@@ -358,10 +359,12 @@ body div.content .moreBtn {
 
 .contentWrap .content header h3 {
   font-family: "Noto Sans KR", sans-serif;
-  font-size: 1.125em;
+  font-size: 1em;
   color: #fff;
   line-height: 3.750em;
   font-weight: 400;
+  font-weight: 400;
+  opacity: 0.6;
 }
 
 .contentWrap .content > section {
@@ -370,7 +373,7 @@ body div.content .moreBtn {
 
 .contentWrap .content.main {
   padding-top: 0;
-  height: 60.000em;
+  height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -401,7 +404,7 @@ body div.content .moreBtn {
       justify-content: space-around;
   background-color: #fff;
   overflow: hidden;
-  padding: 3% 0;
+  padding: 3vw 0;
 }
 
 .contentWrap .content.main main header h2 {
@@ -410,11 +413,11 @@ body div.content .moreBtn {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
-  padding: 0 3%;
+  padding: 0 3vw;
 }
 
 .contentWrap .content.main main header div {
-  padding: 0 3%;
+  padding: 0 3vw;
   border-left: solid 1px #000;
   width: 50%;
   height: 100%;
@@ -442,6 +445,10 @@ body div.content .moreBtn {
 
 .contentWrap .content.main main header div p {
   display: block;
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 0.875em;
+  color: #707070;
+  font-weight: 300;
 }
 
 .contentWrap .content.main main header div button {
@@ -487,19 +494,22 @@ body div.content .moreBtn {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding: 3%;
+  padding: 2vh 3vw;
   border-right: solid 1px #0f0d0d;
 }
 
 .contentWrap .content.main .articleWrap article .txt h4 {
   font-family: "Noto Sans", sans-serif;
-  font-size: 1.688em;
+  font-size: 1.313em;
   color: #0f0d0d;
 }
 
 .contentWrap .content.main .articleWrap article .txt p {
-  font-weight: 400;
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 0.875em;
+  color: #0f0d0d;
   color: #000;
+  font-weight: 300;
 }
 
 .contentWrap .content.main .articleWrap article .btn {
@@ -546,6 +556,7 @@ body div.content .moreBtn {
   height: 0;
   background-color: #0f0d0d;
   border-radius: 50%;
+  cursor: pointer;
 }
 
 .contentWrap .content.main .articleWrap article .btn:hover button > span {
@@ -568,7 +579,7 @@ body div.content .moreBtn {
 }
 
 .contentWrap .content.main .articleWrap article .img img {
-  width: 100%;
+  height: 100%;
 }
 
 .contentWrap .content.lips {
@@ -585,7 +596,7 @@ body div.content .moreBtn {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding: 3%;
+  padding: 3vw;
 }
 
 .contentWrap .content.lips header::before {
@@ -600,7 +611,6 @@ body div.content .moreBtn {
   position: absolute;
   background-image: url(../images/lips.jpeg);
   background-repeat: no-repeat;
-  background-size: 100%;
   background-position: center;
 }
 
@@ -635,7 +645,7 @@ body div.content .moreBtn {
 .contentWrap .content.lips section {
   width: 50%;
   border-radius: 30px;
-  padding: 3%;
+  padding: 3vw;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -669,6 +679,10 @@ body div.content .moreBtn {
   display: block;
 }
 
+.contentWrap .content.lips section ul.lip_tabContent li.on img {
+  width: 80%;
+}
+
 .contentWrap .content.lips section ul.lip_tabMenu {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -686,8 +700,9 @@ body div.content .moreBtn {
 .contentWrap .content.lips section ul.lip_tabMenu li a {
   line-height: 40px;
   font-family: "Noto Sans", sans-serif;
-  font-size: 16px;
+  font-size: 0.875em;
   color: #c8c8c8;
+  font-weight: 300;
   text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.3);
   -webkit-transition: all 0.3s ease-out;
   transition: all 0.3s ease-out;
@@ -697,7 +712,7 @@ body div.content .moreBtn {
 }
 
 .contentWrap .content.lips section ul.lip_tabMenu li.on a {
-  line-height: 180px;
+  line-height: 140px;
   color: #93ED51;
   font-size: 18px;
   letter-spacing: 1px;
@@ -741,7 +756,7 @@ body div.content .moreBtn {
 }
 
 .contentWrap .content.about ul.tabMenu li header {
-  padding: 3%;
+  padding: 3vw;
   text-align: start;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -759,7 +774,7 @@ body div.content .moreBtn {
 }
 
 .contentWrap .content.about ul.tabContent {
-  padding: 3%;
+  padding: 3vw;
   border-radius: 0 0 30px 30px;
   border: 1px solid #fff;
 }
@@ -810,7 +825,7 @@ body div.content .moreBtn {
   height: 15.000em;
   border-radius: 30px;
   background-color: #fff;
-  padding: 3%;
+  padding: 0 3vw;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -829,7 +844,7 @@ body div.content .moreBtn {
 .contentWrap .content.bestReview section article .txt {
   border-radius: 30px;
   background-color: #fff;
-  padding: 3%;
+  padding: 3vw;
 }
 
 .contentWrap .content.bestReview section article .txt span {
@@ -841,11 +856,15 @@ body div.content .moreBtn {
 }
 
 .contentWrap .content.bestReview section article .txt .pName {
-  text-align: center;
+  text-align: start;
   font-family: "lush";
   font-size: 1.688em;
   color: #0f0d0d;
   line-height: 1.875em;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  display: block;
 }
 
 .contentWrap .content.bestReview section article .txt .cate {
