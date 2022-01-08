@@ -332,15 +332,14 @@ body div.content .moreBtn {
 
 .contentWrap {
   width: 100%;
-  height: 200vh;
 }
 
 .contentWrap .content {
   width: 100%;
-  margin-top: 120px;
+  padding-top: 120px;
 }
 
-.contentWrap .content > header {
+.contentWrap .content header {
   position: inherit;
   width: 100%;
   display: block;
@@ -350,30 +349,125 @@ body div.content .moreBtn {
   margin: 0;
 }
 
-.contentWrap .content > header h2 {
+.contentWrap .content header h2 {
   font-family: "lush";
-  font-size: 3.438em;
+  font-size: 2.625em;
   color: #fff;
-  line-height: 120px;
+  line-height: 7.4vh;
 }
 
-.contentWrap .content > header h3 {
+.contentWrap .content header h3 {
   font-family: "Noto Sans KR", sans-serif;
   font-size: 1.125em;
   color: #fff;
   line-height: 3.750em;
-  font-weight: 300;
+  font-weight: 400;
 }
 
 .contentWrap .content > section {
   margin-top: 30px;
 }
 
+.contentWrap .content.main {
+  padding-top: 0;
+  height: 60.000em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.contentWrap .content.main main {
+  width: 60%;
+  height: 100%;
+}
+
+.contentWrap .content.main main .slider {
+  height: 60%;
+  border-radius: 30px 30px 0 0;
+  overflow: hidden;
+}
+
+.contentWrap .content.main main .slider img {
+  height: 100%;
+}
+
+.contentWrap .content.main main header {
+  height: 40%;
+  border-radius: 0 0 30px 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  background-color: #fff;
+  overflow: hidden;
+  padding: 3% 0;
+}
+
+.contentWrap .content.main main header h2 {
+  color: #0f0d0d;
+  width: 50%;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  padding: 0 3%;
+}
+
+.contentWrap .content.main main header div {
+  padding: 0 3%;
+  border-left: solid 1px #000;
+  width: 50%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  text-align: start;
+}
+
+.contentWrap .content.main main header div h3,
+.contentWrap .content.main main header div h4,
+.contentWrap .content.main main header div button {
+  color: #0f0d0d;
+  line-height: 1.875em;
+}
+
+.contentWrap .content.main main header div button {
+  border-color: #0f0d0d;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+}
+
+.contentWrap .content.main .articleWrap {
+  width: 40%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.contentWrap .content.main .articleWrap article {
+  background-color: #fff;
+  height: 100%;
+  border-radius: 30px;
+}
+
 .contentWrap .content.lips {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  height: 37.500em;
 }
 
 .contentWrap .content.lips header {
@@ -384,7 +478,7 @@ body div.content .moreBtn {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding: 30px;
+  padding: 3%;
 }
 
 .contentWrap .content.lips header::before {
@@ -399,7 +493,7 @@ body div.content .moreBtn {
   position: absolute;
   background-image: url(../images/lips.jpeg);
   background-repeat: no-repeat;
-  background-size: 110vh;
+  background-size: 100%;
   background-position: center;
 }
 
@@ -434,7 +528,7 @@ body div.content .moreBtn {
 .contentWrap .content.lips section {
   width: 50%;
   border-radius: 30px;
-  padding: 30px;
+  padding: 3%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -529,8 +623,18 @@ body div.content .moreBtn {
   border: solid 1px #0f0d0d;
 }
 
+.contentWrap .content.about ul.tabMenu li h2,
+.contentWrap .content.about ul.tabMenu li h3,
+.contentWrap .content.about ul.tabMenu li button {
+  color: #707070;
+}
+
+.contentWrap .content.about ul.tabMenu li button {
+  border: solid 1px #707070;
+}
+
 .contentWrap .content.about ul.tabMenu li header {
-  padding: 1.875em;
+  padding: 3%;
   text-align: start;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -548,7 +652,7 @@ body div.content .moreBtn {
 }
 
 .contentWrap .content.about ul.tabContent {
-  padding: 30px;
+  padding: 3%;
   border-radius: 0 0 30px 30px;
   border: 1px solid #fff;
 }
@@ -599,7 +703,7 @@ body div.content .moreBtn {
   height: 15.000em;
   border-radius: 30px;
   background-color: #fff;
-  padding: 0 1.875em;
+  padding: 3%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -618,7 +722,7 @@ body div.content .moreBtn {
 .contentWrap .content.bestReview section article .txt {
   border-radius: 30px;
   background-color: #fff;
-  padding: 1.875em;
+  padding: 3%;
 }
 
 .contentWrap .content.bestReview section article .txt span {

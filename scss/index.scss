@@ -1,14 +1,15 @@
 @import "./common.scss";
 
+$padding: 3%;
+
 .contentWrap {
     width: 100%;
-    height: 200vh;
 
     .content {
         width: 100%;
-        margin-top: 120px;
+        padding-top: 120px;
 
-        &>header {
+        header {
             position: inherit;
             width: 100%;
             display: block;
@@ -18,28 +19,105 @@
             margin: 0;
 
             h2 {
-                @include font($lush, 3.438em, #fff);
-                line-height: 120px;
+                @include font($lush, 2.625em, #fff);
+                line-height: 7.4vh;
             }
 
             h3 {
                 @include font($notoSansKR, 1.125em, #fff);
                 line-height: 3.750em;
-                font-weight: 300;
+                font-weight: 400;
 
             }
         }
-        &>section{
+
+        &>section {
             margin-top: 30px;
         }
 
-        &.main {}
+        &.main {
+            padding-top: 0;
+            height: 60.000em;
+            display: flex;
+
+            main {
+                width: 60%;
+                height: 100%;
+                .slider {
+                    height: 60%;
+                    border-radius: 30px 30px 0 0;
+                    overflow: hidden;
+
+                    img {
+                        height: 100%;
+                    }
+                }
+
+                header {
+                    height: 40%;
+                    border-radius: 0 0 30px 30px;
+                    display: flex;
+                    justify-content: space-around;
+                    background-color: #fff;
+                    overflow: hidden;
+                    padding: $padding 0;
+
+                    h2 {
+                        color: $black;
+                        width: 50%;
+                        align-self: center;
+                        padding:0 $padding;
+                    }
+
+                    div {
+                        padding:0 $padding;
+
+                        border-left: solid 1px #000;
+                        width: 50%;
+                        height: 100%;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-around;
+                        align-items: flex-start;
+                        text-align: start;
+
+                        h3,
+                        h4,
+                        button {
+                            color: $black;
+                            line-height: 1.875em;
+                            
+                        }
+
+                        button {
+                            border-color: $black;
+                            align-self: flex-end;
+                        }
+
+                    }
+                }
+            }
+
+            .articleWrap {
+                width: 40%;
+                height: 100%;
+
+                display: flex;
+                flex-direction: column;
+
+                article {
+                    background-color: #fff;
+                    height: 100%;
+                    border-radius: 30px;
+                }
+            }
+        }
 
         &.bestProduct {}
 
         &.lips {
             display: flex;
-            height: 37.500em;
+            // height: 37.500em;
 
             header {
                 width: 50%;
@@ -60,11 +138,11 @@
                     position: absolute;
                     background-image: url(../images/lips.jpeg);
                     background-repeat: no-repeat;
-                    background-size: 110vh;
+                    background-size: 100%;
                     background-position: center;
                 }
 
-                padding: 30px;
+                padding: $padding;
 
                 .texts {
                     display: flex;
@@ -90,7 +168,7 @@
             section {
                 width: 50%;
                 border-radius: 30px;
-                padding: 30px;
+                padding: $padding;
                 display: flex;
                 justify-content: flex-end;
                 align-items: center;
@@ -168,9 +246,18 @@
                             border: solid 1px $black;
                         }
                     }
+                        h2,
+                        h3,
+                        button {
+                            color: #707070;
+                        }
+
+                        button {
+                            border: solid 1px #707070;
+                        }
 
                     header {
-                        padding: 1.875em;
+                        padding: $padding;
                         text-align: start;
                         display: flex;
                         justify-content: space-between;
@@ -190,7 +277,7 @@
             }
 
             ul.tabContent {
-                padding: 30px;
+                padding: $padding;
                 border-radius: 0 0 30px 30px;
                 border: 1px solid #fff;
 
@@ -232,48 +319,55 @@
 
                 h3 {}
             }
-            section{
+
+            section {
                 display: flex;
 
-                article{
+                article {
                     width: 25%;
-                    position:relative;
-                    .img{
+                    position: relative;
+
+                    .img {
                         width: 100%;
                         height: 15.000em;
                         border-radius: 30px;
                         background-color: #fff;
-                        padding: 0 1.875em;
+                        padding:$padding;
                         display: flex;
                         justify-content: center;
                         align-items: center;
-                        img{
+
+                        img {
                             height: 100%;
                         }
                     }
-                    .txt{
+
+                    .txt {
                         border-radius: 30px;
                         background-color: #fff;
-                        padding: 1.875em;
-                        
-                        span{
+                        padding:$padding;
+
+                        span {
                             display: flex;
-                            font-display:column;
-                            color:#707070;
+                            font-display: column;
+                            color: #707070;
                         }
-                        .pName{
+
+                        .pName {
                             text-align: center;
                             @include font($lush, 1.688em, $black);
                             line-height: 1.875em;
                         }
-                        .cate{
-                            line-height:1.125em;
+
+                        .cate {
+                            line-height: 1.125em;
                         }
-                        .reviewTxt{
+
+                        .reviewTxt {
                             margin-top: 1.875em;
                             font-size: 1.125em;
                             line-height: 1.875em;
-                            height:1.875em;
+                            height: 1.875em;
                             color: $black;
 
                             overflow: hidden;
@@ -282,25 +376,29 @@
                             display: block;
 
                         }
-                        .btm{
+
+                        .btm {
                             display: flex;
                             justify-content: space-between;
                             margin-top: 30px;
                             line-height: 30px;
 
-                            .date{
-                            }
-                            .stars{
-                                i{
+                            .date {}
+
+                            .stars {
+                                i {
                                     color: #707070;
                                 }
                             }
                         }
                     }
-                    a{
-                        position:absolute;
-                        width: 100%;height: 100%;
-                        top: 0;left: 0;
+
+                    a {
+                        position: absolute;
+                        width: 100%;
+                        height: 100%;
+                        top: 0;
+                        left: 0;
                         display: block;
                     }
                 }
