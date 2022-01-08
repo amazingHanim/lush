@@ -38,6 +38,7 @@ body {
         border-radius: 30px;
         transition: all 0.3s ease-out;
         position: fixed;
+        border-right: solid 3px #fff;
         &:hover {
             background-color: $green;
 
@@ -88,7 +89,7 @@ body {
 
         .mainMenuList {
             background-color: #fff;
-            border-radius: 31px;
+            border-radius: 30px;
 
             &>li {
                 text-align: center;
@@ -294,6 +295,12 @@ body {
             @include font($notoSansKR, 1em, #fff);
             font-weight: 300;
             line-height: 34px;
+            transition: all 0.5s ease-out;
+            opacity: 0.4;
+            &:hover{
+                opacity: 1;
+                border-radius: 30px;
+            }
         }
     }
 

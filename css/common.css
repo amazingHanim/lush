@@ -24,6 +24,7 @@ body > header {
   -webkit-transition: all 0.3s ease-out;
   transition: all 0.3s ease-out;
   position: fixed;
+  border-right: solid 3px #fff;
 }
 
 body > header:hover {
@@ -80,7 +81,7 @@ body > header .logo a {
 
 body > header .mainMenuList {
   background-color: #fff;
-  border-radius: 31px;
+  border-radius: 30px;
 }
 
 body > header .mainMenuList > li {
@@ -329,4 +330,12 @@ body div.content .moreBtn {
   color: #fff;
   font-weight: 300;
   line-height: 34px;
+  -webkit-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
+  opacity: 0.4;
+}
+
+body div.content .moreBtn:hover {
+  opacity: 1;
+  border-radius: 30px;
 }

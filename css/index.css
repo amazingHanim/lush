@@ -24,6 +24,7 @@ body > header {
   -webkit-transition: all 0.3s ease-out;
   transition: all 0.3s ease-out;
   position: fixed;
+  border-right: solid 3px #fff;
 }
 
 body > header:hover {
@@ -80,14 +81,14 @@ body > header .logo a {
 
 body > header .mainMenuList {
   background-color: #fff;
-  border-radius: 31px;
+  border-radius: 30px;
 }
 
 body > header .mainMenuList > li {
   text-align: center;
   background-color: #0f0d0d;
   border-radius: 30px;
-  line-height: 5vh;
+  line-height: 6vh;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
 }
@@ -329,6 +330,14 @@ body div.content .moreBtn {
   color: #fff;
   font-weight: 300;
   line-height: 34px;
+  -webkit-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
+  opacity: 0.5;
+}
+
+body div.content .moreBtn:hover {
+  opacity: 1;
+  border-radius: 30px;
 }
 
 .contentWrap {
@@ -364,7 +373,7 @@ body div.content .moreBtn {
   line-height: 3.750em;
   font-weight: 400;
   font-weight: 400;
-  opacity: 0.6;
+  opacity: 0.7;
 }
 
 .contentWrap .content > section {
@@ -382,11 +391,12 @@ body div.content .moreBtn {
 .contentWrap .content.main main {
   width: 60%;
   height: 100%;
+  border-radius: 30px;
+  overflow: hidden;
 }
 
 .contentWrap .content.main main .slider {
   height: 60%;
-  border-radius: 30px 30px 0 0;
   overflow: hidden;
 }
 
@@ -396,7 +406,6 @@ body div.content .moreBtn {
 
 .contentWrap .content.main main header {
   height: 40%;
-  border-radius: 0 0 30px 30px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -645,7 +654,7 @@ body div.content .moreBtn {
 .contentWrap .content.lips section {
   width: 50%;
   border-radius: 30px;
-  padding: 3vw;
+  padding: 3vw 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -676,11 +685,19 @@ body div.content .moreBtn {
 }
 
 .contentWrap .content.lips section ul.lip_tabContent li.on {
-  display: block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .contentWrap .content.lips section ul.lip_tabContent li.on img {
-  width: 80%;
+  width: 70%;
 }
 
 .contentWrap .content.lips section ul.lip_tabMenu {
@@ -790,10 +807,14 @@ body div.content .moreBtn {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .contentWrap .content.about ul.tabContent > li.on .image {
-  width: 60%;
+  width: 40%;
+  height: 40vh;
   background-image: url(../images/weAreLush_01.jpeg);
   background-repeat: no-repeat;
 }
@@ -803,9 +824,9 @@ body div.content .moreBtn {
 }
 
 .contentWrap .content.about ul.tabContent > li.on ul li span {
-  line-height: 3.750em;
+  line-height: 3.125em;
   font-family: "Noto Sans KR", sans-serif;
-  font-size: 1em;
+  font-size: 0.875em;
   color: #fff;
 }
 
