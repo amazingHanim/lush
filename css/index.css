@@ -340,7 +340,7 @@ body div.content .moreBtn {
   margin-top: 120px;
 }
 
-.contentWrap .content header {
+.contentWrap .content > header {
   position: inherit;
   width: 100%;
   display: block;
@@ -350,14 +350,14 @@ body div.content .moreBtn {
   margin: 0;
 }
 
-.contentWrap .content header h2 {
+.contentWrap .content > header h2 {
   font-family: "lush";
   font-size: 3.438em;
   color: #fff;
   line-height: 120px;
 }
 
-.contentWrap .content header h3 {
+.contentWrap .content > header h3 {
   font-family: "Noto Sans KR", sans-serif;
   font-size: 1.125em;
   color: #fff;
