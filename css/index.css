@@ -332,7 +332,7 @@ body div.content .moreBtn {
   line-height: 34px;
   -webkit-transition: all 0.5s ease-out;
   transition: all 0.5s ease-out;
-  opacity: 0.5;
+  opacity: 0.4;
 }
 
 body div.content .moreBtn:hover {
@@ -370,7 +370,7 @@ body div.content .moreBtn:hover {
   font-family: "Noto Sans KR", sans-serif;
   font-size: 1em;
   color: #fff;
-  line-height: 3.750em;
+  line-height: 3.125em;
   font-weight: 400;
   font-weight: 400;
   opacity: 0.7;
@@ -655,6 +655,7 @@ body div.content .moreBtn:hover {
   width: 50%;
   border-radius: 30px;
   padding: 3vw 0;
+  margin-top: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -728,6 +729,10 @@ body div.content .moreBtn:hover {
   width: 100%;
 }
 
+.contentWrap .content.lips section ul.lip_tabMenu li a:hover {
+  color: #93ED51;
+}
+
 .contentWrap .content.lips section ul.lip_tabMenu li.on a {
   line-height: 140px;
   color: #93ED51;
@@ -745,9 +750,21 @@ body div.content .moreBtn:hover {
   width: 50%;
   border-radius: 0 30px 0 0;
   border: 1px solid #fff;
+  cursor: pointer;
+}
+
+.contentWrap .content.about ul.tabMenu li:hover h2,
+.contentWrap .content.about ul.tabMenu li:hover h3,
+.contentWrap .content.about ul.tabMenu li:hover button {
+  color: #fff;
+}
+
+.contentWrap .content.about ul.tabMenu li:hover button {
+  border: solid 1px #fff;
 }
 
 .contentWrap .content.about ul.tabMenu li.on {
+  cursor: default;
   background-color: #fff;
   border-radius: 30px 0 0 0;
 }

@@ -25,7 +25,7 @@ $padding: 3vw;
 
             h3 {
                 @include font($notoSansKR, 1em, #fff);
-                line-height: 3.750em;
+                line-height: 3.125em;
                 font-weight: 400;
                 font-weight: 400;
                 opacity: 0.7;
@@ -271,6 +271,7 @@ $padding: 3vw;
                 width: 50%;
                 border-radius: 30px;
                 padding: $padding 0;
+                margin-top: 0;
                 display: flex;
                 justify-content: flex-end;
                 align-items: center;
@@ -314,6 +315,9 @@ $padding: 3vw;
                             display: block;
                             height: 100%;
                             width: 100%;
+                            &:hover{
+                                color:$green;
+                            }
                         }
 
                         &.on {
@@ -340,8 +344,20 @@ $padding: 3vw;
                     width: 50%;
                     border-radius: 0 30px 0 0;
                     border: 1px solid #fff;
+                    cursor: pointer;
+                    &:hover{
+                        h2,
+                        h3,
+                        button {
+                            color: #fff;
+                        }
+                        button {
+                            border: solid 1px #fff;
+                        }
+                    }
 
                     &.on {
+                        cursor: default;
                         background-color: #fff;
                         border-radius: 30px 0 0 0;
 
