@@ -216,7 +216,11 @@ $padding: 3vw;
             }
         }
 
-        &.bestProduct {}
+        &.bestProduct {
+            // .fullHeart{
+            //     display: none;
+            // }
+        }
 
         &.lips {
             display: flex;
