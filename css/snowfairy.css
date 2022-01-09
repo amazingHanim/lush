@@ -1,0 +1,16 @@
+.content section {
+  padding-top: 12vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.content section .images {
+  width: 60%;
+  background-color: blue;
+}
+
+.content section .disc {
+  width: 40%;
+  background-color: #fff;
+}

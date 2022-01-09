@@ -1,0 +1,22 @@
+.content{
+    section{
+        padding-top:12vh;
+        display: flex;
+        .images{
+            width: 60%;
+            background-color: blue;
+            .image{}
+            ul.imgBtns{
+                li{
+                    
+                }
+            }
+        }
+        .disc{
+            width: 40%;
+            background-color: #fff;
+            .pTitle{}
+            .pOptions{}
+        }
+    }
+}
