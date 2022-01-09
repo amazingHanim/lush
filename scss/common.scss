@@ -30,7 +30,7 @@ $lush:"lush";
 body {
     background-color: $black;
     // display: flex;
-    
+
     &>header {
         width: 240px;
         height: 100%;
@@ -39,6 +39,7 @@ body {
         transition: all 0.3s ease-out;
         position: fixed;
         border-right: solid 3px #fff;
+
         &:hover {
             background-color: $green;
 
@@ -165,6 +166,62 @@ body {
         overflow: hidden;
         padding-left: 240px;
 
+        div.content:first-of-type {
+            /*location이랑 검색*/
+            &>section {
+                padding-top: 12vh;
+
+                .subMenuList2 {
+                    padding: 0 3.125vw;
+
+                    ul {
+                        display: flex;
+                        align-items: baseline;
+
+                        &:first-child {
+                            justify-content: start;
+
+                            li {
+                                margin-right: 2.08vw;
+                            }
+                        }
+
+                        &:last-child {
+                            justify-content: end;
+
+                            li {
+                                margin-left: 2.08vw;
+                            }
+                        }
+
+                        li {
+                            font-family: $lush;
+                            line-height: 11.11vh;
+                            color: #fff;
+                            font-size: 2.45em;
+                            transition: color, font-size 0.3s;
+
+                            &:hover {
+                                font-size: 3.43em;
+                                color: $green;
+                                background-image: url(../images/line.png);
+                                background-repeat: no-repeat;
+                                background-position: left bottom;
+                            }
+                        }
+
+                        li.on {
+                            font-size: 3.43em;
+                            color: $green;
+                            background-image: url(../images/line.png);
+                            background-repeat: no-repeat;
+                            background-position: left bottom;
+                        }
+                    }
+                }
+            }
+        }
+
         &>header {
             position: fixed;
             z-index: 9999;
@@ -177,7 +234,7 @@ body {
             margin-bottom: 3.7vh;
             color: #fff;
             background-color: $black;
-            
+
 
             .location {
                 font-size: 0.875em;
@@ -297,7 +354,8 @@ body {
             line-height: 34px;
             transition: all 0.5s ease-out;
             opacity: 0.4;
-            &:hover{
+
+            &:hover {
                 opacity: 1;
                 border-radius: 30px;
             }
