@@ -1,3 +1,14 @@
+@charset "UTF-8";
+/*색상변수 시작*/
+/*font 시작*/
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;500;700;900&family=Noto+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+@font-face {
+  src: url(../font/Lush.ttf);
+  font-family: "lush";
+}
+
+/*font-family mixins*/
+/*font 믹신을 include할 때 (폰트)*/
 .content section {
   padding-top: 12vh;
   display: -webkit-box;
@@ -7,10 +18,118 @@
 
 .content section .images {
   width: 60%;
-  background-color: blue;
+  min-width: 700px;
+  height: calc(100vh - 12vh);
+}
+
+.content section .images .image {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+  background-image: url(../images/snowfairy.main6.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.content section .images .image ul.imgBtns {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.content section .images .image ul.imgBtns li {
+  width: 6.25vw;
+  min-width: 90px;
+  height: 11.111vh;
+  min-height: 90px;
+}
+
+.content section .images .image ul.imgBtns li.on img {
+  border: 2px solid #93ED51;
+  opacity: 1;
+}
+
+.content section .images .image ul.imgBtns li img {
+  width: 100%;
+  height: 100%;
+  border-radius: 30px;
+  cursor: pointer;
+  opacity: 0.8;
+  -webkit-transition: all 0.1s;
+  transition: all 0.1s;
+}
+
+.content section .images .image ul.imgBtns li img:hover {
+  opacity: 1;
+  border: 2px solid #93ED51;
 }
 
 .content section .disc {
   width: 40%;
+  min-width: 463px;
+  background-color: red;
+}
+
+.content section .disc .pTitle {
+  height: 20vh;
+  background-color: #0f0d0d;
+  border-radius: 0 30px 30px 0;
+  border: 1px solid #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 3% 5%;
+}
+
+.content section .disc .pTitle .txt h3 {
+  font-family: "lush";
+  font-size: 2em;
+  color: #fff;
+  line-height: 2.5em;
+}
+
+.content section .disc .pTitle .txt ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.content section .disc .pTitle .txt ul li {
+  font-size: 1.125em;
+  color: #ccc;
+  margin-right: 1em;
+  line-height: 1.875em;
+}
+
+.content section .disc .pTitle .icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.content section .disc .pTitle .icons li {
+  font-size: 1.5em;
+  margin-left: 10px;
+  line-height: 2.5em;
+}
+
+.content section .disc .pOptions {
+  height: calc(100% - 16.66vh);
+  border-radius: 0 30px 30px 0;
   background-color: #fff;
 }
