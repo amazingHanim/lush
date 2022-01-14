@@ -149,6 +149,7 @@ $lush:"lush";
                     }
                 }
                 .amounts{
+                    margin-bottom: 2.5em;
                     &>span{
                         color: #6F7070;
                         font-size: 0.875em;
@@ -188,11 +189,31 @@ $lush:"lush";
                     }
                 }
                 .selected{
+                    border-top: 1px solid $black;
+                    border-bottom: 1px solid $black;
+                    padding: 0.625em 0;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
                     .count{
-                        li{}
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        width: 15em;
+                        border-radius: 30px;
+                        padding: 0.3125em;
+                        border: 1px solid $black;
+                        li{
+                            height: 1.625em;
+                            color: $black;
+                            line-height: 1.625em;
+                        }
                     }
-                    span{}
-                    img{}
+                    span{
+                        color: $black;
+                        line-height: 1.625em;
+                        height: 1.625em;
+                    }
                 }
                 .prices{
                     &>li{
