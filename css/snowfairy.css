@@ -84,6 +84,7 @@
 
 .content section .disc .pTitle {
   height: 20vh;
+  min-height: 160px;
   background-color: #0f0d0d;
   border-radius: 0 30px 30px 0;
   border: 1px solid #fff;
@@ -93,7 +94,7 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding: 3% 5%;
+  padding: 4% 3%;
 }
 
 .content section .disc .pTitle .txt h3 {
@@ -132,4 +133,177 @@
   height: calc(100% - 16.66vh);
   border-radius: 0 30px 30px 0;
   background-color: #fff;
+  padding: 5% 3%;
+}
+
+.content section .disc .pOptions article {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.content section .disc .pOptions article .txts p {
+  color: #0f0d0d;
+  font-size: 1.125em;
+  margin-bottom: 1.25em;
+}
+
+.content section .disc .pOptions article .txts p strong {
+  color: #0f0d0d;
+  font-weight: bold;
+}
+
+.content section .disc .pOptions article .txts p span {
+  color: #6F7070;
+}
+
+.content section .disc .pOptions article .txts > ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 2.5em;
+}
+
+.content section .disc .pOptions article .txts > ul li {
+  height: 1.125em;
+  line-height: 1.25em;
+  font-size: 1.125em;
+  color: #0f0d0d;
+  margin-right: 5px;
+}
+
+.content section .disc .pOptions article .txts > ul li img {
+  height: 100%;
+}
+
+.content section .disc .pOptions article .image img {
+  width: 8.75em;
+}
+
+.content section .disc .pOptions .amounts {
+  margin-bottom: 1.875em;
+}
+
+.content section .disc .pOptions .amounts > span {
+  color: #6F7070;
+  font-size: 0.875em;
+}
+
+.content section .disc .pOptions .amounts ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 0.625em;
+}
+
+.content section .disc .pOptions .amounts ul li {
+  background-color: #fff;
+  border-top: 1px solid #0f0d0d;
+  border-bottom: 1px solid #0f0d0d;
+  padding-right: 0.625em;
+}
+
+.content section .disc .pOptions .amounts ul li:first-child {
+  border-radius: 30px 0 0 30px;
+}
+
+.content section .disc .pOptions .amounts ul li:last-child {
+  padding-right: 0;
+  border-radius: 0 30px 30px 0;
+}
+
+.content section .disc .pOptions .amounts ul li > span {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border-radius: 30px;
+  line-height: 2.25em;
+  font-size: 0.875em;
+  padding: 0 1.5em;
+  background-color: #0f0d0d;
+  color: #fff;
+}
+
+.content section .disc .pOptions .amounts ul li.on span {
+  background-color: #93ED51;
+  color: #0f0d0d;
+}
+
+.content section .disc .pOptions .selected {
+  border-top: 1px solid #0f0d0d;
+  border-bottom: 1px solid #0f0d0d;
+  padding: 0.625em 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.content section .disc .pOptions .selected .count {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 15em;
+  border-radius: 30px;
+  padding: 0.3125em;
+  border: 1px solid #0f0d0d;
+}
+
+.content section .disc .pOptions .selected .count li {
+  height: 1.625em;
+  color: #0f0d0d;
+  line-height: 1.625em;
+}
+
+.content section .disc .pOptions .selected span {
+  color: #0f0d0d;
+  line-height: 1.625em;
+  height: 1.625em;
+}
+
+.content section .disc .pOptions .prices {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  padding: 1.25em 0;
+}
+
+.content section .disc .pOptions .prices > li {
+  margin: 0.3125em 0;
+}
+
+.content section .disc .pOptions .prices > li span {
+  color: #0f0d0d;
+  font-size: 0.875em;
+}
+
+.content section .disc .pOptions .prices > li strong {
+  color: #0f0d0d;
+  font-size: 1.125em;
+  font-weight: bold;
+  margin-left: 1.25em;
 }
