@@ -149,7 +149,7 @@ $lush:"lush";
                     }
                 }
                 .amounts{
-                    margin-bottom: 2.5em;
+                    margin-bottom: 1.875em;
                     &>span{
                         color: #6F7070;
                         font-size: 0.875em;
@@ -216,9 +216,22 @@ $lush:"lush";
                     }
                 }
                 .prices{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-end;
+                    padding: 1.25em 0;
                     &>li{
-                        span{}
-                        strong{}
+                        margin: 0.3125em 0;
+                        span{
+                            color: $black;
+                            font-size: 0.875em;
+                        }
+                        strong{
+                            color: $black;
+                            font-size: 1.125em;
+                            font-weight: bold;
+                            margin-left: 1.25em;
+                        }
                     }
                 }
                 .btns{

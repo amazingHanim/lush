@@ -187,7 +187,7 @@
 }
 
 .content section .disc .pOptions .amounts {
-  margin-bottom: 2.5em;
+  margin-bottom: 1.875em;
 }
 
 .content section .disc .pOptions .amounts > span {
@@ -276,4 +276,34 @@
   color: #0f0d0d;
   line-height: 1.625em;
   height: 1.625em;
+}
+
+.content section .disc .pOptions .prices {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  padding: 1.25em 0;
+}
+
+.content section .disc .pOptions .prices > li {
+  margin: 0.3125em 0;
+}
+
+.content section .disc .pOptions .prices > li span {
+  color: #0f0d0d;
+  font-size: 0.875em;
+}
+
+.content section .disc .pOptions .prices > li strong {
+  color: #0f0d0d;
+  font-size: 1.125em;
+  font-weight: bold;
+  margin-left: 1.25em;
 }
