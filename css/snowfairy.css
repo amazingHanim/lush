@@ -9,20 +9,20 @@
 
 /*font-family mixins*/
 /*font 믹신을 include할 때 (폰트)*/
-.content section {
+.pMain section {
   padding-top: 12vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-.content section .images {
+.pMain section .images {
   width: 60%;
   min-width: 700px;
   height: calc(100vh - 12vh);
 }
 
-.content section .images .image {
+.pMain section .images .image {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -36,7 +36,7 @@
   height: 100%;
 }
 
-.content section .images .image ul.imgBtns {
+.pMain section .images .image ul.imgBtns {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -49,19 +49,19 @@
           flex-direction: column;
 }
 
-.content section .images .image ul.imgBtns li {
+.pMain section .images .image ul.imgBtns li {
   width: 6.25vw;
   min-width: 90px;
   height: 11.111vh;
   min-height: 90px;
 }
 
-.content section .images .image ul.imgBtns li.on img {
+.pMain section .images .image ul.imgBtns li.on img {
   border: 2px solid #93ED51;
   opacity: 1;
 }
 
-.content section .images .image ul.imgBtns li img {
+.pMain section .images .image ul.imgBtns li img {
   width: 100%;
   height: 100%;
   border-radius: 30px;
@@ -71,20 +71,19 @@
   transition: all 0.1s;
 }
 
-.content section .images .image ul.imgBtns li img:hover {
+.pMain section .images .image ul.imgBtns li img:hover {
   opacity: 1;
   border: 2px solid #93ED51;
 }
 
-.content section .disc {
+.pMain section .disc {
   width: 40%;
   min-width: 463px;
-  background-color: red;
 }
 
-.content section .disc .pTitle {
-  height: 20vh;
-  min-height: 160px;
+.pMain section .disc .pTitle {
+  height: 18vh;
+  min-height: 140px;
   background-color: #0f0d0d;
   border-radius: 0 30px 30px 0;
   border: 1px solid #fff;
@@ -97,46 +96,46 @@
   padding: 4% 3%;
 }
 
-.content section .disc .pTitle .txt h3 {
+.pMain section .disc .pTitle .txt h3 {
   font-family: "lush";
-  font-size: 2em;
+  font-size: 1.8em;
   color: #fff;
   line-height: 2.5em;
 }
 
-.content section .disc .pTitle .txt ul {
+.pMain section .disc .pTitle .txt ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-.content section .disc .pTitle .txt ul li {
-  font-size: 1.125em;
+.pMain section .disc .pTitle .txt ul li {
+  font-size: 1em;
   color: #ccc;
   margin-right: 1em;
-  line-height: 1.875em;
+  line-height: 1em;
 }
 
-.content section .disc .pTitle .icons {
+.pMain section .disc .pTitle .icons {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-.content section .disc .pTitle .icons li {
+.pMain section .disc .pTitle .icons li {
   font-size: 1.5em;
   margin-left: 10px;
   line-height: 2.5em;
 }
 
-.content section .disc .pOptions {
+.pMain section .disc .pOptions {
   height: calc(100% - 16.66vh);
   border-radius: 0 30px 30px 0;
   background-color: #fff;
   padding: 5% 3%;
 }
 
-.content section .disc .pOptions article {
+.pMain section .disc .pOptions article {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -145,22 +144,22 @@
           justify-content: space-between;
 }
 
-.content section .disc .pOptions article .txts p {
+.pMain section .disc .pOptions article .txts p {
   color: #0f0d0d;
-  font-size: 1.125em;
-  margin-bottom: 1.25em;
+  font-size: 0.875em;
+  margin-bottom: 1em;
 }
 
-.content section .disc .pOptions article .txts p strong {
+.pMain section .disc .pOptions article .txts p strong {
   color: #0f0d0d;
   font-weight: bold;
 }
 
-.content section .disc .pOptions article .txts p span {
+.pMain section .disc .pOptions article .txts p span {
   color: #6F7070;
 }
 
-.content section .disc .pOptions article .txts > ul {
+.pMain section .disc .pOptions article .txts > ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -170,55 +169,55 @@
   margin-bottom: 2.5em;
 }
 
-.content section .disc .pOptions article .txts > ul li {
-  height: 1.125em;
+.pMain section .disc .pOptions article .txts > ul li {
+  height: 0.875em;
   line-height: 1.25em;
   font-size: 1.125em;
   color: #0f0d0d;
   margin-right: 5px;
 }
 
-.content section .disc .pOptions article .txts > ul li img {
+.pMain section .disc .pOptions article .txts > ul li img {
   height: 100%;
 }
 
-.content section .disc .pOptions article .image img {
-  width: 8.75em;
+.pMain section .disc .pOptions article .image img {
+  width: 8em;
 }
 
-.content section .disc .pOptions .amounts {
+.pMain section .disc .pOptions .amounts {
   margin-bottom: 1.875em;
 }
 
-.content section .disc .pOptions .amounts > span {
+.pMain section .disc .pOptions .amounts > span {
   color: #6F7070;
   font-size: 0.875em;
 }
 
-.content section .disc .pOptions .amounts ul {
+.pMain section .disc .pOptions .amounts ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   margin-top: 0.625em;
 }
 
-.content section .disc .pOptions .amounts ul li {
+.pMain section .disc .pOptions .amounts ul li {
   background-color: #fff;
   border-top: 1px solid #0f0d0d;
   border-bottom: 1px solid #0f0d0d;
   padding-right: 0.625em;
 }
 
-.content section .disc .pOptions .amounts ul li:first-child {
+.pMain section .disc .pOptions .amounts ul li:first-child {
   border-radius: 30px 0 0 30px;
 }
 
-.content section .disc .pOptions .amounts ul li:last-child {
+.pMain section .disc .pOptions .amounts ul li:last-child {
   padding-right: 0;
   border-radius: 0 30px 30px 0;
 }
 
-.content section .disc .pOptions .amounts ul li > span {
+.pMain section .disc .pOptions .amounts ul li > span {
   display: block;
   width: 100%;
   height: 100%;
@@ -230,12 +229,12 @@
   color: #fff;
 }
 
-.content section .disc .pOptions .amounts ul li.on span {
+.pMain section .disc .pOptions .amounts ul li.on span {
   background-color: #93ED51;
   color: #0f0d0d;
 }
 
-.content section .disc .pOptions .selected {
+.pMain section .disc .pOptions .selected {
   border-top: 1px solid #0f0d0d;
   border-bottom: 1px solid #0f0d0d;
   padding: 0.625em 0;
@@ -250,7 +249,7 @@
           align-items: center;
 }
 
-.content section .disc .pOptions .selected .count {
+.pMain section .disc .pOptions .selected .count {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -266,19 +265,19 @@
   border: 1px solid #0f0d0d;
 }
 
-.content section .disc .pOptions .selected .count li {
+.pMain section .disc .pOptions .selected .count li {
   height: 1.625em;
   color: #0f0d0d;
   line-height: 1.625em;
 }
 
-.content section .disc .pOptions .selected span {
+.pMain section .disc .pOptions .selected span {
   color: #0f0d0d;
   line-height: 1.625em;
   height: 1.625em;
 }
 
-.content section .disc .pOptions .prices {
+.pMain section .disc .pOptions .prices {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -292,18 +291,133 @@
   padding: 1.25em 0;
 }
 
-.content section .disc .pOptions .prices > li {
+.pMain section .disc .pOptions .prices > li {
   margin: 0.3125em 0;
 }
 
-.content section .disc .pOptions .prices > li span {
+.pMain section .disc .pOptions .prices > li span {
   color: #0f0d0d;
   font-size: 0.875em;
 }
 
-.content section .disc .pOptions .prices > li strong {
+.pMain section .disc .pOptions .prices > li strong {
   color: #0f0d0d;
   font-size: 1.125em;
   font-weight: bold;
   margin-left: 1.25em;
+}
+
+.pMain section .disc .pOptions .btns {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 1.25em;
+}
+
+.pMain section .disc .pOptions .btns button {
+  width: 48%;
+  line-height: 2.5em;
+  font-size: 0.875;
+  vertical-align: center;
+  border-radius: 30px;
+  background-color: #fff;
+  border: 1px solid #0f0d0d;
+}
+
+.pMain section .disc .pOptions .btns button:last-child {
+  background-color: #0f0d0d;
+  color: #fff;
+  border: none;
+}
+
+.pMain section .disc .pOptions .nPay {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.pMain section .disc .pOptions .nPay li {
+  margin-left: 0.3125em;
+}
+
+.pMain section .disc .pOptions .nPay li img {
+  height: 2.25em;
+}
+
+.pDisc {
+  width: 100%;
+}
+
+.pDisc section {
+  width: 60%;
+}
+
+.pDisc section > header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.pDisc section > header button {
+  width: calc(100% / 3);
+  line-height: 3.75em;
+  border-radius: 30px 30px 0 0;
+  border: 1px solid #fff;
+  background-color: #0f0d0d;
+}
+
+.pDisc section > header button.on {
+  background-color: #93ED51;
+}
+
+.pDisc section > header button.on a {
+  color: #0f0d0d;
+}
+
+.pDisc section > header button a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  color: #fff;
+  text-align: center;
+  font-size: 1.125em;
+}
+
+.pDisc section > article {
+  background-color: #fff;
+}
+
+.pDisc section > article .title {
+  text-align: center;
+  padding: 3.2em 0;
+}
+
+.pDisc section > article .title span {
+  color: #0f0d0d;
+  line-height: 1.875em;
+}
+
+.pDisc section > article .title h4 {
+  font-family: "lush";
+  font-size: 2em;
+  color: #fff;
+  color: #0f0d0d;
+  line-height: 2.4em;
+}
+
+.pDisc section > article .title h5 {
+  color: #0f0d0d;
+  font-size: 1.125em;
+  line-height: 1.875em;
+  font-weight: bold;
+}
+
+.pDisc section > article .pReview .img img {
+  height: 26.25em;
 }

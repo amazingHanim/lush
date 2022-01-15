@@ -23,7 +23,7 @@ $lush:"lush";
     color: $color;
 }
 
-.content{
+.pMain{
     section{
         padding-top: 12vh;
         display: flex;
@@ -72,10 +72,9 @@ $lush:"lush";
         .disc{
             width: 40%;
             min-width: 463px;
-            background-color: red;
             .pTitle{
-                height: 20vh;
-                min-height: 160px;
+                height: 18vh;
+                min-height: 140px;
                 background-color: $black;
                 border-radius: 0 30px 30px 0;
                 border: 1px solid #fff;
@@ -84,16 +83,16 @@ $lush:"lush";
                 padding: 4% 3%;
                 .txt{
                     h3{
-                        @include font($lush, 2em, #fff);
+                        @include font($lush, 1.8em, #fff);
                         line-height: 2.5em;
                     }
                     ul{
                         display: flex;
                         li{
-                            font-size: 1.125em;
+                            font-size: 1em;
                             color: #ccc;
                             margin-right: 1em;
-                            line-height: 1.875em;
+                            line-height: 1em;
                         }
                     }
                 }
@@ -117,8 +116,8 @@ $lush:"lush";
                     .txts{
                         p{
                             color: $black;
-                            font-size: 1.125em;
-                            margin-bottom: 1.25em;
+                            font-size: 0.875em;
+                            margin-bottom: 1em;
                             strong{
                                 color: $black;
                                 font-weight: bold;
@@ -132,7 +131,7 @@ $lush:"lush";
                             align-items: center;
                             margin-bottom: 2.5em;
                             li{
-                                height: 1.125em;
+                                height: 0.875em;
                                 line-height: 1.25em;
                                 font-size: 1.125em;
                                 color: $black;
@@ -145,7 +144,7 @@ $lush:"lush";
                         }
                     }
                     .image{
-                        img{width: 8.75em;}
+                        img{width: 8em;}
                     }
                 }
                 .amounts{
@@ -235,13 +234,94 @@ $lush:"lush";
                     }
                 }
                 .btns{
-                    button{}
-                }
-                .nPay{
-                    li{
-                        img{}
+                    display: flex;
+                    justify-content: space-between;
+                    margin-bottom: 1.25em;
+                    button{
+                        width: 48%;
+                        line-height: 2.5em;
+                        font-size: 0.875;
+                        vertical-align: center;
+                        border-radius: 30px;
+                        background-color: #fff;
+                        border: 1px solid $black;
+                        &:last-child{
+                            background-color: $black;
+                            color: #fff;
+                            border: none;
+                        }
                     }
                 }
+                .nPay{
+                    display: flex;
+                    justify-content: flex-end;
+                    li{
+                        margin-left: 0.3125em;
+                        img{
+                            height: 2.25em;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.pDisc{
+    width: 100%;
+    & section{
+        width: 60%;
+        &>header{
+            display: flex;
+            button{
+                width: calc(100% / 3);
+                line-height:3.75em;
+                border-radius: 30px 30px 0 0;
+                border: 1px solid #fff;
+                background-color: $black;
+                &.on{
+                    background-color: $green;
+                    a{
+                        color: $black;
+                    }
+                }
+                a{
+                    display: block;
+                    width: 100%; height: 100%;
+                    color: #fff;
+                    text-align: center;
+                    font-size: 1.125em;
+                }
+            }
+        }
+        &>article{
+            background-color: #fff;
+            .title{
+                text-align: center;
+                padding: 3.2em 0;
+                span{
+                    color: $black;
+                    line-height: 1.875em;
+                }
+                h4{
+                    @include font($lush, 2em, #fff);
+                    color: $black;
+                    line-height: 2.4em;
+                }
+                h5{
+                    color: $black;
+                    font-size: 1.125em;
+                    line-height: 1.875em;
+                    font-weight: bold;
+                }
+            }
+            .pReview{
+                .img{
+                    img{
+                        height: 26.25em;
+                    }
+                }
+                .txt{}
             }
         }
     }
