@@ -45,8 +45,6 @@ $lush:"lush";
                     li{
                         width: 6.25vw;
                         min-width: 90px;
-                        height: 11.111vh;
-                        min-height: 90px;
                         &.on{
                             img{
                                 border: 2px solid $green;
@@ -70,7 +68,10 @@ $lush:"lush";
             
         }
         .disc{
-            width: 40%;
+            position: fixed;
+            right: 0;
+            width: calc((100% - 240px) / 10 * 4);
+            height: clac((100vh - 12vh));
             min-width: 463px;
             .pTitle{
                 height: 18vh;
@@ -106,7 +107,7 @@ $lush:"lush";
                 }
             }
             .pOptions{
-                height: calc(100% - 16.66vh);
+                height: 70vh;
                 border-radius: 0 30px 30px 0;
                 background-color: #fff;
                 padding: 5% 3%;
@@ -316,12 +317,83 @@ $lush:"lush";
                 }
             }
             .pReview{
+                width: 100%;
+                position: relative;
+                
                 .img{
                     img{
-                        height: 26.25em;
+                        width: 83%;
                     }
                 }
-                .txt{}
+                .txt{
+                    width: 47%;
+                    position: absolute;
+                    right: 0; top: 50%;
+                    transform: translateY(-50%);
+                    background-color: #fff;
+                    padding: 1.875em;
+                    .title{
+                        display: flex;
+                        justify-content: space-between;
+                        padding: 0;
+                        h6{
+                            color: $black;
+                            line-height: 1.125em;
+                            font-weight: bold;
+                        }
+                        p{
+                            line-height: 1.125em;
+                            padding: 0;
+                            i{
+                                font-size: 1.125em;
+                                color: $black;
+                            }
+                        }
+                    }
+                    span{
+                        display: block;
+                        width: 100%;
+                        font-size: 0.75em;
+                        line-height: 1.875em;
+                        color: #656566;
+                    }
+                    p{
+                        padding-top: 0.625em;
+                        font-size: 0.875em;
+                        line-height: 1.875em;
+                        color: $black;
+                    }
+                }
+            }
+            .discript{
+                padding: 7.5em 0;
+                text-align: center;
+                p{
+                    color: $black;
+                    line-height: 1.875em;
+                    padding-bottom: 1em;
+                }
+                span{
+                    color: #656566;
+                    line-height: 1em;
+                    strong{
+                        color: #656566;
+                        font-weight: bold;
+                    }
+                }
+            }
+            img{
+                width: 100%;
+            }
+            .ingredients{
+                padding: 7.5em 0;
+                text-align: left;
+                .txts{}
+                .image{
+                    img{
+                        width: 11.25em;
+                    }
+                }
             }
         }
     }
