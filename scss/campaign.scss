@@ -63,7 +63,7 @@ div.campaign {
 
     .fixed {
         width: 40%;
-        background-color: #ffffff;
+        background-color: $green;
         border-radius: 30px;
         padding: 5%;
         text-align: center;
@@ -79,12 +79,14 @@ div.campaign {
         }
 
         h3 {
-            @include font($notoSansKR, 0.875em, #707070);
+            @include font($notoSansKR, 0.875em, $black);
+            opacity: 0.6;
             line-height: 1.125em;
             margin-top: 3%;
         }
 
         .form {
+            background-color: #fff;
             display: flex;
             flex-direction: column;
             border: solid 1px #707070;
@@ -108,7 +110,8 @@ div.campaign {
             input {
             }
 
-            @include font($notoSansKR, 0.875em, #707070);
+            @include font($notoSansKR, 0.875em, $black);
+            opacity: 0.6;
 
 
         }
@@ -144,15 +147,16 @@ div.campaign {
         .txt{
             padding: 12%;
             
-            p,span{
+            p{
                 @include font($notoSansKR, 0.875em, #707070);
                 line-height: 1.875em;
                 font-weight: 300;
                 margin-top:5%;
+                &.stress{
+                    font-weight: 400;
+                }
             }
-            span{
-                font-weight: 400;
-            }
+            
         }
     }
 }

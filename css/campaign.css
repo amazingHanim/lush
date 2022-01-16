@@ -478,7 +478,7 @@ div.campaign {
 
 div.campaign .fixed {
   width: 40%;
-  background-color: #ffffff;
+  background-color: #93ED51;
   border-radius: 30px;
   padding: 5%;
   text-align: center;
@@ -505,12 +505,14 @@ div.campaign .fixed h2 {
 div.campaign .fixed h3 {
   font-family: "Noto Sans KR", sans-serif;
   font-size: 0.875em;
-  color: #707070;
+  color: #0f0d0d;
+  opacity: 0.6;
   line-height: 1.125em;
   margin-top: 3%;
 }
 
 div.campaign .fixed .form {
+  background-color: #fff;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -538,7 +540,8 @@ div.campaign .fixed .check {
   text-align: left;
   font-family: "Noto Sans KR", sans-serif;
   font-size: 0.875em;
-  color: #707070;
+  color: #0f0d0d;
+  opacity: 0.6;
 }
 
 div.campaign .fixed button {
@@ -580,7 +583,7 @@ div.campaign .scroll .txt {
   padding: 12%;
 }
 
-div.campaign .scroll .txt p, div.campaign .scroll .txt span {
+div.campaign .scroll .txt p {
   font-family: "Noto Sans KR", sans-serif;
   font-size: 0.875em;
   color: #707070;
@@ -589,6 +592,6 @@ div.campaign .scroll .txt p, div.campaign .scroll .txt span {
   margin-top: 5%;
 }
 
-div.campaign .scroll .txt span {
+div.campaign .scroll .txt p.stress {
   font-weight: 400;
 }
