@@ -170,7 +170,6 @@ body > header .join li a {
 
 body div.content {
   width: 100%;
-  overflow: hidden;
   padding-left: 240px;
 }
 
@@ -413,7 +412,6 @@ div.content:first-of-type > section {
 div.content:first-of-type > section .subMenuList2 {
   padding: 0 3.125vw;
   max-width: 1126px;
-  height: 220px;
 }
 
 div.content:first-of-type > section .subMenuList2 ul {
@@ -471,29 +469,44 @@ div.content:first-of-type > section .subMenuList2 ul li.on {
 }
 
 div.campaign {
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  height: auto;
 }
 
 div.campaign .fixed {
   width: 40%;
-  background-color: #fff;
+  background-color: #ffffff;
   border-radius: 30px;
   padding: 5%;
   text-align: center;
+  position: -webkit-sticky;
+  position: sticky;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 
 div.campaign .fixed h2 {
   font-family: "Noto Sans KR", sans-serif;
   font-size: 1.5em;
   color: #0f0d0d;
+  line-height: 1.875em;
 }
 
 div.campaign .fixed h3 {
   font-family: "Noto Sans KR", sans-serif;
   font-size: 0.875em;
   color: #707070;
+  line-height: 1.125em;
   margin-top: 3%;
 }
 
@@ -514,7 +527,7 @@ div.campaign .fixed .form input {
   border: none;
   line-height: 3.750em;
   border-bottom: solid 1px #707070;
-  padding: 0 5%;
+  margin: 0 10%;
 }
 
 div.campaign .fixed .form input:last-of-type {
@@ -522,6 +535,7 @@ div.campaign .fixed .form input:last-of-type {
 }
 
 div.campaign .fixed .check {
+  text-align: left;
   font-family: "Noto Sans KR", sans-serif;
   font-size: 0.875em;
   color: #707070;
@@ -535,9 +549,46 @@ div.campaign .fixed button {
   background-color: #0f0d0d;
   font-family: "Noto Sans KR", sans-serif;
   font-size: 0.875em;
+  color: #707070;
+  cursor: pointer;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+div.campaign .fixed button:hover {
   color: #fff;
 }
 
 div.campaign .scroll {
   width: 60%;
+  background-color: #ffffff;
+  border-radius: 30px;
+  overflow: hidden;
+}
+
+div.campaign .scroll .img {
+  width: 100%;
+  /*임시*/
+  height: 100vh;
+}
+
+div.campaign .scroll .img img {
+  height: 100%;
+}
+
+div.campaign .scroll .txt {
+  padding: 12%;
+}
+
+div.campaign .scroll .txt p, div.campaign .scroll .txt span {
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 0.875em;
+  color: #707070;
+  line-height: 1.875em;
+  font-weight: 300;
+  margin-top: 5%;
+}
+
+div.campaign .scroll .txt span {
+  font-weight: 400;
 }

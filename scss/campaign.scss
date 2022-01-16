@@ -7,8 +7,6 @@ div.content:first-of-type {
         .subMenuList2 {
             padding: 0 3.125vw;
             max-width: 1126px;
-            height: 220px;
-
 
             ul {
                 display: flex;
@@ -59,21 +57,30 @@ div.content:first-of-type {
 }
 
 div.campaign {
+    width: 100%;
     display: flex;
+    height: auto;
 
     .fixed {
         width: 40%;
-        background-color: #fff;
+        background-color: #ffffff;
         border-radius: 30px;
         padding: 5%;
         text-align: center;
+        position: sticky;
+        display: flex;
+        flex-direction:column;
+        justify-content: space-around;
 
         h2 {
             @include font($notoSansKR, 1.5em, $black);
+            line-height: 1.875em;
+            
         }
 
         h3 {
             @include font($notoSansKR, 0.875em, #707070);
+            line-height: 1.125em;
             margin-top: 3%;
         }
 
@@ -88,7 +95,7 @@ div.campaign {
                 border: none;
                 line-height: 3.750em;
                 border-bottom: solid 1px #707070;
-                padding: 0 5%;
+                margin: 0 10%;
 
                 &:last-of-type {
                     border-bottom: none;
@@ -97,7 +104,9 @@ div.campaign {
         }
 
         .check {
-            input {}
+            text-align: left;
+            input {
+            }
 
             @include font($notoSansKR, 0.875em, #707070);
 
@@ -110,11 +119,40 @@ div.campaign {
             border-radius: 30px;
             border: none;
             background-color: $black;
-            @include font($notoSansKR, 0.875em, #fff)
+            @include font($notoSansKR, 0.875em, #707070);
+            cursor: pointer;
+            transition: all 0.2s;
+            &:hover{
+                color: #fff;
+            }
         }
     }
 
     .scroll {
         width: 60%;
+        background-color: #ffffff;
+        border-radius: 30px;
+        overflow: hidden;
+        .img{
+            width: 100%;
+            /*임시*/
+            height: 100vh;
+            img{
+                height: 100%;
+            }
+        }
+        .txt{
+            padding: 12%;
+            
+            p,span{
+                @include font($notoSansKR, 0.875em, #707070);
+                line-height: 1.875em;
+                font-weight: 300;
+                margin-top:5%;
+            }
+            span{
+                font-weight: 400;
+            }
+        }
     }
 }
