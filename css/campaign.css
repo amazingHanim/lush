@@ -469,3 +469,75 @@ div.content:first-of-type > section .subMenuList2 ul li.on {
   background-repeat: no-repeat;
   background-position: left bottom;
 }
+
+div.campaign {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+div.campaign .fixed {
+  width: 40%;
+  background-color: #fff;
+  border-radius: 30px;
+  padding: 5%;
+  text-align: center;
+}
+
+div.campaign .fixed h2 {
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 1.5em;
+  color: #0f0d0d;
+}
+
+div.campaign .fixed h3 {
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 0.875em;
+  color: #707070;
+  margin-top: 3%;
+}
+
+div.campaign .fixed .form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border: solid 1px #707070;
+  border-radius: 30px;
+  overflow: hidden;
+}
+
+div.campaign .fixed .form input {
+  border: none;
+  line-height: 3.750em;
+  border-bottom: solid 1px #707070;
+  padding: 0 5%;
+}
+
+div.campaign .fixed .form input:last-of-type {
+  border-bottom: none;
+}
+
+div.campaign .fixed .check {
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 0.875em;
+  color: #707070;
+}
+
+div.campaign .fixed button {
+  width: 100%;
+  line-height: 3.750em;
+  border-radius: 30px;
+  border: none;
+  background-color: #0f0d0d;
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 0.875em;
+  color: #fff;
+}
+
+div.campaign .scroll {
+  width: 60%;
+}

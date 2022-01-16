@@ -1,4 +1,5 @@
 @import "./common.scss";
+
 div.content:first-of-type {
     &>section {
         padding-top: 12vh;
@@ -54,5 +55,66 @@ div.content:first-of-type {
                 }
             }
         }
+    }
+}
+
+div.campaign {
+    display: flex;
+
+    .fixed {
+        width: 40%;
+        background-color: #fff;
+        border-radius: 30px;
+        padding: 5%;
+        text-align: center;
+
+        h2 {
+            @include font($notoSansKR, 1.5em, $black);
+        }
+
+        h3 {
+            @include font($notoSansKR, 0.875em, #707070);
+            margin-top: 3%;
+        }
+
+        .form {
+            display: flex;
+            flex-direction: column;
+            border: solid 1px #707070;
+            border-radius: 30px;
+            overflow: hidden;
+
+            input {
+                border: none;
+                line-height: 3.750em;
+                border-bottom: solid 1px #707070;
+                padding: 0 5%;
+
+                &:last-of-type {
+                    border-bottom: none;
+                }
+            }
+        }
+
+        .check {
+            input {}
+
+            @include font($notoSansKR, 0.875em, #707070);
+
+
+        }
+
+        button {
+            width: 100%;
+            line-height: 3.750em;
+            border-radius: 30px;
+            border: none;
+            background-color: $black;
+            @include font($notoSansKR, 0.875em, #fff)
+        }
+    }
+
+    .scroll {
+        width: 60%;
     }
 }
