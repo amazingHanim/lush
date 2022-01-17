@@ -355,7 +355,7 @@ $lush:"lush";
                         width: 100%;
                         font-size: 0.75em;
                         line-height: 1.875em;
-                        color: #656566;
+                        color: #707070;
                     }
                     p{
                         padding-top: 0.625em;
@@ -374,10 +374,10 @@ $lush:"lush";
                     padding-bottom: 1em;
                 }
                 span{
-                    color: #656566;
+                    color: #707070;
                     line-height: 1em;
                     strong{
-                        color: #656566;
+                        color: #707070;
                         font-weight: bold;
                     }
                 }
@@ -386,12 +386,100 @@ $lush:"lush";
                 width: 100%;
             }
             .ingredients{
-                padding: 7.5em 0;
+                padding: 7.5em 3.75em 3.75em 3.75em;
                 text-align: left;
-                .txts{}
+                display: flex;
+                justify-content: space-around;
+                .txts{
+                    h5{
+                        color: $black;
+                        font-weight: bold;
+                        font-size: 1.5em;
+                    }
+                    span{
+                        color: #707070;
+                        font-size: 0.875em;
+                        line-height: 1.25em;
+                        display: block;
+                        padding-top: 1em;
+                    }
+                    p{
+                        padding-top: 1em;
+                        color: #707070;
+                        font-size: 0.875em;
+                        line-height: 1.25em;
+                    }
+                }
                 .image{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
                     img{
                         width: 11.25em;
+                        
+                    }
+                    h6{
+                        font-size: 1em;
+                        color: $black;
+                        font-weight: bold;
+                        padding-bottom: 0.3125em;
+                    }
+                    span{
+                        color: #707070;
+                        font-size: 0.875em;
+                    }
+                }
+            }
+            .special{
+                display: flex;
+                justify-content: space-around;
+                padding: 0 3.75em 3.75em 3.75em;
+                .symbol{
+                    display: flex;
+                    img{
+                        height: 2.5em;
+                        width: 2.5em;
+                        margin-right: 0.625em;
+                    }
+                    span{
+                        display: block;
+                        color: #707070;
+                        font-size: 0.875em;
+                        line-height: 1.25em;
+                    }
+                }
+                .vegan{
+                    img{
+                        width: 3em;
+                    }
+                }
+            }
+            .animalRight{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background-color: #F7F7F7;
+                padding:1.25em;
+                margin:0 3.75em;
+                img{
+                    width: 2.5em; height: 4.625em;
+                    margin-right: 1.25em;
+                }
+                .txts{
+                    p{
+                        font-size: 0.75em;
+                        color: $black;
+                        line-height: 1.25em;
+                    }
+                    span{
+                        display: block;
+                        width: 100%;
+                        text-align: right;
+                        a{
+                            text-decoration: underline;
+                            color: $black;
+                            font-size: 0.75em;
+                        }
                     }
                 }
             }
