@@ -470,7 +470,7 @@
   width: 100%;
   font-size: 0.75em;
   line-height: 1.875em;
-  color: #656566;
+  color: #707070;
 }
 
 .pDisc section > article .pReview .txt p {
@@ -492,12 +492,12 @@
 }
 
 .pDisc section > article .discript span {
-  color: #656566;
+  color: #707070;
   line-height: 1em;
 }
 
 .pDisc section > article .discript span strong {
-  color: #656566;
+  color: #707070;
   font-weight: bold;
 }
 
@@ -506,10 +506,132 @@
 }
 
 .pDisc section > article .ingredients {
-  padding: 7.5em 0;
+  padding: 7.5em 3.75em 3.75em 3.75em;
   text-align: left;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.pDisc section > article .ingredients .txts h5 {
+  color: #0f0d0d;
+  font-weight: bold;
+  font-size: 1.5em;
+}
+
+.pDisc section > article .ingredients .txts span {
+  color: #707070;
+  font-size: 0.875em;
+  line-height: 1.25em;
+  display: block;
+  padding-top: 1em;
+}
+
+.pDisc section > article .ingredients .txts p {
+  padding-top: 1em;
+  color: #707070;
+  font-size: 0.875em;
+  line-height: 1.25em;
+}
+
+.pDisc section > article .ingredients .image {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .pDisc section > article .ingredients .image img {
   width: 11.25em;
+}
+
+.pDisc section > article .ingredients .image h6 {
+  font-size: 1em;
+  color: #0f0d0d;
+  font-weight: bold;
+  padding-bottom: 0.3125em;
+}
+
+.pDisc section > article .ingredients .image span {
+  color: #707070;
+  font-size: 0.875em;
+}
+
+.pDisc section > article .special {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding: 0 3.75em 3.75em 3.75em;
+}
+
+.pDisc section > article .special .symbol {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.pDisc section > article .special .symbol img {
+  height: 2.5em;
+  width: 2.5em;
+  margin-right: 0.625em;
+}
+
+.pDisc section > article .special .symbol span {
+  display: block;
+  color: #707070;
+  font-size: 0.875em;
+  line-height: 1.25em;
+}
+
+.pDisc section > article .special .vegan img {
+  width: 3em;
+}
+
+.pDisc section > article .animalRight {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #F7F7F7;
+  padding: 1.25em;
+  margin: 0 3.75em;
+}
+
+.pDisc section > article .animalRight img {
+  width: 2.5em;
+  height: 4.625em;
+  margin-right: 1.25em;
+}
+
+.pDisc section > article .animalRight .txts p {
+  font-size: 0.75em;
+  color: #0f0d0d;
+  line-height: 1.25em;
+}
+
+.pDisc section > article .animalRight .txts span {
+  display: block;
+  width: 100%;
+  text-align: right;
+}
+
+.pDisc section > article .animalRight .txts span a {
+  text-decoration: underline;
+  color: #0f0d0d;
+  font-size: 0.75em;
 }
