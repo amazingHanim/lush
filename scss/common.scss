@@ -8,7 +8,8 @@ body {
     // display: flex;
 
     &>header {
-        width: 240px;
+        // width: 240px;
+        width: 12.5%;
         height: 100%;
         background-color: #0f0d0d;
         border-radius: 30px;
@@ -139,7 +140,8 @@ body {
     div.content {
         width: 100%;
         // overflow: hidden;
-        padding-left: 240px;
+        // padding-left: 240px;
+        padding-left:12.5%;
 
         div.content:first-of-type {
 
