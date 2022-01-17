@@ -65,7 +65,7 @@ div.campaign {
     .fixed {
         width: 40%;
         background-color: $green;
-        border-radius: 30px;
+        border-radius: 1.875em;
         padding: 5%;
         text-align: center;
         position: sticky;
@@ -91,7 +91,7 @@ div.campaign {
             display: flex;
             flex-direction: column;
             border: solid 1px #707070;
-            border-radius: 30px;
+            border-radius: 1.875em;
             overflow: hidden;
 
             input {
@@ -120,7 +120,7 @@ div.campaign {
         button {
             width: 100%;
             line-height: 3.750em;
-            border-radius: 30px;
+            border-radius: 1.875em;
             border: none;
             background-color: $black;
             @include font($notoSansKR, 0.875em, #707070);
@@ -135,7 +135,7 @@ div.campaign {
     .scroll {
         width: 60%;
         background-color: #ffffff;
-        border-radius: 30px;
+        border-radius: 1.875em;
         overflow: hidden;
         .img{
             width: 100%;
