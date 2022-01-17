@@ -111,6 +111,7 @@ $lush:"lush";
                 border-radius: 0 30px 30px 0;
                 background-color: #fff;
                 padding: 5% 3%;
+                overflow: auto;
                 article{
                     display: flex;
                     justify-content: space-between;
@@ -149,7 +150,6 @@ $lush:"lush";
                     }
                 }
                 .amounts{
-                    margin-bottom: 1.875em;
                     &>span{
                         color: #6F7070;
                         font-size: 0.875em;
@@ -191,6 +191,7 @@ $lush:"lush";
                 .selected{
                     border-top: 1px solid $black;
                     border-bottom: 1px solid $black;
+                    margin-top: 1.25em;
                     padding: 0.625em 0;
                     display: flex;
                     justify-content: space-between;
@@ -482,6 +483,118 @@ $lush:"lush";
                         }
                     }
                 }
+            }
+            .how{
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                padding: 7.5em 3.75em 3.75em 3.75em;
+                .txts{
+                    width: 26.25em;
+                    margin-right: 3.75em;
+                    h5{
+                        color: $black;
+                        font-weight: bold;
+                        font-size: 1.5em;
+                    }
+                    p{
+                        padding-top: 1em;
+                        color: $black;
+                        font-size: 1em;
+                        line-height: 1.875em;
+                    }
+                }
+                .image{
+                    width: 11.25em; height: 18.75em;
+                }
+            }
+            .keywords{
+                padding: 0 3.75em 7.5em 3.75em;
+                display: flex;
+                justify-content: center;
+                flex-wrap: wrap;
+                button{
+                    font-size: 0.875em;
+                    color: $black;
+                    padding: 0.625em 1.5625em;
+                    border: 1px solid $green;
+                    border-radius: 30px;
+                    background-color: #fff;
+                    margin-right: 0.625em;
+                    margin-bottom: 0.625em;
+                }
+            }
+        }
+    }
+    & section:nth-child(2){
+        padding: 3.75em 0;
+        &>header{
+            height: 3.75em;
+            display: flex;
+            justify-content: space-between;
+            padding: 0 0.625em;
+            h4{
+                font-family: $lush;
+                font-size: 2em;
+                line-height: initial;
+            }
+            ul{
+                display: flex;
+                li{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    padding: 1.25em 1.875em;
+                    border: 1px solid #fff;
+                    border-radius: 0 30px 30px 0;
+                    &:first-child{
+                        border-radius: 30px 0 0 30px;
+                        border-right: none;
+                    }
+                    &:hover{
+                        background-color: $green;
+                    }
+                    img{
+                        height: 1.125em;
+                    }
+                }
+            }
+        }
+        .recommends{
+            display: flex;
+            .rProduct{
+                width: calc(100% / 3);
+                .img{
+                    display: flex;
+                    justify-content: flex-end;
+                    width: 100%;
+                    img{
+                        width: 11.25em; height: 11.25em;
+                    }
+                }
+                .txts{
+                    background-color: #fff;
+                    border-radius: 1.875em;
+                    padding: 2.5em;
+                    h5{
+                        font-family: $lush;
+                        font-size: 1.5em;
+                        color: $black;
+                    }
+                    ul{
+                        li{}
+                    }
+                    p{}
+                    .rStars{
+                        display: flex;
+                        li{
+                            img{
+                                width: 1.25em; height: 1.25em;
+                            }
+                        }
+                    }
+                }
+                .cart{}
             }
         }
     }

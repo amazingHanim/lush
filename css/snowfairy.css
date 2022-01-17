@@ -134,6 +134,7 @@
   border-radius: 0 30px 30px 0;
   background-color: #fff;
   padding: 5% 3%;
+  overflow: auto;
 }
 
 .pMain section .disc .pOptions article {
@@ -186,10 +187,6 @@
   width: 8em;
 }
 
-.pMain section .disc .pOptions .amounts {
-  margin-bottom: 1.875em;
-}
-
 .pMain section .disc .pOptions .amounts > span {
   color: #6F7070;
   font-size: 0.875em;
@@ -238,6 +235,7 @@
 .pMain section .disc .pOptions .selected {
   border-top: 1px solid #0f0d0d;
   border-bottom: 1px solid #0f0d0d;
+  margin-top: 1.25em;
   padding: 0.625em 0;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -634,4 +632,165 @@
   text-decoration: underline;
   color: #0f0d0d;
   font-size: 0.75em;
+}
+
+.pDisc section > article .how {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 7.5em 3.75em 3.75em 3.75em;
+}
+
+.pDisc section > article .how .txts {
+  width: 26.25em;
+  margin-right: 3.75em;
+}
+
+.pDisc section > article .how .txts h5 {
+  color: #0f0d0d;
+  font-weight: bold;
+  font-size: 1.5em;
+}
+
+.pDisc section > article .how .txts p {
+  padding-top: 1em;
+  color: #0f0d0d;
+  font-size: 1em;
+  line-height: 1.875em;
+}
+
+.pDisc section > article .how .image {
+  width: 11.25em;
+  height: 18.75em;
+}
+
+.pDisc section > article .keywords {
+  padding: 0 3.75em 7.5em 3.75em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.pDisc section > article .keywords button {
+  font-size: 0.875em;
+  color: #0f0d0d;
+  padding: 0.625em 1.5625em;
+  border: 1px solid #93ED51;
+  border-radius: 30px;
+  background-color: #fff;
+  margin-right: 0.625em;
+  margin-bottom: 0.625em;
+}
+
+.pDisc section:nth-child(2) {
+  padding: 3.75em 0;
+}
+
+.pDisc section:nth-child(2) > header {
+  height: 3.75em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0 0.625em;
+}
+
+.pDisc section:nth-child(2) > header h4 {
+  font-family: "lush";
+  font-size: 2em;
+  line-height: initial;
+}
+
+.pDisc section:nth-child(2) > header ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.pDisc section:nth-child(2) > header ul li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 1.25em 1.875em;
+  border: 1px solid #fff;
+  border-radius: 0 30px 30px 0;
+}
+
+.pDisc section:nth-child(2) > header ul li:first-child {
+  border-radius: 30px 0 0 30px;
+  border-right: none;
+}
+
+.pDisc section:nth-child(2) > header ul li:hover {
+  background-color: #93ED51;
+}
+
+.pDisc section:nth-child(2) > header ul li img {
+  height: 1.125em;
+}
+
+.pDisc section:nth-child(2) .recommends {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.pDisc section:nth-child(2) .recommends .rProduct {
+  width: calc(100% / 3);
+}
+
+.pDisc section:nth-child(2) .recommends .rProduct .img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  width: 100%;
+}
+
+.pDisc section:nth-child(2) .recommends .rProduct .img img {
+  width: 11.25em;
+  height: 11.25em;
+}
+
+.pDisc section:nth-child(2) .recommends .rProduct .txts {
+  background-color: #fff;
+  border-radius: 1.875em;
+  padding: 2.5em;
+}
+
+.pDisc section:nth-child(2) .recommends .rProduct .txts h5 {
+  font-family: "lush";
+  font-size: 1.5em;
+  color: #0f0d0d;
+}
+
+.pDisc section:nth-child(2) .recommends .rProduct .txts .rStars {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.pDisc section:nth-child(2) .recommends .rProduct .txts .rStars li img {
+  width: 1.25em;
+  height: 1.25em;
 }
