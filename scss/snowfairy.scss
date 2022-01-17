@@ -70,7 +70,7 @@ $lush:"lush";
         .disc{
             position: fixed;
             right: 0;
-            width: calc((100% - 240px) / 10 * 4);
+            width: calc((100% - 12.5vw) / 10 * 4);
             height: clac((100vh - 12vh));
             min-width: 463px;
             .pTitle{
@@ -81,14 +81,15 @@ $lush:"lush";
                 border: 1px solid #fff;
                 display: flex;
                 justify-content: space-between;
-                padding: 4% 3%;
+                padding: 1.875em;
                 .txt{
                     h3{
                         @include font($lush, 1.8em, #fff);
-                        line-height: 2.5em;
+                        line-height: 1.8em;
                     }
                     ul{
                         display: flex;
+                        margin-top: 0.3125em;
                         li{
                             font-size: 1em;
                             color: #ccc;
@@ -110,7 +111,7 @@ $lush:"lush";
                 height: 70vh;
                 border-radius: 0 1.875em 1.875em 0;
                 background-color: #fff;
-                padding: 5% 3%;
+                padding: 1.875em;;
                 overflow: auto;
                 article{
                     display: flex;
