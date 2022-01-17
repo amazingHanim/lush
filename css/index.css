@@ -261,13 +261,32 @@
   height: 100%;
 }
 
+.contentWrap .content.bestProduct .img img:first-of-type {
+  height: 70%;
+}
+
+.contentWrap .content.bestProduct .img img:last-of-type {
+  height: 100%;
+  display: none;
+}
+
+.contentWrap .content.bestProduct .img:hover img:first-of-type {
+  display: none;
+}
+
+.contentWrap .content.bestProduct .img:hover img:last-of-type {
+  display: block;
+}
+
 .contentWrap .content.lips {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  min-height: 50vh;
 }
 
 .contentWrap .content.lips header {
+  height: 50vh;
   width: 50%;
   border-radius: 1.875em;
   position: relative;
@@ -335,27 +354,24 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  overflow: hidden;
 }
 
-.contentWrap .content.lips section ul.lip_tabContent {
+.contentWrap .content.lips section .tab_content_wrap {
   width: 50%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  border-right: solid 1px #fff;
+  height: 100%;
+  position: relative;
 }
 
-.contentWrap .content.lips section ul.lip_tabContent li {
-  display: none;
+.contentWrap .content.lips section .tab_content_wrap ul.lip_tabContent {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
-.contentWrap .content.lips section ul.lip_tabContent li.on {
+.contentWrap .content.lips section .tab_content_wrap ul.lip_tabContent li {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -365,10 +381,25 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  height: 100%;
+  width: 100%;
 }
 
-.contentWrap .content.lips section ul.lip_tabContent li.on img {
+.contentWrap .content.lips section .tab_content_wrap ul.lip_tabContent li img {
   width: 70%;
+}
+
+.contentWrap .content.lips section .tab_content_wrap ul.lip_tabContent li.on {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
 }
 
 .contentWrap .content.lips section ul.lip_tabMenu {
@@ -382,7 +413,11 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   width: 50%;
+  border-left: solid 1px #fff;
 }
 
 .contentWrap .content.lips section ul.lip_tabMenu li a {
@@ -546,7 +581,7 @@
 }
 
 .contentWrap .content.bestReview section article .img img {
-  height: 100%;
+  height: 70%;
 }
 
 .contentWrap .content.bestReview section article .txt {
