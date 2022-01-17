@@ -1,31 +1,7 @@
 @import url('../css/jquery-ui.css');
 @import url('../css/all.css');
+@import '_V&M.scss';
 
-/*폰트어썸*/
-/*색상변수 시작*/
-$black : #0f0d0d;
-$green : #93ED51;
-
-/*font 시작*/
-@font-face {
-    src: url(../font/Lush.ttf);
-    font-family: "lush";
-}
-
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;500;700;900&family=Noto+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
-/*font-family mixins*/
-$notoSans :'Noto Sans',
-sans-serif;
-$notoSansKR :'Noto Sans KR',
-sans-serif;
-$lush:"lush";
-
-/*font 믹신을 include할 때 (폰트)*/
-@mixin font($family, $size, $color) {
-    font-family: $family;
-    font-size: $size;
-    color: $color;
-}
 
 body {
     background-color: $black;
@@ -36,7 +12,7 @@ body {
         height: 100%;
         background-color: #0f0d0d;
         border-radius: 30px;
-        transition: all 0.3s ease-out;
+        transition: all 0.1s ease-out;
         position: fixed;
         border-right: solid 3px #fff;
 
@@ -103,24 +79,27 @@ body {
                     /*폰트 고민*/
                     @include font($notoSans, 1.125em, #fff);
                 }
-
-                &.on {
-                    background-color: $green;
+                .subMenuList {
+                    // display: none;
+                    height: 0px;
+                    overflow: hidden;
+                    transition: all 0.3s;
                 }
 
                 &:hover {
+                    background-color: $green;
                     background-color: #3C6EBE;
                     border-radius: 30px;
 
                     .subMenuList {
                         display: flex;
+                        height: inherit;
                         flex-direction: column;
                         align-items: center;
                         padding: 2.77vh 0;
                         border-top: solid 1px #fff;
                         width: 83.3%;
                         margin: 0 auto;
-
                         li {
                             a {
                                 display: block;
@@ -133,10 +112,6 @@ body {
 
                         }
                     }
-                }
-
-                .subMenuList {
-                    display: none;
                 }
             }
         }
@@ -167,6 +142,7 @@ body {
         padding-left: 240px;
 
         div.content:first-of-type {
+
             /*location이랑 검색*/
             &>section {
                 padding-top: 12vh;
