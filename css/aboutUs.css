@@ -186,7 +186,7 @@ div.charityPot section.charityInfo .txt h2 {
 
 div.charityPot section.charityInfo .txt p {
   line-height: 1.875em;
-  margin: 30px 0;
+  margin: 1.875em 0;
 }
 
 div.charityPot section.charityInfo .txt > span {
@@ -312,7 +312,7 @@ div.charityPot div.more button {
   line-height: 2.5em;
   color: #0f0d0d;
   font-size: 1.125em;
-  border-radius: 30px;
+  border-radius: 1.875em;
   border: none;
   cursor: pointer;
 }

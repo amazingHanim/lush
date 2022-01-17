@@ -84,7 +84,7 @@ div.campaign {
 div.campaign .fixed {
   width: 40%;
   background-color: #93ED51;
-  border-radius: 30px;
+  border-radius: 1.875em;
   padding: 5%;
   text-align: center;
   position: -webkit-sticky;
@@ -126,7 +126,7 @@ div.campaign .fixed .form {
       -ms-flex-direction: column;
           flex-direction: column;
   border: solid 1px #707070;
-  border-radius: 30px;
+  border-radius: 1.875em;
   overflow: hidden;
 }
 
@@ -152,7 +152,7 @@ div.campaign .fixed .check {
 div.campaign .fixed button {
   width: 100%;
   line-height: 3.750em;
-  border-radius: 30px;
+  border-radius: 1.875em;
   border: none;
   background-color: #0f0d0d;
   font-family: "Noto Sans KR", sans-serif;
@@ -170,7 +170,7 @@ div.campaign .fixed button:hover {
 div.campaign .scroll {
   width: 60%;
   background-color: #ffffff;
-  border-radius: 30px;
+  border-radius: 1.875em;
   overflow: hidden;
 }
 

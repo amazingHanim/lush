@@ -11,7 +11,7 @@ body {
         width: 240px;
         height: 100%;
         background-color: #0f0d0d;
-        border-radius: 30px;
+        border-radius: 1.875em;
         transition: all 0.1s ease-out;
         position: fixed;
         border-right: solid 3px #fff;
@@ -66,12 +66,12 @@ body {
 
         .mainMenuList {
             background-color: #fff;
-            border-radius: 30px;
+            border-radius: 1.875em;
 
             &>li {
                 text-align: center;
                 background-color: $black;
-                border-radius: 30px;
+                border-radius: 1.875em;
                 line-height: 6vh;
                 transition: all 0.3s;
 
@@ -89,7 +89,7 @@ body {
                 &:hover {
                     background-color: $green;
                     background-color: #3C6EBE;
-                    border-radius: 30px;
+                    border-radius: 1.875em;
 
                     .subMenuList {
                         display: flex;
@@ -333,7 +333,7 @@ body {
 
             &:hover {
                 opacity: 1;
-                border-radius: 30px;
+                border-radius: 1.875em;
             }
         }
     }

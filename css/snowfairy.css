@@ -62,7 +62,7 @@
 .pMain section .images .image ul.imgBtns li img {
   width: 100%;
   height: 100%;
-  border-radius: 30px;
+  border-radius: 1.875em;
   cursor: pointer;
   opacity: 0.8;
   -webkit-transition: all 0.1s;
@@ -86,7 +86,7 @@
   height: 18vh;
   min-height: 140px;
   background-color: #0f0d0d;
-  border-radius: 0 30px 30px 0;
+  border-radius: 0 1.875em 1.875em 0;
   border: 1px solid #fff;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -131,7 +131,7 @@
 
 .pMain section .disc .pOptions {
   height: 70vh;
-  border-radius: 0 30px 30px 0;
+  border-radius: 0 1.875em 1.875em 0;
   background-color: #fff;
   padding: 5% 3%;
   overflow: auto;
@@ -207,19 +207,19 @@
 }
 
 .pMain section .disc .pOptions .amounts ul li:first-child {
-  border-radius: 30px 0 0 30px;
+  border-radius: 1.875em 0 0 1.875em;
 }
 
 .pMain section .disc .pOptions .amounts ul li:last-child {
   padding-right: 0;
-  border-radius: 0 30px 30px 0;
+  border-radius: 0 1.875em 1.875em 0;
 }
 
 .pMain section .disc .pOptions .amounts ul li > span {
   display: block;
   width: 100%;
   height: 100%;
-  border-radius: 30px;
+  border-radius: 1.875em;
   line-height: 2.25em;
   font-size: 0.875em;
   padding: 0 1.5em;
@@ -259,7 +259,7 @@
       -ms-flex-align: center;
           align-items: center;
   width: 15em;
-  border-radius: 30px;
+  border-radius: 1.875em;
   padding: 0.3125em;
   border: 1px solid #0f0d0d;
 }
@@ -321,7 +321,7 @@
   line-height: 2.5em;
   font-size: 0.875;
   vertical-align: center;
-  border-radius: 30px;
+  border-radius: 1.875em;
   background-color: #fff;
   border: 1px solid #0f0d0d;
 }
@@ -366,7 +366,7 @@
 .pDisc section > header button {
   width: calc(100% / 3);
   line-height: 3.75em;
-  border-radius: 30px 30px 0 0;
+  border-radius: 1.875em 1.875em 0 0;
   border: 1px solid #fff;
   background-color: #0f0d0d;
 }
@@ -686,14 +686,14 @@
   color: #0f0d0d;
   padding: 0.625em 1.5625em;
   border: 1px solid #93ED51;
-  border-radius: 30px;
+  border-radius: 1.875em;
   background-color: #fff;
   margin-right: 0.625em;
   margin-bottom: 0.625em;
 }
 
 .pDisc section:nth-child(2) {
-  padding: 3.75em 0;
+  padding-top: 3.75em;
 }
 
 .pDisc section:nth-child(2) > header {
@@ -731,11 +731,12 @@
           align-items: center;
   padding: 1.25em 1.875em;
   border: 1px solid #fff;
-  border-radius: 0 30px 30px 0;
+  border-radius: 0 1.875em 1.875em 0;
+  cursor: pointer;
 }
 
 .pDisc section:nth-child(2) > header ul li:first-child {
-  border-radius: 30px 0 0 30px;
+  border-radius: 1.875em 0 0 1.875em;
   border-right: none;
 }
 
@@ -770,27 +771,269 @@
 .pDisc section:nth-child(2) .recommends .rProduct .img img {
   width: 11.25em;
   height: 11.25em;
+  z-index: 100;
 }
 
 .pDisc section:nth-child(2) .recommends .rProduct .txts {
+  position: relative;
+  top: -3.75em;
   background-color: #fff;
   border-radius: 1.875em;
-  padding: 2.5em;
+  padding: 3.125em 2em;
+}
+
+.pDisc section:nth-child(2) .recommends .rProduct .txts:hover {
+  border: 2px solid #93ED51;
 }
 
 .pDisc section:nth-child(2) .recommends .rProduct .txts h5 {
   font-family: "lush";
   font-size: 1.5em;
   color: #0f0d0d;
+  padding-bottom: 1.5em;
+}
+
+.pDisc section:nth-child(2) .recommends .rProduct .txts ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-bottom: 1.875em;
+}
+
+.pDisc section:nth-child(2) .recommends .rProduct .txts ul li {
+  font-size: 1em;
+  color: #0f0d0d;
+}
+
+.pDisc section:nth-child(2) .recommends .rProduct .txts ul li i {
+  font-size: 1.25em;
+  color: #93ED51;
+}
+
+.pDisc section:nth-child(2) .recommends .rProduct .txts p {
+  color: #0f0d0d;
+  font-size: 0.875em;
+  line-height: 1.875em;
+  padding-bottom: 1.25em;
 }
 
 .pDisc section:nth-child(2) .recommends .rProduct .txts .rStars {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  padding-bottom: 0;
+}
+
+.pDisc section:nth-child(2) .recommends .rProduct .txts .rStars li {
+  font-size: 0.875em;
+  margin-right: 0.3125em;
 }
 
 .pDisc section:nth-child(2) .recommends .rProduct .txts .rStars li img {
   width: 1.25em;
   height: 1.25em;
+}
+
+.pDisc section:nth-child(2) .recommends .rProduct .cart {
+  width: 100%;
+  position: relative;
+  top: -3.75em;
+}
+
+.pDisc section:nth-child(2) .recommends .rProduct .cart button {
+  width: 100%;
+  text-align: center;
+  padding: 20px 0;
+  border: 1px solid #fff;
+  border-radius: 1.875em;
+  background-color: #0f0d0d;
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.pDisc section:nth-child(2) .recommends .rProduct .cart button:hover {
+  background-color: #93ED51;
+}
+
+.pDisc section:nth-child(3) article {
+  background-color: #0f0d0d;
+  border: 1px solid #fff;
+  padding: 0 3.75em;
+}
+
+.pDisc section:nth-child(3) article header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 7.5em;
+  border-bottom: 1px solid #fff;
+}
+
+.pDisc section:nth-child(3) article header .txts h4 {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.pDisc section:nth-child(3) article header .txts p {
+  padding-top: 0.625em;
+}
+
+.pDisc section:nth-child(3) article header button {
+  width: 7.5em;
+  line-height: 2.5em;
+  border: 1px solid #fff;
+  background-color: #0f0d0d;
+  color: #fff;
+  font-size: 1em;
+  cursor: pointer;
+}
+
+.pDisc section:nth-child(3) article header button:hover {
+  background-color: #3C6EBE;
+}
+
+.pDisc section:nth-child(3) article .review {
+  padding: 1.875em 0;
+  border-bottom: 1px solid #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.pDisc section:nth-child(3) article .review:last-of-type {
+  border: none;
+}
+
+.pDisc section:nth-child(3) article .review .info {
+  width: 10em;
+  margin-right: 3.75em;
+}
+
+.pDisc section:nth-child(3) article .review .info span {
+  display: block;
+  padding-bottom: 1.25em;
+}
+
+.pDisc section:nth-child(3) article .review .info span i {
+  font-size: 0.875em;
+}
+
+.pDisc section:nth-child(3) article .review .info p {
+  font-size: 0.875em;
+  line-height: 1.25em;
+  padding-bottom: 0.625em;
+}
+
+.pDisc section:nth-child(3) article .review .txts span {
+  display: block;
+  font-size: 0.875em;
+  padding-bottom: 1.25em;
+}
+
+.pDisc section:nth-child(3) article .review .txts p {
+  padding-bottom: 1.25em;
+  font-size: 0.875em;
+  line-height: 1.25em;
+}
+
+.pDisc section:nth-child(3) article .review .txts .images {
+  padding-bottom: 1.25em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.pDisc section:nth-child(3) article .review .txts .images .image {
+  width: 3.75em;
+  height: 3.75em;
+  background-color: #fff;
+  background-image: url();
+  margin-right: 0.625em;
+}
+
+.pDisc section:nth-child(3) article .review .txts .images .i1 {
+  background-image: url("../images/review.i1.png");
+  background-size: cover;
+}
+
+.pDisc section:nth-child(3) article .review .txts .images .i2 {
+  background-image: url("../images/review.i2.png");
+  background-size: cover;
+}
+
+.pDisc section:nth-child(3) article .review .txts ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.pDisc section:nth-child(3) article .review .txts ul li {
+  font-size: 0.875em;
+  margin-right: 1.25em;
+}
+
+.pDisc section:nth-child(3) article .review .txts ul li > span {
+  display: inline;
+  text-decoration: underline;
+  font-size: 1em;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.pDisc section:nth-child(3) article .review .txts ul li:nth-child(2) {
+  font-weight: bold;
+}
+
+.pDisc section:nth-child(3) article .review .txts ul li button {
+  line-height: 1.5em;
+  font-size: 0.875em;
+  background-color: #0f0d0d;
+  border: 1px solid #fff;
+  color: #fff;
+  cursor: pointer;
+}
+
+.pDisc section:nth-child(3) article .review .txts ul li button:hover {
+  background-color: #3C6EBE;
+}
+
+.pDisc section:nth-child(3) article .pages {
+  padding: 1.875em 0 3.75em 0;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.pDisc section:nth-child(3) article .pages li {
+  font-size: 1em;
+  margin-right: 0.9375em;
+  cursor: pointer;
+}
+
+.pDisc section:nth-child(3) article .pages li.current {
+  text-decoration: underline;
+  font-weight: bold;
 }
