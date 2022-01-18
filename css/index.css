@@ -341,6 +341,7 @@
 }
 
 .contentWrap .content.lips section {
+  height: 50vh;
   width: 50%;
   border-radius: 1.875em;
   padding: 3vw 0;
@@ -523,33 +524,47 @@
 }
 
 .contentWrap .content.about ul.tabContent > li.on {
+  display: block;
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.contentWrap .content.about ul.tabContent > li.on .txt li {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
 }
 
-.contentWrap .content.about ul.tabContent > li.on .image {
-  width: 40%;
-  height: 40vh;
-  background-image: url(../images/weAreLush_01.jpeg);
-  background-repeat: no-repeat;
+.contentWrap .content.about ul.tabContent > li.on .txt li.on span {
+  color: #93ED51;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
 }
 
-.contentWrap .content.about ul.tabContent > li.on ul:last-of-type li {
-  text-align: end;
-}
-
-.contentWrap .content.about ul.tabContent > li.on ul li span {
+.contentWrap .content.about ul.tabContent > li.on .txt li span {
   line-height: 3.125em;
   font-family: "Noto Sans KR", sans-serif;
   font-size: 0.875em;
   color: #fff;
+}
+
+.contentWrap .content.about ul.tabContent > li.on .img {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: -15vw;
+  margin-top: -15vh;
+  width: 30vw;
+  height: 30vh;
+  background-image: url(../images/about_1.jpeg);
+  background-size: 100%;
+  background-repeat: no-repeat;
 }
 
 .contentWrap .content.bestReview section {

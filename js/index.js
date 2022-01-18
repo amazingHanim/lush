@@ -16,5 +16,27 @@ $(function () {
             $imgList.animate({'top':-(hovernum * imgHeignt)},300);
         })
     }
+    //lips content fin
+
+    function about(){
+        var $about = $(".about"),
+            $txt = $about.find(".txt")
+            $img = $about.find(".img")
+
+
+            $txt.find("span").mouseenter(
+                function(){
+                    $txt.children("li").removeClass("on");
+                    $(this).parent().addClass("on");//해당 텍스트에 컬러 번경 fin
+                    $thisNum = $(this).parent().index();
+                    $img.css({"background-image":"url(../images/about_"+ ($thisNum+1) +".jpeg)"},300)
+                }
+            )
+
+            
+
+    }
+    //about content fin
     listHover();
+    about();
 })
