@@ -47,17 +47,70 @@ $padding: 3vw;
                 width: 60%;
                 height: 100%;
                 border-radius: 1.875em;
-                overflow: hidden;
 
-
-                .slider {
+                .frame {
                     height: 60%;
-                    overflow: hidden;
-
-                    img {
+                    ul.slider {
+                        width: 100%;
                         height: 100%;
+                        position: relative;
+                        // overflow: hidden;
+                        button{
+                            position: absolute;
+                            top: 50%;
+                            font-size: 0;
+                            color: transparent;
+                            cursor: pointer;
+                            background-color: transparent;
+                            border: none;
+                            width: 3vw;
+                            height: 3vh;
+                            z-index: 1000;
+                            background-image: url(../images/left-arrow.png);
+
+                            &.slick-prev{
+                                z-index: 100;
+                                background-image: url(../images/left-arrow.png);
+                                left: 0;
+                            }
+                            &.slick-next{
+                                background-image: url(../images/right-arrow.png);
+                                right: 0;
+                            }
+                        }
+                        li {
+                            height: 100%;
+                            overflow: hidden;
+
+                            img {
+                                width: 100%;
+                            }
+                        }
                     }
+
+                    // .btns {
+                    //     position: absolute;
+                    //     top: 0;
+                    //     left: 0;
+                    //     width: 100%;
+                    //     height: 100%;
+                    //     display: flex;
+                    //     justify-content: space-between;
+                    //     align-items: center;
+                    //     padding: 3%;
+
+                    //     div {
+                    //         width: 2vw;
+                    //         height: 2vh;
+                    //         img {
+                    //             width: 100%;
+                    //             cursor: pointer;
+
+                    //         }
+                    //     }
+                    // }
                 }
+
 
                 header {
                     height: 40%;
@@ -467,35 +520,41 @@ $padding: 3vw;
                     &.on {
                         display: block;
                         position: relative;
-                        width: 100%;height: 100%;
+                        width: 100%;
+                        height: 100%;
 
                         .txt {
-                            
+
                             li {
                                 display: flex;
                                 justify-content: space-between;
-                                &.on{
-                                    span{
+
+                                &.on {
+                                    span {
                                         color: $green;
                                         transition: all 0.3s;
                                     }
                                 }
+
                                 span {
-                                    
+
                                     line-height: 3.125em;
                                     @include font($notoSansKR, 0.875em, #fff);
                                 }
                             }
                         }
-                        .img{
+
+                        .img {
                             content: "";
                             display: block;
                             position: absolute;
-                            top: 50%;left: 50%;
-                            margin-left: -15vw;
-                            margin-top: -15vh;
-                            width: 30vw;
-                            height: 30vh;
+                            top: 50%;
+                            left: 50%;
+                            margin-left: -20vw;
+                            margin-top: -22vh;
+                            width: 40vw;
+                            height: 44vh;
+                            z-index: -10;
                             background-image: url(../images/about_1.jpeg);
                             background-size: 100%;
                             background-repeat: no-repeat;
