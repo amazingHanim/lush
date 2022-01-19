@@ -821,6 +821,8 @@
 
 .pDisc section:nth-child(2) .recommends .rProduct .txts:hover {
   border: 2px solid #93ED51;
+  -webkit-transition: all 0.1s;
+  transition: all 0.1s;
 }
 
 .pDisc section:nth-child(2) .recommends .rProduct .txts h5 {
@@ -899,6 +901,8 @@
 }
 
 .pDisc section:nth-child(2) .recommends .rProduct .cart button:hover {
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
   background-color: #93ED51;
 }
 
@@ -942,7 +946,9 @@
 }
 
 .pDisc section:nth-child(3) article header button:hover {
-  background-color: #3C6EBE;
+  border-radius: 1.875em;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
 }
 
 .pDisc section:nth-child(3) article .review {
