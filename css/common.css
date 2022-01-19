@@ -250,12 +250,12 @@ body div.content > header {
       -ms-flex-pack: justify;
           justify-content: space-between;
   background-color: transparent;
-  width: calc(100% - 240px);
+  width: calc(100% - 12.5vw);
   height: 12vh;
-  padding: 5.55vh 3.125vw 1vh 3.125vw;
-  margin-bottom: 3.7vh;
+  padding: 2.5em 1.875em 1.25em 1.875em;
   color: #fff;
   background-color: #0f0d0d;
+  vertical-align: middle;
 }
 
 body div.content > header .location {
@@ -280,8 +280,8 @@ body div.content > header .cHeaderRight .icons li {
 }
 
 body div.content > header .cHeaderRight .icons li img {
-  width: 44px;
-  height: 44px;
+  width: 2.5em;
+  height: 2.5em;
 }
 
 body div.content > header .cHeaderRight .search a {
@@ -294,7 +294,7 @@ body div.content > header .cHeaderRight .search a {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  width: 25vw;
+  width: 18.75em;
   height: 100%;
   border-bottom: 1px solid #fff;
 }
