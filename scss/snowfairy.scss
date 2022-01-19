@@ -600,6 +600,7 @@ $lush:"lush";
                     padding: 3.125em 2em;
                     &:hover{
                         border: 2px solid $green;
+                        transition: all 0.1s;
                     }
                     h5{
                         font-family: $lush;
@@ -655,6 +656,7 @@ $lush:"lush";
                         font-weight: bold;
                         cursor: pointer;
                         &:hover{
+                            transition: all 0.3s;
                             background-color: $green;
                         }
                     }
@@ -691,7 +693,8 @@ $lush:"lush";
                     font-size: 1em;
                     cursor: pointer;
                     &:hover{
-                        background-color: #3C6EBE;
+                        border-radius: 1.875em;
+                        transition: all 0.3s;
                     }
                 }
             }
