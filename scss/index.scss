@@ -47,15 +47,18 @@ $padding: 3vw;
                 width: 60%;
                 height: 100%;
                 border-radius: 1.875em;
+                overflow: hidden;
 
                 .frame {
                     height: 60%;
+
                     ul.slider {
                         width: 100%;
                         height: 100%;
                         position: relative;
-                        // overflow: hidden;
-                        button{
+                        overflow: hidden;
+
+                        button {
                             position: absolute;
                             top: 50%;
                             font-size: 0;
@@ -66,19 +69,46 @@ $padding: 3vw;
                             width: 3vw;
                             height: 3vh;
                             z-index: 1000;
-                            background-image: url(../images/left-arrow.png);
 
-                            &.slick-prev{
+                            &.slick-prev {
                                 z-index: 100;
-                                background-image: url(../images/left-arrow.png);
                                 left: 0;
+
+                                &::after {
+                                    position: absolute;
+                                    top: 0;
+                                    left: 0;
+                                    display: block;
+                                    content: "";
+                                    width: 100%;
+                                    height: 100%;
+                                    background-image: url(../images/left-arrow.png);
+                                    background-size: contain;
+                                    background-repeat: no-repeat;
+
+                                }
                             }
-                            &.slick-next{
-                                background-image: url(../images/right-arrow.png);
+
+                            &.slick-next {
                                 right: 0;
+
+                                &::after {
+                                    position: absolute;
+                                    top: 0;
+                                    left: 0;
+                                    display: block;
+                                    content: "";
+                                    width: 100%;
+                                    height: 100%;
+                                    background-image: url(../images/right-arrow.png);
+                                    background-size: contain;
+                                    background-repeat: no-repeat;
+                                }
                             }
                         }
+
                         li {
+                            width: 100%;
                             height: 100%;
                             overflow: hidden;
 
@@ -87,28 +117,6 @@ $padding: 3vw;
                             }
                         }
                     }
-
-                    // .btns {
-                    //     position: absolute;
-                    //     top: 0;
-                    //     left: 0;
-                    //     width: 100%;
-                    //     height: 100%;
-                    //     display: flex;
-                    //     justify-content: space-between;
-                    //     align-items: center;
-                    //     padding: 3%;
-
-                    //     div {
-                    //         width: 2vw;
-                    //         height: 2vh;
-                    //         img {
-                    //             width: 100%;
-                    //             cursor: pointer;
-
-                    //         }
-                    //     }
-                    // }
                 }
 
 
