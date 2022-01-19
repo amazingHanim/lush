@@ -206,12 +206,11 @@ body {
             display: flex;
             justify-content: space-between;
             background-color: transparent;
-            width: calc(100% - 240px);
-            height: 12vh;
-            padding: 5.55vh 3.125vw 1vh 3.125vw;
-            margin-bottom: 3.7vh;
+            width: calc(100% - 12.5vw); height: 12vh;
+            padding: 2.5em 1.875em 1.25em 1.875em;
             color: #fff;
             background-color: $black;
+            vertical-align: middle;
 
 
             .location {
@@ -229,8 +228,8 @@ body {
                         margin-right: 10px;
 
                         img {
-                            width: 44px;
-                            height: 44px;
+                            width: 2.5em;
+                            height: 2.5em;
                         }
                     }
                 }
@@ -240,7 +239,7 @@ body {
                         display: flex;
                         align-items: center;
                         justify-content: space-between;
-                        width: 25vw;
+                        width: 18.75em;
                         height: 100%;
                         border-bottom: 1px solid #fff;
                     }
