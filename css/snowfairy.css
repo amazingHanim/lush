@@ -16,27 +16,56 @@
   display: flex;
 }
 
-.pMain section .images {
+.pMain section .imageWrap {
   width: 60%;
   min-width: 700px;
   height: calc(100vh - 12vh);
+  overflow: hidden;
+  position: relative;
 }
 
-.pMain section .images .image {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: end;
-  background-image: url(../images/snowfairy.main6.png);
+.pMain section .imageWrap .images {
+  position: absolute;
+  top: calc((100vh - 12vh) * -5);
+  width: 100%;
+  height: calc((100vh - 12vh) * 6);
+}
+
+.pMain section .imageWrap .images .image {
+  width: 100%;
+  height: calc(100vh - 12vh);
   background-repeat: no-repeat;
   background-size: cover;
-  width: 100%;
-  height: 100%;
 }
 
-.pMain section .images .image ul.imgBtns {
+.pMain section .imageWrap .images .image.i1 {
+  background-image: url(../images/snowfairy.main1.png);
+}
+
+.pMain section .imageWrap .images .image.i2 {
+  background-image: url(../images/snowfairy.main2.png);
+}
+
+.pMain section .imageWrap .images .image.i3 {
+  background-image: url(../images/snowfairy.main3.png);
+}
+
+.pMain section .imageWrap .images .image.i4 {
+  background-image: url(../images/snowfairy.main4.png);
+}
+
+.pMain section .imageWrap .images .image.i5 {
+  background-image: url(../images/snowfairy.main5.png);
+}
+
+.pMain section .imageWrap .images .image.i6 {
+  background-image: url(../images/snowfairy.main6.png);
+}
+
+.pMain section .imageWrap ul.imgBtns {
+  position: absolute;
+  top: 0;
+  right: 1px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -49,17 +78,17 @@
           flex-direction: column;
 }
 
-.pMain section .images .image ul.imgBtns li {
+.pMain section .imageWrap ul.imgBtns li {
   width: 6.25vw;
   min-width: 90px;
 }
 
-.pMain section .images .image ul.imgBtns li.on img {
+.pMain section .imageWrap ul.imgBtns li.on img {
   border: 2px solid #93ED51;
   opacity: 1;
 }
 
-.pMain section .images .image ul.imgBtns li img {
+.pMain section .imageWrap ul.imgBtns li img {
   width: 100%;
   height: 100%;
   border-radius: 1.875em;
@@ -69,7 +98,7 @@
   transition: all 0.1s;
 }
 
-.pMain section .images .image ul.imgBtns li img:hover {
+.pMain section .imageWrap ul.imgBtns li img:hover {
   opacity: 1;
   border: 2px solid #93ED51;
 }
@@ -377,6 +406,14 @@
 }
 
 .pDisc section > header button.on a {
+  color: #0f0d0d;
+}
+
+.pDisc section > header button:hover {
+  background-color: #93ED51;
+}
+
+.pDisc section > header button:hover a {
   color: #0f0d0d;
 }
 
