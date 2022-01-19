@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="css/snowfairy.css">
     <script src="js/jquery-ui.min.js"></script>
     <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/snowfairy.js"></script>
     <script src="https://kit.fontawesome.com/43177ae168.js" crossorigin="anonymous"></script>
 </head>
 <body>
@@ -88,17 +89,23 @@
             </div>
         </header>
         <section>
-            <div class="images">
-                <div class="image">
-                    <ul class="imgBtns">
-                        <li><img src="images/snowfairy.main.btn1.png" alt="스노우페어리 제형 이미지₩"></li>
-                        <li><img src="images/snowfairy.main.btn2.png" alt="스노우페어리 100g 제품"></li>
-                        <li><img src="images/snowfairy.main.btn3.png" alt="스노우페어리 275g 제품"></li>
-                        <li><img src="images/snowfairy.main.btn4.png" alt="스노우페어리 550g 제품"></li>
-                        <li><img src="images/snowfairy.main.btn5.png" alt="스노우페어리 1000g 제품"></li>
-                        <li class="on"><img src="images/snowfairy.main.btn6.png" alt="스노우페어리 사용 이미지"></li>
-                    </ul>
+            <div class="imageWrap">
+                <div class="images">
+                    <div class="image i1"></div>
+                    <div class="image i2"></div>
+                    <div class="image i3"></div>
+                    <div class="image i4"></div>
+                    <div class="image i5"></div>
+                    <div class="image i6"></div>
                 </div>
+                <ul class="imgBtns">
+                    <li><img src="images/snowfairy.main.btn1.png" alt="스노우페어리 제형 이미지"></li>
+                    <li><img src="images/snowfairy.main.btn2.png" alt="스노우페어리 100g 제품"></li>
+                    <li><img src="images/snowfairy.main.btn3.png" alt="스노우페어리 275g 제품"></li>
+                    <li><img src="images/snowfairy.main.btn4.png" alt="스노우페어리 550g 제품"></li>
+                    <li><img src="images/snowfairy.main.btn5.png" alt="스노우페어리 1000g 제품"></li>
+                    <li class="on"><img src="images/snowfairy.main.btn6.png" alt="스노우페어리 사용 이미지"></li>
+                </ul>
             </div>
             <div class="disc">
                 <div class="pTitle">
@@ -187,11 +194,11 @@
         </section>
     </div>
     <div class="content pDisc">
-        <section>
+        <section id="productDetails">
             <header>
-                <button class="on"><a href="">제품상세정보</a></button>
-                <button><a href="">상품후기(23)</a></button>
-                <button><a href="">배송/교환 및 반품안내</a></button>
+                <button class="on"><a href="#productDetails">제품상세정보</a></button>
+                <button><a href="#productReview">상품후기(23)</a></button>
+                <button><a href="#productShipping">배송/교환 및 반품안내</a></button>
             </header>
             <article>
                 <div class="title">
@@ -396,11 +403,11 @@
                 </div>
             </div>
         </section>
-        <section>
+        <section id="productReview">
             <header>
-                <button><a href="">제품상세정보</a></button>
-                <button class="on"><a href="">상품후기(23)</a></button>
-                <button><a href="">배송/교환 및 반품안내</a></button>
+                <button><a href="#productDetails">제품상세정보</a></button>
+                <button class="on"><a href="#productReview">상품후기(23)</a></button>
+                <button><a href="#productShipping">배송/교환 및 반품안내</a></button>
             </header>
             <article>
                 <header>
@@ -564,11 +571,11 @@
                 </ul>
             </article>
         </section>
-        <section>
+        <section id="productShipping">
             <header>
-                <button><a href="">제품상세정보</a></button>
-                <button><a href="">상품후기(23)</a></button>
-                <button class="on"><a href="">배송/교환 및 반품안내</a></button>
+                <button><a href="#productDetails">제품상세정보</a></button>
+                <button><a href="#productReview">상품후기(23)</a></button>
+                <button class="on"><a href="#productShipping">배송/교환 및 반품안내</a></button>
             </header>
             <article>
                 <ul>
