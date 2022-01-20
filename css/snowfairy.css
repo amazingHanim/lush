@@ -63,7 +63,7 @@
 
 .pMain section .imageWrap ul.imgBtns {
   position: absolute;
-  top: 0;
+  top: 1px;
   right: 1px;
   display: -webkit-box;
   display: -ms-flexbox;
