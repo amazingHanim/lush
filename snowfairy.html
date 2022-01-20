@@ -8,10 +8,12 @@
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/common.css">
     <link rel="stylesheet" href="css/snowfairy.css">
+    <link rel="stylesheet" type="text/css" href="http://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
     <script src="js/jquery-ui.min.js"></script>
     <script src="js/jquery-3.6.0.min.js"></script>
     <script src="js/snowfairy.js"></script>
     <script src="https://kit.fontawesome.com/43177ae168.js" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="http://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 </head>
 <body>
     <header>
@@ -148,19 +150,46 @@
                     <div class="amounts">
                         <span>용량을 선택하세요</span>
                         <ul>
-                            <li><span>100g</span></li>
-                            <li><span>275g</span></li>
-                            <li class="on"><span>550g</span></li>
-                            <li><span>1000g</span></li>
+                            <li class="100gBtn"><span>100g</span></li>
+                            <li class="275gBtn"><span>275g</span></li>
+                            <li class="on 550gBtn"><span>550g</span></li>
+                            <li class="1000gBtn"><span>1000g</span></li>
                         </ul>
                     </div>
-                    <div class="selected">
+                    <div class="selected 100g" style="display:none">
+                        <ul class="count">
+                            <li><img src="images/minus.svg" alt="빼기 버튼"></li>
+                            <li>1</li>
+                            <li><img src="images/plus.svg" alt="더하기 버튼"></li>
+                        </ul>
+                        <span>100g / ₩16,000</span>
+                        <img src="images/closed.svg" alt="닫기 버튼">
+                    </div>
+                    <div class="selected 275g" style="display:none">
+                        <ul class="count">
+                            <li><img src="images/minus.svg" alt="빼기 버튼"></li>
+                            <li>1</li>
+                            <li><img src="images/plus.svg" alt="더하기 버튼"></li>
+                        </ul>
+                        <span>275g / ₩32,000</span>
+                        <img src="images/closed.svg" alt="닫기 버튼">
+                    </div>
+                    <div class="selected 550g">
                         <ul class="count">
                             <li><img src="images/minus.svg" alt="빼기 버튼"></li>
                             <li>1</li>
                             <li><img src="images/plus.svg" alt="더하기 버튼"></li>
                         </ul>
                         <span>550g / ₩52,000</span>
+                        <img src="images/closed.svg" alt="닫기 버튼">
+                    </div>
+                    <div class="selected 1000g" style="display:none">
+                        <ul class="count">
+                            <li><img src="images/minus.svg" alt="빼기 버튼"></li>
+                            <li>1</li>
+                            <li><img src="images/plus.svg" alt="더하기 버튼"></li>
+                        </ul>
+                        <span>1000g / ₩86,000</span>
                         <img src="images/closed.svg" alt="닫기 버튼">
                     </div>
                     <ul class="prices">
@@ -323,12 +352,8 @@
         <section>
             <header>
                 <h4>You might also like</h4>
-                <ul>
-                    <li><img src="images/left.arrow.png" alt="왼쪽 화살표"></li>
-                    <li><img src="images/right.arrow.png" alt="오른쪽 화살표"></li>
-                </ul>
             </header>
-            <div class="recommends">
+            <div class="recommends" data-slick='{"slidesToShow": 3, "slidesToScroll": 3}'>
                 <div class="rProduct">
                     <div class="img">
                         <img src="images/rProduct1.png" alt="코코로코 제품 이미지">
@@ -364,6 +389,78 @@
                             <li><i class="far fa-heart"></i></li>
                         </ul>
                         <p>라즈베리와 바닐라 폼</p>
+                        <ul class="rStars">
+                            <li><img src="images/star1.0.svg" alt="검정별"></li>
+                            <li><img src="images/star1.0.svg" alt="검정별"></li>
+                            <li><img src="images/star1.0.svg" alt="검정별"></li>
+                            <li><img src="images/star1.0.svg" alt="검정별"></li>
+                            <li><img src="images/star0.8.svg" alt="검정별"></li>
+                            <li>4.8 (23)</li>
+                        </ul>
+                    </div>
+                    <div class="cart">
+                        <button>장바구니</button>
+                    </div>
+                </div>
+                <div class="rProduct">
+                    <div class="img">
+                        <img src="images/rProduct3.png" alt="코코로코 제품 이미지">
+                    </div>
+                    <div class="txts">
+                        <h5>springwash</h5>
+                        <ul>
+                            <li>샤워 젤</li>
+                            <li><i class="far fa-heart"></i></li>
+                        </ul>
+                        <p>민트 향의 상쾌함</p>
+                        <ul class="rStars">
+                            <li><img src="images/star1.0.svg" alt="검정별"></li>
+                            <li><img src="images/star1.0.svg" alt="검정별"></li>
+                            <li><img src="images/star1.0.svg" alt="검정별"></li>
+                            <li><img src="images/star1.0.svg" alt="검정별"></li>
+                            <li><img src="images/star0.8.svg" alt="검정별"></li>
+                            <li>4.8 (23)</li>
+                        </ul>
+                    </div>
+                    <div class="cart">
+                        <button>장바구니</button>
+                    </div>
+                </div>
+                <div class="rProduct">
+                    <div class="img">
+                        <img src="images/rProduct3.png" alt="코코로코 제품 이미지">
+                    </div>
+                    <div class="txts">
+                        <h5>springwash</h5>
+                        <ul>
+                            <li>샤워 젤</li>
+                            <li><i class="far fa-heart"></i></li>
+                        </ul>
+                        <p>민트 향의 상쾌함</p>
+                        <ul class="rStars">
+                            <li><img src="images/star1.0.svg" alt="검정별"></li>
+                            <li><img src="images/star1.0.svg" alt="검정별"></li>
+                            <li><img src="images/star1.0.svg" alt="검정별"></li>
+                            <li><img src="images/star1.0.svg" alt="검정별"></li>
+                            <li><img src="images/star0.8.svg" alt="검정별"></li>
+                            <li>4.8 (23)</li>
+                        </ul>
+                    </div>
+                    <div class="cart">
+                        <button>장바구니</button>
+                    </div>
+                </div>
+                <div class="rProduct">
+                    <div class="img">
+                        <img src="images/rProduct3.png" alt="코코로코 제품 이미지">
+                    </div>
+                    <div class="txts">
+                        <h5>springwash</h5>
+                        <ul>
+                            <li>샤워 젤</li>
+                            <li><i class="far fa-heart"></i></li>
+                        </ul>
+                        <p>민트 향의 상쾌함</p>
                         <ul class="rStars">
                             <li><img src="images/star1.0.svg" alt="검정별"></li>
                             <li><img src="images/star1.0.svg" alt="검정별"></li>
