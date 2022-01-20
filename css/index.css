@@ -66,7 +66,7 @@
 }
 
 .contentWrap .content.main main .frame {
-  height: 60%;
+  height: 100%;
 }
 
 .contentWrap .content.main main .frame ul.slider {
@@ -76,25 +76,25 @@
   overflow: hidden;
 }
 
-.contentWrap .content.main main .frame ul.slider button {
+.contentWrap .content.main main .frame ul.slider > button {
   position: absolute;
-  top: 50%;
+  top: 30%;
   font-size: 0;
   color: transparent;
   cursor: pointer;
   background-color: transparent;
   border: none;
-  width: 3vw;
-  height: 3vh;
+  width: 3%;
+  height: 3%;
   z-index: 1000;
 }
 
-.contentWrap .content.main main .frame ul.slider button.slick-prev {
+.contentWrap .content.main main .frame ul.slider > button.slick-prev {
   z-index: 100;
-  left: 0;
+  left: 3%;
 }
 
-.contentWrap .content.main main .frame ul.slider button.slick-prev::after {
+.contentWrap .content.main main .frame ul.slider > button.slick-prev::after {
   position: absolute;
   top: 0;
   left: 0;
@@ -107,11 +107,11 @@
   background-repeat: no-repeat;
 }
 
-.contentWrap .content.main main .frame ul.slider button.slick-next {
-  right: 0;
+.contentWrap .content.main main .frame ul.slider > button.slick-next {
+  right: 3%;
 }
 
-.contentWrap .content.main main .frame ul.slider button.slick-next::after {
+.contentWrap .content.main main .frame ul.slider > button.slick-next::after {
   position: absolute;
   top: 0;
   left: 0;
@@ -122,6 +122,7 @@
   background-image: url(../images/right-arrow.png);
   background-size: contain;
   background-repeat: no-repeat;
+  background-position: right;
 }
 
 .contentWrap .content.main main .frame ul.slider li {
@@ -130,23 +131,34 @@
   overflow: hidden;
 }
 
-.contentWrap .content.main main .frame ul.slider li img {
+.contentWrap .content.main main .frame ul.slider li div.img {
+  width: 100%;
+  height: 60vh;
+  overflow: hidden;
+}
+
+.contentWrap .content.main main .frame ul.slider li div.img img {
   width: 100%;
 }
 
-.contentWrap .content.main main header {
-  height: 40%;
+.contentWrap .content.main main .frame ul.slider li .sliderTxt {
+  height: 40vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   background-color: #fff;
   overflow: hidden;
   padding: 3vw 0;
 }
 
-.contentWrap .content.main main header h2 {
+.contentWrap .content.main main .frame ul.slider li .sliderTxt h2 {
+  font-family: "lush";
+  font-size: 2.625em;
+  color: #fff;
+  line-height: 8.325vh;
   color: #0f0d0d;
   width: 50%;
   -ms-flex-item-align: center;
@@ -155,7 +167,7 @@
   padding: 0 3vw;
 }
 
-.contentWrap .content.main main header div {
+.contentWrap .content.main main .frame ul.slider li .sliderTxt div {
   padding: 0 3vw;
   border-left: solid 1px #000;
   width: 50%;
@@ -175,14 +187,14 @@
   text-align: start;
 }
 
-.contentWrap .content.main main header div h3,
-.contentWrap .content.main main header div p,
-.contentWrap .content.main main header div button {
+.contentWrap .content.main main .frame ul.slider li .sliderTxt div h3,
+.contentWrap .content.main main .frame ul.slider li .sliderTxt div p,
+.contentWrap .content.main main .frame ul.slider li .sliderTxt div button {
   color: #0f0d0d;
   line-height: 1.875em;
 }
 
-.contentWrap .content.main main header div p {
+.contentWrap .content.main main .frame ul.slider li .sliderTxt div p {
   display: block;
   font-family: "Noto Sans KR", sans-serif;
   font-size: 0.875em;
@@ -190,7 +202,7 @@
   font-weight: 300;
 }
 
-.contentWrap .content.main main header div button {
+.contentWrap .content.main main .frame ul.slider li .sliderTxt div button {
   border-color: #0f0d0d;
   -ms-flex-item-align: end;
       align-self: flex-end;
@@ -321,20 +333,86 @@
   height: 100%;
 }
 
-.contentWrap .content.bestProduct .img img:first-of-type {
+.contentWrap .content.bestProduct section {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  position: relative;
+}
+
+.contentWrap .content.bestProduct section > button {
+  display: none !important;
+}
+
+.contentWrap .content.bestProduct section ul.slick-dots {
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  position: absolute;
+  bottom: -10%;
+  left: 0;
+  width: 100%;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.contentWrap .content.bestProduct section ul.slick-dots li {
+  width: 12px;
+  height: 12px;
+  margin-right: 8px;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.contentWrap .content.bestProduct section ul.slick-dots li:hover button {
+  border: none;
+  background-color: #fff;
+}
+
+.contentWrap .content.bestProduct section ul.slick-dots li button {
+  -webkit-transition: all 0.1s;
+  transition: all 0.1s;
+  width: 100%;
+  height: 100%;
+  border-radius: 6px;
+  font-size: 0px;
+  color: transparent;
+  border: solid 1px #fff;
+  background-color: transparent;
+  padding: 0;
+  margin: 0;
+  cursor: pointer;
+}
+
+.contentWrap .content.bestProduct section ul.slick-dots li.slick-active {
+  width: 50px;
+}
+
+.contentWrap .content.bestProduct section ul.slick-dots li.slick-active button {
+  width: 100%;
+  height: 100%;
+  border: none;
+  background-color: #fff;
+}
+
+.contentWrap .content.bestProduct section article .img img:first-of-type {
   height: 70%;
 }
 
-.contentWrap .content.bestProduct .img img:last-of-type {
+.contentWrap .content.bestProduct section article .img img:last-of-type {
   height: 100%;
   display: none;
 }
 
-.contentWrap .content.bestProduct .img:hover img:first-of-type {
+.contentWrap .content.bestProduct section article .img:hover img:first-of-type {
   display: none;
 }
 
-.contentWrap .content.bestProduct .img:hover img:last-of-type {
+.contentWrap .content.bestProduct section article .img:hover img:last-of-type {
   display: block;
 }
 
@@ -632,6 +710,8 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .contentWrap .content.bestReview section article {

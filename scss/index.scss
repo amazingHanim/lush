@@ -50,7 +50,7 @@ $padding: 3vw;
                 overflow: hidden;
 
                 .frame {
-                    height: 60%;
+                    height: 100%;
 
                     ul.slider {
                         width: 100%;
@@ -58,21 +58,22 @@ $padding: 3vw;
                         position: relative;
                         overflow: hidden;
 
-                        button {
+                        &>button {
                             position: absolute;
-                            top: 50%;
+                            // top: 50%;
+                            top:30%;
                             font-size: 0;
                             color: transparent;
                             cursor: pointer;
                             background-color: transparent;
                             border: none;
-                            width: 3vw;
-                            height: 3vh;
+                            width: 3%;
+                            height: 3%;
                             z-index: 1000;
 
                             &.slick-prev {
                                 z-index: 100;
-                                left: 0;
+                                left: 3%;
 
                                 &::after {
                                     position: absolute;
@@ -85,12 +86,11 @@ $padding: 3vw;
                                     background-image: url(../images/left-arrow.png);
                                     background-size: contain;
                                     background-repeat: no-repeat;
-
                                 }
                             }
 
                             &.slick-next {
-                                right: 0;
+                                right: 3%;
 
                                 &::after {
                                     position: absolute;
@@ -103,6 +103,7 @@ $padding: 3vw;
                                     background-image: url(../images/right-arrow.png);
                                     background-size: contain;
                                     background-repeat: no-repeat;
+                                    background-position: right;
                                 }
                             }
                         }
@@ -112,63 +113,71 @@ $padding: 3vw;
                             height: 100%;
                             overflow: hidden;
 
-                            img {
+                            div.img{
                                 width: 100%;
+                                height: 60vh;
+                                overflow: hidden;
+                                img {
+                                    width: 100%;
+                                }
+                            }
+                            .sliderTxt {
+                                height: 40vh;
+                                display: flex;
+                                justify-content: space-between;
+                                background-color: #fff;
+                                overflow: hidden;
+                                padding: $padding 0;
+            
+                                h2 {
+                                    @include font($lush, 2.625em, #fff);
+                                    line-height: 8.325vh;
+                                    color: $black;
+                                    width: 50%;
+                                    align-self: center;
+                                    padding: 0 $padding;
+                                }
+            
+                                div {
+                                    padding: 0 $padding;
+            
+                                    border-left: solid 1px #000;
+                                    width: 50%;
+                                    height: 100%;
+                                    display: flex;
+                                    flex-direction: column;
+                                    justify-content: space-around;
+                                    align-items: flex-start;
+                                    text-align: start;
+            
+                                    h3,
+                                    p,
+                                    button {
+                                        color: $black;
+                                        line-height: 1.875em;
+            
+                                    }
+            
+            
+                                    p {
+                                        display: block;
+                                        @include font($notoSansKR, 0.875em, #707070);
+                                        font-weight: 300;
+                                    }
+            
+                                    button {
+                                        border-color: $black;
+                                        align-self: flex-end;
+                                    }
+            
+                                }
                             }
                         }
                     }
                 }
 
 
-                header {
-                    height: 40%;
-                    display: flex;
-                    justify-content: space-around;
-                    background-color: #fff;
-                    overflow: hidden;
-                    padding: $padding 0;
-
-                    h2 {
-                        color: $black;
-                        width: 50%;
-                        align-self: center;
-                        padding: 0 $padding;
-                    }
-
-                    div {
-                        padding: 0 $padding;
-
-                        border-left: solid 1px #000;
-                        width: 50%;
-                        height: 100%;
-                        display: flex;
-                        flex-direction: column;
-                        justify-content: space-around;
-                        align-items: flex-start;
-                        text-align: start;
-
-                        h3,
-                        p,
-                        button {
-                            color: $black;
-                            line-height: 1.875em;
-
-                        }
-
-
-                        p {
-                            display: block;
-                            @include font($notoSansKR, 0.875em, #707070);
-                            font-weight: 300;
-                        }
-
-                        button {
-                            border-color: $black;
-                            align-self: flex-end;
-                        }
-
-                    }
-                }
+            
             }
 
             .articleWrap {
@@ -276,36 +285,83 @@ $padding: 3vw;
                 }
             }
         }
-
         &.bestProduct {
-
-            .img {
-
-
-                img {
-                    &:first-of-type {
-                        height: 70%;
-                    }
-
-                    &:last-of-type {
-                        height: 100%;
-                        display: none;
-                    }
-
+            
+            section{
+                flex-wrap: wrap;
+                position: relative;
+                &>button{
+                    display: none !important;
                 }
-
-                &:hover {
-                    img {
-                        &:first-of-type {
-                            display: none;
+                ul.slick-dots{
+                    display: flex !important;
+                    position: absolute;
+                    bottom: -10%;left: 0;
+                    width: 100%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    li{
+                        width: 12px;height: 12px;
+                        margin-right: 8px;
+                        transition: all 0.3s;
+                        &:hover{
+                            button{
+                                border: none;
+                                background-color: #fff;
+                            }
                         }
-
-                        &:last-of-type {
-                            display: block;
+                        button{
+                            transition: all 0.1s;
+                            width: 100%;height: 100%;
+                            border-radius: 6px;
+                        font-size: 0px;
+                        color: transparent;
+                        border: solid 1px #fff;
+                        background-color:transparent;
+                        padding: 0;
+                        margin: 0;
+                        cursor: pointer;
+                        }
+                        &.slick-active{
+                            width: 50px;
+                            button{
+                                width: 100%;height: 100%;
+                                border: none;
+                                background-color: #fff;
+                            }
                         }
                     }
                 }
+                article{
+                    .img {
 
+                        img {
+                            &:first-of-type {
+                                height: 70%;
+                            }
+        
+                            &:last-of-type {
+                                height: 100%;
+                                display: none;
+                            }
+        
+                        }
+        
+                        &:hover {
+                            img {
+                                &:first-of-type {
+                                    display: none;
+                                }
+        
+                                &:last-of-type {
+                                    display: block;
+                                }
+                            }
+                        }
+        
+                    }
+                }
             }
         }
 
@@ -581,6 +637,7 @@ $padding: 3vw;
 
             section {
                 display: flex;
+                flex-wrap: wrap;
 
                 article {
                     width: 25%;
