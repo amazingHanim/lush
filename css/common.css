@@ -108,9 +108,12 @@ body > header .mainMenuList > li .subMenuList {
 }
 
 body > header .mainMenuList > li:hover {
-  /* background-color: #93ED51;
-  background-color: #3C6EBE; */
   border-radius: 1.875em;
+  cursor: pointer;
+}
+
+body > header .mainMenuList > li:hover a {
+  color: #93ED51;
 }
 
 body > header .mainMenuList > li:hover .subMenuList {
@@ -139,6 +142,13 @@ body > header .mainMenuList > li:hover .subMenuList li a {
   font-size: 1em;
   color: #fff;
   font-weight: 300;
+}
+
+body > header .mainMenuList > li:hover .subMenuList li:hover a {
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+  font-size: 1.125em;
+  font-weight: 500;
 }
 
 body > header .join {

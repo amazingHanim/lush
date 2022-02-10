@@ -80,6 +80,7 @@ body {
                     /*폰트 고민*/
                     @include font($notoSans, 1.125em, #fff);
                 }
+
                 .subMenuList {
                     // display: none;
                     height: 0px;
@@ -88,10 +89,14 @@ body {
                 }
 
                 &:hover {
-                    background-color: $green;
-                    background-color: #3C6EBE;
+                    // background-color: $green;
+                    // background-color: #3C6EBE;
                     border-radius: 1.875em;
+                    cursor: pointer;
+                    a{
+                        color:$green;
 
+                    }
                     .subMenuList {
                         display: flex;
                         height: inherit;
@@ -101,6 +106,7 @@ body {
                         border-top: solid 1px #fff;
                         width: 83.3%;
                         margin: 0 auto;
+
                         li {
                             a {
                                 display: block;
@@ -108,7 +114,14 @@ body {
                                 line-height: 3.7vh;
                                 @include font($notoSansKR, 1em, #fff);
                                 font-weight: 300;
+                            }
 
+                            &:hover {
+                                a {
+                                    transition: all 0.2s;
+                                    font-size: 1.125em;
+                                    font-weight: 500;
+                                }
                             }
 
                         }
@@ -141,7 +154,7 @@ body {
         width: 100%;
         // overflow: hidden;
         // padding-left: 240px;
-        padding-left:12.5vw;
+        padding-left: 12.5vw;
 
         div.content:first-of-type {
 
@@ -206,7 +219,8 @@ body {
             display: flex;
             justify-content: space-between;
             background-color: transparent;
-            width: calc(100% - 12.5vw); height: 12vh;
+            width: calc(100% - 12.5vw);
+            height: 12vh;
             padding: 2.5em 1.875em 1.25em 1.875em;
             color: #fff;
             background-color: $black;
