@@ -10,73 +10,6 @@
 
 /*font-family mixins*/
 /*font 믹신을 include할 때 (폰트)*/
-div.content:first-of-type {
-  /*topSubMenu*/
-}
-
-div.content:first-of-type > section {
-  padding-top: 12vh;
-}
-
-div.content:first-of-type > section .subMenuList2 {
-  padding: 0 3.125vw;
-  max-width: 1126px;
-}
-
-div.content:first-of-type > section .subMenuList2 ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: baseline;
-      -ms-flex-align: baseline;
-          align-items: baseline;
-}
-
-div.content:first-of-type > section .subMenuList2 ul:first-child {
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: start;
-}
-
-div.content:first-of-type > section .subMenuList2 ul:first-child li {
-  margin-right: 2.08vw;
-}
-
-div.content:first-of-type > section .subMenuList2 ul:last-child {
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: end;
-}
-
-div.content:first-of-type > section .subMenuList2 ul:last-child li {
-  margin-left: 2.08vw;
-}
-
-div.content:first-of-type > section .subMenuList2 ul li {
-  font-family: "lush";
-  line-height: 11.11vh;
-  color: #fff;
-  font-size: 2.45em;
-  -webkit-transition: color, font-size 0.3s;
-  transition: color, font-size 0.3s;
-}
-
-div.content:first-of-type > section .subMenuList2 ul li:hover {
-  font-size: 3.43em;
-  color: #93ED51;
-  background-image: url(../images/line.png);
-  background-repeat: no-repeat;
-  background-position: left bottom;
-}
-
-div.content:first-of-type > section .subMenuList2 ul li.on {
-  font-size: 3.43em;
-  color: #93ED51;
-  background-image: url(../images/line.png);
-  background-repeat: no-repeat;
-  background-position: left bottom;
-}
-
 div.campaign {
   width: 100%;
   display: -webkit-box;
@@ -86,13 +19,15 @@ div.campaign {
 }
 
 div.campaign .fixed {
+  top: 12vh;
+  position: -webkit-sticky;
+  position: sticky;
+  height: calc(100vh - 12vh);
   width: 40%;
   background-color: #93ED51;
   border-radius: 1.875em;
   padding: 5%;
   text-align: center;
-  position: -webkit-sticky;
-  position: sticky;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -147,6 +82,9 @@ div.campaign .fixed .form input:last-of-type {
 
 div.campaign .fixed .check {
   text-align: left;
+}
+
+div.campaign .fixed .check span {
   font-family: "Noto Sans KR", sans-serif;
   font-size: 0.875em;
   color: #0f0d0d;

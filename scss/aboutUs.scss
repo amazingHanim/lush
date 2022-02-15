@@ -1,67 +1,9 @@
 @import"./_V&M.scss";
 
-div.content:first-of-type {
-    &>section {
-        padding-top: 12vh;
 
-        .subMenuList2 {
-            padding: 0 3.125vw;
-            max-width: 1126px;
-            height: 220px;
-
-
-            ul {
-                display: flex;
-                align-items: baseline;
-
-                &:first-child {
-                    justify-content: start;
-
-                    li {
-                        margin-right: 2.08vw;
-                    }
-                }
-
-                &:last-child {
-                    justify-content: end;
-
-                    li {
-                        margin-left: 2.08vw;
-                    }
-                }
-
-                li {
-                    font-family: $lush;
-                    line-height: 11.11vh;
-                    color: #fff;
-                    font-size: 2.45em;
-                    transition: color, font-size 0.3s;
-
-                    &:hover {
-                        font-size: 3.43em;
-                        color: $green;
-                        background-image: url(../images/line.png);
-                        background-repeat: no-repeat;
-                        background-position: left bottom;
-                    }
-                }
-
-                li.on {
-                    font-size: 3.43em;
-                    color: $green;
-                    background-image: url(../images/line.png);
-                    background-repeat: no-repeat;
-                    background-position: left bottom;
-                }
-            }
-        }
-    }
-}
 
 div.charityPot {
     width: 100%;
-    padding: 18vh 0;
-
     section.charityInfo {
         display: flex;
         justify-content: center;

@@ -282,23 +282,23 @@ body div.topSub > .topSub_B .subMenuList2 ul:last-child li {
 }
 
 body div.topSub > .topSub_B .subMenuList2 ul li {
+  height: 11.11vh;
+}
+
+body div.topSub > .topSub_B .subMenuList2 ul li a {
   font-family: "lush";
   line-height: 11.11vh;
   color: #fff;
   font-size: 2.45em;
-  -webkit-transition: color, font-size 0.3s;
-  transition: color, font-size 0.3s;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
 }
 
-body div.topSub > .topSub_B .subMenuList2 ul li:hover {
-  font-size: 3.43em;
+body div.topSub > .topSub_B .subMenuList2 ul li:hover a {
   color: #93ED51;
-  background-image: url(../images/line.png);
-  background-repeat: no-repeat;
-  background-position: left bottom;
 }
 
-body div.topSub > .topSub_B .subMenuList2 ul li.on {
+body div.topSub > .topSub_B .subMenuList2 ul li.on a {
   font-size: 3.43em;
   color: #93ED51;
   background-image: url(../images/line.png);

@@ -1,75 +1,20 @@
 
 @import "./V&M.scss";
 
-div.content:first-of-type {
-    /*topSubMenu*/
-    &>section {
-        padding-top: 12vh;
-
-        .subMenuList2 {
-            padding: 0 3.125vw;
-            max-width: 1126px;
-
-            ul {
-                display: flex;
-                align-items: baseline;
-
-                &:first-child {
-                    justify-content: start;
-
-                    li {
-                        margin-right: 2.08vw;
-                    }
-                }
-
-                &:last-child {
-                    justify-content: end;
-
-                    li {
-                        margin-left: 2.08vw;
-                    }
-                }
-
-                li {
-                    font-family: $lush;
-                    line-height: 11.11vh;
-                    color: #fff;
-                    font-size: 2.45em;
-                    transition: color, font-size 0.3s;
-
-                    &:hover {
-                        font-size: 3.43em;
-                        color: $green;
-                        background-image: url(../images/line.png);
-                        background-repeat: no-repeat;
-                        background-position: left bottom;
-                    }
-                }
-
-                li.on {
-                    font-size: 3.43em;
-                    color: $green;
-                    background-image: url(../images/line.png);
-                    background-repeat: no-repeat;
-                    background-position: left bottom;
-                }
-            }
-        }
-    }
-}
-
 div.campaign {
     width: 100%;
     display: flex;
     height: auto;
 
     .fixed {
+        top:12vh;
+        position: sticky;
+        height: calc(100vh - 12vh);
         width: 40%;
         background-color: $green;
         border-radius: 1.875em;
         padding: 5%;
         text-align: center;
-        position: sticky;
         display: flex;
         flex-direction:column;
         justify-content: space-around;
@@ -111,9 +56,11 @@ div.campaign {
             text-align: left;
             input {
             }
+            span{
+                @include font($notoSansKR, 0.875em, $black);
 
-            @include font($notoSansKR, 0.875em, $black);
-            opacity: 0.6;
+                opacity: 0.6;
+            }
 
 
         }

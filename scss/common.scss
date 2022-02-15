@@ -93,10 +93,12 @@ body {
                     // background-color: #3C6EBE;
                     border-radius: 1.875em;
                     cursor: pointer;
-                    a{
-                        color:$green;
+
+                    a {
+                        color: $green;
 
                     }
+
                     .subMenuList {
                         display: flex;
                         height: inherit;
@@ -148,8 +150,10 @@ body {
             }
         }
     }
+
     div.topSub {
         padding-left: 12.5vw;
+
         /*location이랑 검색*/
         &>.topSub_T {
             position: fixed;
@@ -198,6 +202,7 @@ body {
                 }
             }
         }
+
         /*위쪽 서브메뉴*/
         &>.topSub_B {
             padding-top: 12vh;
@@ -208,7 +213,6 @@ body {
                 ul {
                     display: flex;
                     align-items: baseline;
-
                     &:first-child {
                         justify-content: start;
 
@@ -226,22 +230,22 @@ body {
                     }
 
                     li {
-                        font-family: $lush;
-                        line-height: 11.11vh;
-                        color: #fff;
-                        font-size: 2.45em;
-                        transition: color, font-size 0.3s;
+                        height: 11.11vh;
 
-                        &:hover {
-                            font-size: 3.43em;
+                        a {
+                            font-family: $lush;
+                            line-height: 11.11vh;
+                            color: #fff;
+                            font-size: 2.45em;
+                            transition:  0.2s;
+                        }
+
+                        &:hover a {
                             color: $green;
-                            background-image: url(../images/line.png);
-                            background-repeat: no-repeat;
-                            background-position: left bottom;
                         }
                     }
 
-                    li.on {
+                    li.on a{
                         font-size: 3.43em;
                         color: $green;
                         background-image: url(../images/line.png);
@@ -255,9 +259,8 @@ body {
 
     div.content {
         width: 100%;
-        // overflow: hidden;
-        // padding-left: 240px;
         padding-left: 12.5vw;
+
 
         &.products {
             section {
