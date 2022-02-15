@@ -10,6 +10,10 @@
 
 /*font-family mixins*/
 /*font 믹신을 include할 때 (폰트)*/
+div.content:first-of-type {
+  /*topSubMenu*/
+}
+
 div.content:first-of-type > section {
   padding-top: 12vh;
 }
@@ -176,12 +180,13 @@ div.campaign .scroll {
 
 div.campaign .scroll .img {
   width: 100%;
+  overflow: hidden;
   /*임시*/
   height: 100vh;
 }
 
 div.campaign .scroll .img img {
-  height: 100%;
+  width: 100%;
 }
 
 div.campaign .scroll .txt {

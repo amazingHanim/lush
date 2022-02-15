@@ -1,4 +1,5 @@
 @charset "UTF-8";
+/*폰트어썸*/
 /*색상변수 시작*/
 /*font 시작*/
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;500;700;900&family=Noto+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap");
@@ -9,69 +10,7 @@
 
 /*font-family mixins*/
 /*font 믹신을 include할 때 (폰트)*/
-div.content:first-of-type > section {
-  padding-top: 12vh;
-}
-
-div.content:first-of-type > section .subMenuList2 {
-  padding: 0 3.125vw;
-}
-
-div.content:first-of-type > section .subMenuList2 ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: baseline;
-      -ms-flex-align: baseline;
-          align-items: baseline;
-}
-
-div.content:first-of-type > section .subMenuList2 ul:first-child {
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: start;
-}
-
-div.content:first-of-type > section .subMenuList2 ul:first-child li {
-  margin-right: 2.08vw;
-}
-
-div.content:first-of-type > section .subMenuList2 ul:last-child {
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: end;
-}
-
-div.content:first-of-type > section .subMenuList2 ul:last-child li {
-  margin-left: 2.08vw;
-}
-
-div.content:first-of-type > section .subMenuList2 ul li {
-  font-family: "lush";
-  line-height: 11.11vh;
-  color: #fff;
-  font-size: 2.45em;
-  -webkit-transition: color,font-size 0.3s;
-  transition: color,font-size 0.3s;
-}
-
-div.content:first-of-type > section .subMenuList2 ul li:hover {
-  font-size: 3.43em;
-  color: #93ED51;
-  background-image: url(../images/line.png);
-  background-repeat: no-repeat;
-  background-position: left bottom;
-}
-
-div.content:first-of-type > section .subMenuList2 ul li.on {
-  font-size: 3.43em;
-  color: #93ED51;
-  background-image: url(../images/line.png);
-  background-repeat: no-repeat;
-  background-position: left bottom;
-}
-
-div.content:first-of-type > section .details > ul {
+div.topSub > .topSub_B .details > ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -82,19 +21,19 @@ div.content:first-of-type > section .details > ul {
   height: 5.8vh;
 }
 
-div.content:first-of-type > section .details > ul li {
+div.topSub > .topSub_B .details > ul li {
   background-color: #fff;
 }
 
-div.content:first-of-type > section .details > ul li:first-child {
+div.topSub > .topSub_B .details > ul li:first-child {
   border-radius: 1.875em 0 0 1.875em;
 }
 
-div.content:first-of-type > section .details > ul li:last-child {
+div.topSub > .topSub_B .details > ul li:last-child {
   border-radius: 0 1.875em 1.875em 0;
 }
 
-div.content:first-of-type > section .details > ul li a {
+div.topSub > .topSub_B .details > ul li a {
   display: block;
   line-height: 5.55vh;
   -webkit-box-sizing: border-box;
@@ -107,22 +46,22 @@ div.content:first-of-type > section .details > ul li a {
   font-size: 1em;
 }
 
-div.content:first-of-type > section .details > ul li a:hover {
+div.topSub > .topSub_B .details > ul li a:hover {
   background-color: #3C6EBE;
   font-weight: bold;
 }
 
-div.content:first-of-type > section .details > ul li.on a {
+div.topSub > .topSub_B .details > ul li.on a {
   background-color: #93ED51;
   color: #0f0d0d;
   font-weight: bold;
 }
 
-div.content:first-of-type > section .filter {
+div.topSub > .topSub_B .filter {
   padding: 0 3.125vw;
 }
 
-div.content:first-of-type > section .filter .filterTitle {
+div.topSub > .topSub_B .filter .filterTitle {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -131,13 +70,13 @@ div.content:first-of-type > section .filter .filterTitle {
           justify-content: space-between;
 }
 
-div.content:first-of-type > section .filter .filterTitle li {
+div.topSub > .topSub_B .filter .filterTitle li {
   color: #fff;
   line-height: 3.75em;
   cursor: pointer;
 }
 
-div.content:first-of-type > section .filter .filterSlider {
+div.topSub > .topSub_B .filter .filterSlider {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -147,45 +86,45 @@ div.content:first-of-type > section .filter .filterSlider {
   padding-bottom: 20px;
 }
 
-div.content:first-of-type > section .filter .filterSlider > li h4 {
+div.topSub > .topSub_B .filter .filterSlider > li h4 {
   font-weight: bold;
   font-size: 1em;
   line-height: 2.45em;
 }
 
-div.content:first-of-type > section .filter .filterSlider > li .filterDetails {
+div.topSub > .topSub_B .filter .filterSlider > li .filterDetails {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-div.content:first-of-type > section .filter .filterSlider > li .filterDetails ul li::before {
+div.topSub > .topSub_B .filter .filterSlider > li .filterDetails ul li::before {
   content: '○ ';
 }
 
-div.content:first-of-type > section .filter .filterSlider > li .filterDetails ul li.on::before {
+div.topSub > .topSub_B .filter .filterSlider > li .filterDetails ul li.on::before {
   content: '● ';
 }
 
-div.content:first-of-type > section .filter .filterSlider > li .filterDetails ul li {
+div.topSub > .topSub_B .filter .filterSlider > li .filterDetails ul li {
   cursor: pointer;
   font-size: 0.875em;
   line-height: 2.45em;
 }
 
-div.content:first-of-type > section .filter .filterSlider > li .filterDetails ul li.on {
+div.topSub > .topSub_B .filter .filterSlider > li .filterDetails ul li.on {
   color: #93ED51;
 }
 
-div.content:first-of-type > section .filter .filterSlider > li .filterDetails ul li:hover {
+div.topSub > .topSub_B .filter .filterSlider > li .filterDetails ul li:hover {
   color: #93ED51;
 }
 
-div.content:first-of-type > section .filter .filterSlider > li .filterDetails ul:not(:last-child) {
+div.topSub > .topSub_B .filter .filterSlider > li .filterDetails ul:not(:last-child) {
   margin-right: 3.125vw;
 }
 
-div.content:first-of-type > section .filter .order {
+div.topSub > .topSub_B .filter .order {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -202,25 +141,25 @@ div.content:first-of-type > section .filter .order {
   padding-bottom: 20px;
 }
 
-div.content:first-of-type > section .filter .order li::before {
+div.topSub > .topSub_B .filter .order li::before {
   content: '○ ';
 }
 
-div.content:first-of-type > section .filter .order li.on::before {
+div.topSub > .topSub_B .filter .order li.on::before {
   content: '● ';
 }
 
-div.content:first-of-type > section .filter .order li {
+div.topSub > .topSub_B .filter .order li {
   cursor: pointer;
   font-size: 0.875em;
   line-height: 2.45em;
 }
 
-div.content:first-of-type > section .filter .order li.on {
+div.topSub > .topSub_B .filter .order li.on {
   color: #93ED51;
 }
 
-div.content:first-of-type > section .filter .order li:hover {
+div.topSub > .topSub_B .filter .order li:hover {
   color: #93ED51;
 }
 

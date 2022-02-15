@@ -2,6 +2,7 @@
 @import "./V&M.scss";
 
 div.content:first-of-type {
+    /*topSubMenu*/
     &>section {
         padding-top: 12vh;
 
@@ -139,10 +140,11 @@ div.campaign {
         overflow: hidden;
         .img{
             width: 100%;
+            overflow: hidden;
             /*임시*/
             height: 100vh;
             img{
-                height: 100%;
+                width: 100%;
             }
         }
         .txt{

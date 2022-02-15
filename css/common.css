@@ -179,78 +179,13 @@ body > header .join li a {
   color: #fff;
 }
 
-body div.content {
-  width: 100%;
+body div.topSub {
   padding-left: 12.5vw;
-}
-
-body div.content div.content:first-of-type {
   /*location이랑 검색*/
+  /*위쪽 서브메뉴*/
 }
 
-body div.content div.content:first-of-type > section {
-  padding-top: 12vh;
-}
-
-body div.content div.content:first-of-type > section .subMenuList2 {
-  padding: 0 3.125vw;
-}
-
-body div.content div.content:first-of-type > section .subMenuList2 ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: baseline;
-      -ms-flex-align: baseline;
-          align-items: baseline;
-}
-
-body div.content div.content:first-of-type > section .subMenuList2 ul:first-child {
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: start;
-}
-
-body div.content div.content:first-of-type > section .subMenuList2 ul:first-child li {
-  margin-right: 2.08vw;
-}
-
-body div.content div.content:first-of-type > section .subMenuList2 ul:last-child {
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: end;
-}
-
-body div.content div.content:first-of-type > section .subMenuList2 ul:last-child li {
-  margin-left: 2.08vw;
-}
-
-body div.content div.content:first-of-type > section .subMenuList2 ul li {
-  font-family: "lush";
-  line-height: 11.11vh;
-  color: #fff;
-  font-size: 2.45em;
-  -webkit-transition: color, font-size 0.3s;
-  transition: color, font-size 0.3s;
-}
-
-body div.content div.content:first-of-type > section .subMenuList2 ul li:hover {
-  font-size: 3.43em;
-  color: #93ED51;
-  background-image: url(../images/line.png);
-  background-repeat: no-repeat;
-  background-position: left bottom;
-}
-
-body div.content div.content:first-of-type > section .subMenuList2 ul li.on {
-  font-size: 3.43em;
-  color: #93ED51;
-  background-image: url(../images/line.png);
-  background-repeat: no-repeat;
-  background-position: left bottom;
-}
-
-body div.content > header {
+body div.topSub > .topSub_T {
   position: fixed;
   z-index: 9999;
   display: -webkit-box;
@@ -268,33 +203,33 @@ body div.content > header {
   vertical-align: middle;
 }
 
-body div.content > header .location {
+body div.topSub > .topSub_T .location {
   font-size: 0.875em;
   line-height: 5.55vh;
 }
 
-body div.content > header .cHeaderRight {
+body div.topSub > .topSub_T .cHeaderRight {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-body div.content > header .cHeaderRight .icons {
+body div.topSub > .topSub_T .cHeaderRight .icons {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-body div.content > header .cHeaderRight .icons li {
+body div.topSub > .topSub_T .cHeaderRight .icons li {
   margin-right: 10px;
 }
 
-body div.content > header .cHeaderRight .icons li img {
+body div.topSub > .topSub_T .cHeaderRight .icons li img {
   width: 2.5em;
   height: 2.5em;
 }
 
-body div.content > header .cHeaderRight .search a {
+body div.topSub > .topSub_T .cHeaderRight .search a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -307,6 +242,73 @@ body div.content > header .cHeaderRight .search a {
   width: 18.75em;
   height: 100%;
   border-bottom: 1px solid #fff;
+}
+
+body div.topSub > .topSub_B {
+  padding-top: 12vh;
+}
+
+body div.topSub > .topSub_B .subMenuList2 {
+  padding: 0 3.125vw;
+}
+
+body div.topSub > .topSub_B .subMenuList2 ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+}
+
+body div.topSub > .topSub_B .subMenuList2 ul:first-child {
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+}
+
+body div.topSub > .topSub_B .subMenuList2 ul:first-child li {
+  margin-right: 2.08vw;
+}
+
+body div.topSub > .topSub_B .subMenuList2 ul:last-child {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+}
+
+body div.topSub > .topSub_B .subMenuList2 ul:last-child li {
+  margin-left: 2.08vw;
+}
+
+body div.topSub > .topSub_B .subMenuList2 ul li {
+  font-family: "lush";
+  line-height: 11.11vh;
+  color: #fff;
+  font-size: 2.45em;
+  -webkit-transition: color, font-size 0.3s;
+  transition: color, font-size 0.3s;
+}
+
+body div.topSub > .topSub_B .subMenuList2 ul li:hover {
+  font-size: 3.43em;
+  color: #93ED51;
+  background-image: url(../images/line.png);
+  background-repeat: no-repeat;
+  background-position: left bottom;
+}
+
+body div.topSub > .topSub_B .subMenuList2 ul li.on {
+  font-size: 3.43em;
+  color: #93ED51;
+  background-image: url(../images/line.png);
+  background-repeat: no-repeat;
+  background-position: left bottom;
+}
+
+body div.content {
+  width: 100%;
+  padding-left: 12.5vw;
 }
 
 body div.content.products section {

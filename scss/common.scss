@@ -148,72 +148,10 @@ body {
             }
         }
     }
-
-
-    div.content {
-        width: 100%;
-        // overflow: hidden;
-        // padding-left: 240px;
+    div.topSub {
         padding-left: 12.5vw;
-
-        div.content:first-of-type {
-
-            /*location이랑 검색*/
-            &>section {
-                padding-top: 12vh;
-
-                .subMenuList2 {
-                    padding: 0 3.125vw;
-
-                    ul {
-                        display: flex;
-                        align-items: baseline;
-
-                        &:first-child {
-                            justify-content: start;
-
-                            li {
-                                margin-right: 2.08vw;
-                            }
-                        }
-
-                        &:last-child {
-                            justify-content: end;
-
-                            li {
-                                margin-left: 2.08vw;
-                            }
-                        }
-
-                        li {
-                            font-family: $lush;
-                            line-height: 11.11vh;
-                            color: #fff;
-                            font-size: 2.45em;
-                            transition: color, font-size 0.3s;
-
-                            &:hover {
-                                font-size: 3.43em;
-                                color: $green;
-                                background-image: url(../images/line.png);
-                                background-repeat: no-repeat;
-                                background-position: left bottom;
-                            }
-                        }
-
-                        li.on {
-                            font-size: 3.43em;
-                            color: $green;
-                            background-image: url(../images/line.png);
-                            background-repeat: no-repeat;
-                            background-position: left bottom;
-                        }
-                    }
-                }
-            }
-        }
-
-        &>header {
+        /*location이랑 검색*/
+        &>.topSub_T {
             position: fixed;
             z-index: 9999;
             display: flex;
@@ -260,6 +198,66 @@ body {
                 }
             }
         }
+        /*위쪽 서브메뉴*/
+        &>.topSub_B {
+            padding-top: 12vh;
+
+            .subMenuList2 {
+                padding: 0 3.125vw;
+
+                ul {
+                    display: flex;
+                    align-items: baseline;
+
+                    &:first-child {
+                        justify-content: start;
+
+                        li {
+                            margin-right: 2.08vw;
+                        }
+                    }
+
+                    &:last-child {
+                        justify-content: end;
+
+                        li {
+                            margin-left: 2.08vw;
+                        }
+                    }
+
+                    li {
+                        font-family: $lush;
+                        line-height: 11.11vh;
+                        color: #fff;
+                        font-size: 2.45em;
+                        transition: color, font-size 0.3s;
+
+                        &:hover {
+                            font-size: 3.43em;
+                            color: $green;
+                            background-image: url(../images/line.png);
+                            background-repeat: no-repeat;
+                            background-position: left bottom;
+                        }
+                    }
+
+                    li.on {
+                        font-size: 3.43em;
+                        color: $green;
+                        background-image: url(../images/line.png);
+                        background-repeat: no-repeat;
+                        background-position: left bottom;
+                    }
+                }
+            }
+        }
+    }
+
+    div.content {
+        width: 100%;
+        // overflow: hidden;
+        // padding-left: 240px;
+        padding-left: 12.5vw;
 
         &.products {
             section {

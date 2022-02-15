@@ -1,66 +1,6 @@
-/*색상변수 시작*/
-$black : #0f0d0d;
-$green : #93ED51;
-/*font 시작*/
-@font-face{
-    src: url(../font/Lush.ttf);
-    font-family: "lush";
-}
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;500;700;900&family=Noto+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
-/*font-family mixins*/
-$notoSans :'Noto Sans', sans-serif;
-$notoSansKR :'Noto Sans KR', sans-serif;
-$lush:"lush";
-/*font 믹신을 include할 때 (폰트)*/
-@mixin font($family,$size,$color){
-    font-family: $family;
-    font-size: $size;
-    color: $color;
-}
-
-div.content:first-of-type{
-    & > section{
-            padding-top: 12vh;
-        .subMenuList2{
-            padding: 0 3.125vw;
-            ul{
-                display: flex;
-                align-items: baseline;
-                &:first-child{
-                    justify-content: start;
-                    li{
-                        margin-right: 2.08vw;
-                    }
-                }
-                &:last-child{
-                    justify-content: end;
-                    li{
-                        margin-left: 2.08vw;
-                    }
-                }
-                li{
-                    font-family: $lush;
-                    line-height: 11.11vh;
-                    color: #fff;
-                    font-size: 2.45em;
-                    transition: color,font-size 0.3s;
-                    &:hover{
-                        font-size: 3.43em;
-                        color: $green;
-                        background-image: url(../images/line.png);
-                        background-repeat: no-repeat;
-                        background-position: left bottom;
-                    }
-                }
-                li.on{
-                    font-size: 3.43em;
-                    color: $green;
-                    background-image: url(../images/line.png);
-                    background-repeat: no-repeat;
-                    background-position: left bottom;
-                }
-            }
-        }
+@import "./V&M.scss";
+div.topSub{
+    & > .topSub_B{
         .details{
             &>ul{
                 display: flex;
