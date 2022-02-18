@@ -188,6 +188,7 @@ $padding: 3vw;
             .articleWrap {
                 width: 40%;
                 height: 100%;
+
                 display: flex;
                 flex-direction: column;
 
@@ -200,20 +201,21 @@ $padding: 3vw;
                     height: 100%;
                     display: flex;
                     flex-wrap: wrap;
+                    padding: 2vh $padding;
+
 
 
                     .txt {
                         width: 80%;
-                        height: 20%;
+                        height: 30%;
                         display: flex;
                         flex-direction: column;
-                        justify-content: space-between;
-                        padding: 2vh $padding;
-                        border-right: solid 1px #fff;
+                        justify-content: space-around;
+                        padding: 2vh;
 
 
                         h4 {
-                            @include font($notoSans, 1.313em, #fff);
+                            @include font($notoSans, 1em, #fff);
                         }
 
                         p {
@@ -224,11 +226,7 @@ $padding: 3vw;
 
                     .btn {
                         width: 20%;
-                        height: 20%;
-                        transition: all 1s;
-
-                        overflow: hidden;
-                        position: relative;
+                        // height: 20%;
 
                         button {
                             width: 100%;
@@ -236,9 +234,6 @@ $padding: 3vw;
                             border: none;
                             background-color: transparent;
                             cursor: pointer;
-                            display: flex;
-                            justify-content: center;
-                            align-items: center;
 
                             span {
                                 color: #fff;
@@ -248,7 +243,7 @@ $padding: 3vw;
 
                     .img {
                         width: 100%;
-                        height: 80%;
+                        height: 70%;
                         overflow: hidden;
                         border-radius: 1.875em;
 
@@ -629,8 +624,8 @@ $padding: 3vw;
                 flex-wrap: wrap;
 
                 button {
-                    display: none!important;
-            
+                    display: none !important;
+
                 }
 
                 article {
@@ -714,6 +709,205 @@ $padding: 3vw;
                         top: 0;
                         left: 0;
                         display: block;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:1024px) {
+    body {
+        header {
+            display: none;
+        }
+
+        .contentWrap {
+            .content.main {
+                padding-left: 0;
+                flex-direction: column;
+                height: auto !important;
+                main {
+                    width: 100%;
+                    .slick-list,.slick-track,{
+                        height: 100% !important;
+                    }
+                    li {
+                        width: 100%;
+                        height: inherit;
+                        display: flex;
+                        flex-direction: column;
+
+
+                        .sliderTxt {
+                            position: absolute;
+                            background-color: transparent !important;
+                            height: 100% !important;
+                            flex-direction: column;
+                            justify-content: space-around!important;
+                            padding: $padding!important;
+
+
+                            h2 {
+                                align-self: flex-start !important;
+                            }
+                            p{
+                                color:#fff !important;
+                            }
+
+                            div {
+                                width: auto;
+                                height: auto !important;
+
+                            }
+                        }
+                    }
+                }
+
+                .articleWrap {
+                    width: 100%;
+                    display: flex;
+                    flex-direction: row;
+
+                    article {
+                        width: 50%;
+                    }
+                }
+            }
+            &.lips {
+                display: flex;
+                flex-direction: column !important;
+                min-height: 50vh;
+                // height: 37.500em;
+    
+                header {
+                    height: 50vh;
+                    width: 50%;
+                    border-radius: 1.875em;
+                    position: relative;
+                    overflow: hidden;
+                    display: flex;
+    
+                    &::before {
+                        z-index: -10;
+                        opacity: 40%;
+                        content: "";
+                        display: block;
+                        width: 100%;
+                        height: 100%;
+                        top: 0;
+                        left: 0;
+                        position: absolute;
+                        background-image: url(../images/lips.jpeg);
+                        background-repeat: no-repeat;
+                        background-position: center;
+                    }
+    
+                    padding: $padding;
+    
+                    .texts {
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: flex-end;
+                        text-align: start;
+    
+                        h2 {
+                            color: $green;
+                        }
+    
+                        h3 {
+                            color: $green;
+                            font-weight: 300;
+                        }
+                    }
+    
+                    button {
+                        align-self: flex-end;
+                    }
+                }
+    
+                section {
+                    height: 50vh;
+                    width: 50%;
+                    border-radius: 1.875em;
+                    padding: $padding 0;
+                    margin-top: 0;
+                    display: flex;
+                    justify-content: flex-end;
+                    align-items: center;
+                    overflow: hidden;
+    
+    
+                    .tab_content_wrap {
+                        width: 50%;
+                        height: 100%;
+                        position: relative;
+    
+                        ul.lip_tabContent {
+                            width: 100%;
+                            height: 100%;
+                            position: absolute;
+                            top: 0;
+                            left: 0;
+    
+                            li {
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                                height: 100%;
+                                width: 100%;
+    
+                                img {
+                                    width: 70%;
+    
+                                }
+    
+                                &.on {
+                                    display: flex;
+                                    justify-content: center;
+                                    align-items: center;
+                                    height: 100%;
+                                }
+    
+    
+                            }
+                        }
+                    }
+    
+                    ul.lip_tabMenu {
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        justify-content: space-between;
+                        width: 50%;
+                        border-left: solid 1px #fff;
+    
+                        li {
+                            a {
+                                line-height: 40px;
+                                @include font($notoSans, 0.875em, rgb(200, 200, 200));
+                                font-weight: 300;
+                                text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.3);
+                                transition: all 0.3s ease-out;
+                                display: block;
+                                height: 100%;
+                                width: 100%;
+    
+                                &:hover {
+                                    color: $green;
+                                }
+                            }
+    
+                            &.on {
+    
+                                a {
+                                    line-height: 140px;
+                                    color: $green;
+                                    font-size: 18px;
+                                    letter-spacing: 1px;
+                                }
+                            }
+                        }
                     }
                 }
             }

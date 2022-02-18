@@ -5,10 +5,8 @@
 
 body {
     background-color: $black;
-    // display: flex;
 
     &>header {
-        // width: 240px;
         width: 12.5vw;
         height: 100%;
         background-color: #0f0d0d;
@@ -354,4 +352,9 @@ body {
         }
     }
 
+}
+@media screen and (max-width:1024px){
+    div.content{
+        padding-left: 0 !important;
+    }
 }
