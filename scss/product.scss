@@ -6,15 +6,14 @@ div.topSub{
                 display: flex;
                 align-items: center;
                 margin: 3.7vh 3.125vw 0 ;
-                height: 5.8vh;
+                background-color: #fff;
+                border-radius: 1.875em;
+                justify-content:inherit;
+                flex-wrap: wrap;
+                height: auto;
+                width: auto;
+
                 li{
-                    background-color: #fff;
-                    &:first-child{
-                        border-radius: 1.875em 0 0 1.875em;
-                    }
-                    &:last-child{
-                        border-radius: 0 1.875em 1.875em 0;
-                    }
                     a{
                         display: block;
                         line-height: 5.55vh;
@@ -116,6 +115,11 @@ div.topSub{
     }
 }
 .products{
+    section{
+        flex-wrap: wrap;
+
+        article{}
+    }
     i.fa-heart{
         color:$green;
     }
@@ -136,6 +140,48 @@ div.topSub{
                 background-color: #3C6EBE;
                 color: #fff;
                 transition: all ease-in 0.2s;
+            }
+        }
+    }
+}
+@media screen and (max-width:1024px){
+    body .products{
+        section{
+            flex-wrap: wrap;
+    
+            article{
+                width: calc(100% / 3)!important;
+            }
+        }
+        
+        div.more{
+            display: flex;
+            justify-content: center;
+            margin: 3.75em 0;
+            button{
+                background-color: $green;
+                padding: 0 4.16vw;
+                line-height: 2.5em;
+                color: $black;
+                font-size: 1.125em;
+                border-radius: 1.875em;
+                border: none;
+                cursor: pointer;
+                &:hover{
+                    background-color: #3C6EBE;
+                    color: #fff;
+                    transition: all ease-in 0.2s;
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width:768px){
+    body .products{
+        section{
+    
+            article{
+                width: calc(100% / 2)!important;
             }
         }
     }

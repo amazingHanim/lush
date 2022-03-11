@@ -1,4 +1,3 @@
-
 @import "./V&M.scss";
 
 div.campaign {
@@ -7,7 +6,7 @@ div.campaign {
     height: auto;
 
     .fixed {
-        top:12vh;
+        top: 12vh;
         position: sticky;
         height: calc(100vh - 12vh);
         width: 40%;
@@ -16,13 +15,13 @@ div.campaign {
         padding: 5%;
         text-align: center;
         display: flex;
-        flex-direction:column;
+        flex-direction: column;
         justify-content: space-around;
 
         h2 {
             @include font($notoSansKR, 1.5em, $black);
             line-height: 1.875em;
-            
+
         }
 
         h3 {
@@ -54,9 +53,10 @@ div.campaign {
 
         .check {
             text-align: left;
-            input {
-            }
-            span{
+
+            input {}
+
+            span {
                 @include font($notoSansKR, 0.875em, $black);
 
                 opacity: 0.6;
@@ -74,7 +74,8 @@ div.campaign {
             @include font($notoSansKR, 0.875em, #707070);
             cursor: pointer;
             transition: all 0.2s;
-            &:hover{
+
+            &:hover {
                 color: #fff;
             }
         }
@@ -85,28 +86,71 @@ div.campaign {
         background-color: #ffffff;
         border-radius: 1.875em;
         overflow: hidden;
-        .img{
+
+        .img {
             width: 100%;
             overflow: hidden;
             /*임시*/
             height: 100vh;
-            img{
+
+            img {
                 width: 100%;
             }
         }
-        .txt{
+
+        .txt {
             padding: 12%;
-            
-            p{
+
+            p {
                 @include font($notoSansKR, 0.875em, #707070);
                 line-height: 1.875em;
                 font-weight: 300;
-                margin-top:5%;
-                &.stress{
+                margin-top: 5%;
+
+                &.stress {
                     font-weight: 400;
                 }
             }
+
+        }
+    }
+}
+@media screen and (max-width:1024px){
+    div.campaign{
+        div.fixed{
+            width: 50%;
             
+        }
+        div.scroll{
+            width: 50%;
+            .img{
+                height: auto;
+            }
+        }
+    }
+}
+@media screen and (max-width:768px) {
+    div.campaign {
+        width: 100%;
+        display: block;
+        height: auto;
+
+        div.fixed {
+            position: inherit;
+            width: 100%;
+        }
+
+        div.scroll {
+            width: 100%;
+
+            .img {
+                width: 100%;
+                overflow: hidden;
+
+                img {
+                    width: 100%;
+                }
+            }
         }
     }
 }

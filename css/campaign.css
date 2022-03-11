@@ -143,3 +143,37 @@ div.campaign .scroll .txt p {
 div.campaign .scroll .txt p.stress {
   font-weight: 400;
 }
+
+@media screen and (max-width: 1024px) {
+  div.campaign div.fixed {
+    width: 50%;
+  }
+  div.campaign div.scroll {
+    width: 50%;
+  }
+  div.campaign div.scroll .img {
+    height: auto;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  div.campaign {
+    width: 100%;
+    display: block;
+    height: auto;
+  }
+  div.campaign div.fixed {
+    position: inherit;
+    width: 100%;
+  }
+  div.campaign div.scroll {
+    width: 100%;
+  }
+  div.campaign div.scroll .img {
+    width: 100%;
+    overflow: hidden;
+  }
+  div.campaign div.scroll .img img {
+    width: 100%;
+  }
+}

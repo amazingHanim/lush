@@ -108,7 +108,6 @@
   right: 0;
   width: calc((100% - 12.5vw) / 10 * 4);
   height: clac(88vh);
-  min-width: 463px;
 }
 
 .pMain section .disc .pTitle {
@@ -226,14 +225,15 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
   margin-top: 0.625em;
 }
 
 .pMain section .disc .pOptions .amounts ul li {
+  margin-right: 2%;
   background-color: #fff;
-  border-top: 1px solid #0f0d0d;
-  border-bottom: 1px solid #0f0d0d;
-  padding-right: 0.625em;
   cursor: pointer;
 }
 
@@ -283,13 +283,13 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  width: 40%;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 15em;
   border-radius: 1.875em;
   padding: 0.3125em;
   border: 1px solid #0f0d0d;
@@ -534,7 +534,7 @@
 }
 
 .pDisc section > article .discript {
-  padding: 7.5em 0;
+  padding: 7.5em 3.75em 3.75em;
   text-align: center;
 }
 
@@ -564,8 +564,9 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .pDisc section > article .ingredients .txts h5 {
@@ -702,7 +703,6 @@
 }
 
 .pDisc section > article .how .txts {
-  width: 26.25em;
   margin-right: 3.75em;
 }
 
@@ -756,10 +756,10 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  padding: 0 0.625em;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 3.75em;
 }
 
 .pDisc section:nth-child(2) > header h4 {
@@ -779,11 +779,17 @@
   position: absolute;
   width: 4.6875vw;
   height: 6vh;
-  top: -8vh;
+  top: -10vh;
   background-color: transparent;
   font-size: 0;
   padding: 0;
-  border: 1px solid #0f0d0d;
+  margin: 3%;
+  border: none;
+  cursor: pointer;
+}
+
+.pDisc section:nth-child(2) .recommends > button:first-of-type {
+  left: 0;
 }
 
 .pDisc section:nth-child(2) .recommends > button:hover:after {
@@ -798,7 +804,7 @@
 .pDisc section:nth-child(2) .recommends > button.slick-prev::after {
   content: '';
   display: block;
-  border: 1px solid #fff;
+  border: none;
   width: 100%;
   height: 100%;
   border-radius: 30px 0 0 30px;
@@ -817,7 +823,7 @@
 .pDisc section:nth-child(2) .recommends > button.slick-next::after {
   content: '';
   display: block;
-  border: 1px solid #fff;
+  border: none;
   width: 100%;
   height: 100%;
   border-radius: 0 30px 30px 0;
@@ -1003,6 +1009,7 @@
 .pDisc section:nth-child(3) article .review .info {
   width: 10em;
   margin-right: 3.75em;
+  opacity: 0.6;
 }
 
 .pDisc section:nth-child(3) article .review .info span {
@@ -1158,4 +1165,221 @@
   color: #0f0d0d;
   font-size: 0.875em;
   line-height: 1.25em;
+}
+
+@media screen and (max-width: 1024px) {
+  .pMain section {
+    -webkit-box-orient: vertical !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-direction: column !important;
+            flex-direction: column !important;
+  }
+  .pMain section .imageWrap {
+    width: 100%;
+    height: calc(100vh - 12vh);
+    overflow: hidden;
+    position: relative;
+  }
+  .pMain section .imageWrap .images {
+    position: absolute;
+    top: calc((100vh - 12vh) * -5);
+    width: 100%;
+    height: calc((100vh - 12vh) * 6);
+  }
+  .pMain section .imageWrap .images .image {
+    width: 100%;
+    height: calc(100vh - 12vh);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .pMain section .imageWrap .images .image.i1 {
+    background-image: url(../images/snowfairy.main1.png);
+  }
+  .pMain section .imageWrap .images .image.i2 {
+    background-image: url(../images/snowfairy.main2.png);
+  }
+  .pMain section .imageWrap .images .image.i3 {
+    background-image: url(../images/snowfairy.main3.png);
+  }
+  .pMain section .imageWrap .images .image.i4 {
+    background-image: url(../images/snowfairy.main4.png);
+  }
+  .pMain section .imageWrap .images .image.i5 {
+    background-image: url(../images/snowfairy.main5.png);
+  }
+  .pMain section .imageWrap .images .image.i6 {
+    background-image: url(../images/snowfairy.main6.png);
+  }
+  .pMain section .imageWrap ul.imgBtns {
+    position: absolute;
+    top: 1px;
+    right: 1px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .pMain section .imageWrap ul.imgBtns li {
+    width: 6.25vw;
+    min-width: 90px;
+  }
+  .pMain section .imageWrap ul.imgBtns li.on img {
+    border: 2px solid #93ED51;
+    opacity: 1;
+  }
+  .pMain section .imageWrap ul.imgBtns li img {
+    width: 100%;
+    height: 100%;
+    border-radius: 1.875em;
+    cursor: pointer;
+    opacity: 0.8;
+    -webkit-transition: all 0.1s;
+    transition: all 0.1s;
+  }
+  .pMain section .imageWrap ul.imgBtns li img:hover {
+    opacity: 1;
+    border: 2px solid #93ED51;
+  }
+  .pMain section .disc {
+    position: inherit;
+    width: 100%;
+  }
+  .pDisc {
+    width: 100%;
+  }
+  .pDisc section {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .pDisc section > article {
+    background-color: #fff;
+  }
+  .pDisc section > article .title {
+    text-align: center;
+    padding: 3.2em 0;
+  }
+  .pDisc section > article .title span {
+    color: #0f0d0d;
+    line-height: 1.875em;
+  }
+  .pDisc section > article .title h4 {
+    font-family: "lush";
+    font-size: 2em;
+    color: #fff;
+    color: #0f0d0d;
+    line-height: 2.4em;
+  }
+  .pDisc section > article .title h5 {
+    color: #0f0d0d;
+    font-size: 1.125em;
+    line-height: 1.875em;
+    font-weight: bold;
+  }
+  .pDisc section > article .pReview {
+    position: inherit;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .pDisc section > article .pReview .img img {
+    width: 100%;
+  }
+  .pDisc section > article .pReview .txt {
+    position: inherit;
+    -webkit-transform: inherit;
+            transform: inherit;
+    width: 100%;
+  }
+  .pDisc section > article .ingredients {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .pDisc section > article .how {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .pDisc section > article .how .txts {
+    margin-right: 0;
+  }
+  .pDisc section > article .how .image {
+    width: 11.25em;
+    height: 18.75em;
+  }
+  .pDisc section:nth-child(3) article header {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 30px 0;
+    height: inherit;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .pDisc section:nth-child(3) article header button {
+    margin-top: 3%;
+    -ms-flex-item-align: end;
+        align-self: flex-end;
+  }
+  .pDisc section:nth-child(3) article .review {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .pDisc section:nth-child(3) article .review .info {
+    width: 10em;
+    margin-right: 3.75em;
+  }
+  .pDisc section:nth-child(3) article .review .info span {
+    display: block;
+    padding-bottom: 1.25em;
+  }
+  .pDisc section:nth-child(3) article .review .info span i {
+    font-size: 0.875em;
+  }
+  .pDisc section:nth-child(3) article .review .info p {
+    font-size: 0.875em;
+    line-height: 1.25em;
+    padding-bottom: 0.625em;
+  }
+  .pDisc section:nth-child(3) article .review .txts {
+    margin-top: 10%;
+  }
+  .pDisc section:nth-child(3) article .review .txts ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .pDisc section:nth-child(3) article .review .txts ul li {
+    margin-top: 3%;
+  }
+  .pDisc section:nth-child(3) article .review .txts ul li:nth-child(1) {
+    display: block;
+    width: 100%;
+  }
 }
