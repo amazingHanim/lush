@@ -646,17 +646,30 @@
   color: #fff;
 }
 
-.contentWrap .content.about ul.tabContent > li.on .img {
+.contentWrap .content.about ul.tabContent > li.on .imgBox {
   content: "";
   display: block;
   position: absolute;
-  top: 50%;
-  left: 50%;
-  margin-left: -20vw;
-  margin-top: -22vh;
-  width: 40vw;
-  height: 44vh;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   z-index: -10;
+}
+
+.contentWrap .content.about ul.tabContent > li.on .imgBox .img {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  height: inherit;
+  width: 40%;
+  height: 60%;
   background-image: url(../images/about_1.jpeg);
   background-size: 100%;
   background-repeat: no-repeat;
@@ -781,7 +794,8 @@
   body .contentWrap .content.main main {
     width: 100%;
   }
-  body .contentWrap .content.main main .slick-list, body .contentWrap .content.main main .slick-track {
+  body .contentWrap .content.main main .slick-list,
+  body .contentWrap .content.main main .slick-track {
     height: 100% !important;
   }
   body .contentWrap .content.main main li {
@@ -831,159 +845,45 @@
   body .contentWrap .content.main .articleWrap article {
     width: 50%;
   }
-  body .contentWrap.lips {
+  body .contentWrap .content.about ul.tabMenu {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical !important;
-    -webkit-box-direction: normal !important;
-        -ms-flex-direction: column !important;
-            flex-direction: column !important;
+  }
+  body .contentWrap .content.about ul.tabMenu li:not(.on) {
+    display: none;
+  }
+  body .contentWrap .content.about ul.tabMenu li.on {
+    width: 100%;
+    border-radius: 1.875em 1.875em 0 0;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  body .contentWrap .content.lips {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     min-height: 50vh;
   }
-  body .contentWrap.lips header {
-    height: 50vh;
-    width: 50%;
-    border-radius: 1.875em;
-    position: relative;
-    overflow: hidden;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    padding: 3vw;
-  }
-  body .contentWrap.lips header::before {
-    z-index: -10;
-    opacity: 40%;
-    content: "";
-    display: block;
+  body .contentWrap .content.lips header {
     width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    position: absolute;
-    background-image: url(../images/lips.jpeg);
-    background-repeat: no-repeat;
-    background-position: center;
-  }
-  body .contentWrap.lips header .texts {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    -webkit-box-pack: end;
-        -ms-flex-pack: end;
-            justify-content: flex-end;
-    text-align: start;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
   }
-  body .contentWrap.lips header .texts h2 {
-    color: #93ED51;
+  body .contentWrap .content.lips header button {
+    -ms-flex-item-align: start;
+        align-self: flex-start;
   }
-  body .contentWrap.lips header .texts h3 {
-    color: #93ED51;
-    font-weight: 300;
-  }
-  body .contentWrap.lips header button {
-    -ms-flex-item-align: end;
-        align-self: flex-end;
-  }
-  body .contentWrap.lips section {
-    height: 50vh;
-    width: 50%;
-    border-radius: 1.875em;
-    padding: 3vw 0;
-    margin-top: 0;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: end;
-        -ms-flex-pack: end;
-            justify-content: flex-end;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    overflow: hidden;
-  }
-  body .contentWrap.lips section .tab_content_wrap {
-    width: 50%;
-    height: 100%;
-    position: relative;
-  }
-  body .contentWrap.lips section .tab_content_wrap ul.lip_tabContent {
+  body .contentWrap .content.lips section {
     width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-  }
-  body .contentWrap.lips section .tab_content_wrap ul.lip_tabContent li {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    height: 100%;
-    width: 100%;
-  }
-  body .contentWrap.lips section .tab_content_wrap ul.lip_tabContent li img {
-    width: 70%;
-  }
-  body .contentWrap.lips section .tab_content_wrap ul.lip_tabContent li.on {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    height: 100%;
-  }
-  body .contentWrap.lips section ul.lip_tabMenu {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    width: 50%;
-    border-left: solid 1px #fff;
-  }
-  body .contentWrap.lips section ul.lip_tabMenu li a {
-    line-height: 40px;
-    font-family: "Noto Sans", sans-serif;
-    font-size: 0.875em;
-    color: #c8c8c8;
-    font-weight: 300;
-    text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.3);
-    -webkit-transition: all 0.3s ease-out;
-    transition: all 0.3s ease-out;
-    display: block;
-    height: 100%;
-    width: 100%;
-  }
-  body .contentWrap.lips section ul.lip_tabMenu li a:hover {
-    color: #93ED51;
-  }
-  body .contentWrap.lips section ul.lip_tabMenu li.on a {
-    line-height: 140px;
-    color: #93ED51;
-    font-size: 18px;
-    letter-spacing: 1px;
   }
 }

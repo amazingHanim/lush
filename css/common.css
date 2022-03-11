@@ -419,7 +419,45 @@ body div.content .moreBtn:hover {
 }
 
 @media screen and (max-width: 1024px) {
-  div.content {
+  body header {
+    display: none;
+  }
+  body div.content, body .topSub {
     padding-left: 0 !important;
+  }
+  body div.content .topSub_T, body .topSub .topSub_T {
+    width: 100% !important;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .topSub_B > .subMenuList2 ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+  }
+  .topSub_B > .subMenuList2 ul li {
+    height: inherit !important;
+  }
+  .topSub_B > .subMenuList2 ul li a {
+    font-family: "lush";
+    line-height: 8vh !important;
+    color: #fff;
+    font-size: 1.750em !important;
+    -webkit-transition: 0.2s;
+    transition: 0.2s;
+  }
+  .topSub_B > .subMenuList2 ul li:hover a {
+    color: #93ED51;
+  }
+  .topSub_B > .subMenuList2 ul li.on a {
+    font-size: 3.43em;
+    color: #93ED51;
+    background-image: url(../images/line.png);
+    background-repeat: no-repeat;
+    background-position: left bottom;
   }
 }

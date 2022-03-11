@@ -592,20 +592,29 @@ $padding: 3vw;
                             }
                         }
 
-                        .img {
+                        .imgBox {
                             content: "";
                             display: block;
                             position: absolute;
-                            top: 50%;
-                            left: 50%;
-                            margin-left: -20vw;
-                            margin-top: -22vh;
-                            width: 40vw;
-                            height: 44vh;
+                            top: 0;
+                            left: 0;
+                            width: 100%;
+                            height: 100%;
+                            display: flex;
+                            justify-content: center;
                             z-index: -10;
-                            background-image: url(../images/about_1.jpeg);
-                            background-size: 100%;
-                            background-repeat: no-repeat;
+
+                            .img {
+                                align-self: center;
+                                height: inherit;
+                                width: 40%;
+                                height: 60%;
+                                background-image: url(../images/about_1.jpeg);
+                                background-size: 100%;
+                                background-repeat: no-repeat;
+
+                            }
+
                         }
                     }
                 }
@@ -727,11 +736,16 @@ $padding: 3vw;
                 padding-left: 0;
                 flex-direction: column;
                 height: auto !important;
+
                 main {
                     width: 100%;
-                    .slick-list,.slick-track,{
+
+                    .slick-list,
+                    .slick-track,
+                        {
                         height: 100% !important;
                     }
+
                     li {
                         width: 100%;
                         height: inherit;
@@ -744,15 +758,16 @@ $padding: 3vw;
                             background-color: transparent !important;
                             height: 100% !important;
                             flex-direction: column;
-                            justify-content: space-around!important;
-                            padding: $padding!important;
+                            justify-content: space-around !important;
+                            padding: $padding !important;
 
 
                             h2 {
                                 align-self: flex-start !important;
                             }
-                            p{
-                                color:#fff !important;
+
+                            p {
+                                color: #fff !important;
                             }
 
                             div {
@@ -774,143 +789,43 @@ $padding: 3vw;
                     }
                 }
             }
-            &.lips {
-                display: flex;
-                flex-direction: column !important;
-                min-height: 50vh;
-                // height: 37.500em;
-    
-                header {
-                    height: 50vh;
-                    width: 50%;
-                    border-radius: 1.875em;
-                    position: relative;
-                    overflow: hidden;
+            .content.about{
+                ul.tabMenu {
+
                     display: flex;
     
-                    &::before {
-                        z-index: -10;
-                        opacity: 40%;
-                        content: "";
-                        display: block;
+                    li:not(.on){
+                        display: none;
+                    }
+                    li.on{
                         width: 100%;
-                        height: 100%;
-                        top: 0;
-                        left: 0;
-                        position: absolute;
-                        background-image: url(../images/lips.jpeg);
-                        background-repeat: no-repeat;
-                        background-position: center;
-                    }
-    
-                    padding: $padding;
-    
-                    .texts {
-                        display: flex;
-                        flex-direction: column;
-                        justify-content: flex-end;
-                        text-align: start;
-    
-                        h2 {
-                            color: $green;
-                        }
-    
-                        h3 {
-                            color: $green;
-                            font-weight: 300;
-                        }
-                    }
-    
-                    button {
-                        align-self: flex-end;
-                    }
-                }
-    
-                section {
-                    height: 50vh;
-                    width: 50%;
-                    border-radius: 1.875em;
-                    padding: $padding 0;
-                    margin-top: 0;
-                    display: flex;
-                    justify-content: flex-end;
-                    align-items: center;
-                    overflow: hidden;
-    
-    
-                    .tab_content_wrap {
-                        width: 50%;
-                        height: 100%;
-                        position: relative;
-    
-                        ul.lip_tabContent {
-                            width: 100%;
-                            height: 100%;
-                            position: absolute;
-                            top: 0;
-                            left: 0;
-    
-                            li {
-                                display: flex;
-                                justify-content: center;
-                                align-items: center;
-                                height: 100%;
-                                width: 100%;
-    
-                                img {
-                                    width: 70%;
-    
-                                }
-    
-                                &.on {
-                                    display: flex;
-                                    justify-content: center;
-                                    align-items: center;
-                                    height: 100%;
-                                }
-    
-    
-                            }
-                        }
-                    }
-    
-                    ul.lip_tabMenu {
-                        display: flex;
-                        flex-direction: column;
-                        align-items: center;
-                        justify-content: space-between;
-                        width: 50%;
-                        border-left: solid 1px #fff;
-    
-                        li {
-                            a {
-                                line-height: 40px;
-                                @include font($notoSans, 0.875em, rgb(200, 200, 200));
-                                font-weight: 300;
-                                text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.3);
-                                transition: all 0.3s ease-out;
-                                display: block;
-                                height: 100%;
-                                width: 100%;
-    
-                                &:hover {
-                                    color: $green;
-                                }
-                            }
-    
-                            &.on {
-    
-                                a {
-                                    line-height: 140px;
-                                    color: $green;
-                                    font-size: 18px;
-                                    letter-spacing: 1px;
-                                }
-                            }
-                        }
+                        border-radius: 1.875em 1.875em 0 0;
                     }
                 }
             }
+        }
+    }
+}
+
+@media screen and (max-width:768px) {
+    body .contentWrap .content.lips {
+        display: flex;
+        flex-direction: column;
+        min-height: 50vh;
+
+        header {
+            width: 100%;
+            flex-direction: column;
+            justify-content: space-around;
+
+            button {
+                align-self: flex-start
+            }
+
+        }
+
+        section {
+            width: 100%;
         }
     }
 }

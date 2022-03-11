@@ -211,6 +211,7 @@ body {
                 ul {
                     display: flex;
                     align-items: baseline;
+
                     &:first-child {
                         justify-content: start;
 
@@ -235,7 +236,7 @@ body {
                             line-height: 11.11vh;
                             color: #fff;
                             font-size: 2.45em;
-                            transition:  0.2s;
+                            transition: 0.2s;
                         }
 
                         &:hover a {
@@ -243,7 +244,7 @@ body {
                         }
                     }
 
-                    li.on a{
+                    li.on a {
                         font-size: 3.43em;
                         color: $green;
                         background-image: url(../images/line.png);
@@ -353,8 +354,51 @@ body {
     }
 
 }
-@media screen and (max-width:1024px){
-    div.content{
-        padding-left: 0 !important;
+
+@media screen and (max-width:1024px) {
+
+    body {
+        header {
+            display: none;
+        }
+
+        div.content,.topSub {
+            padding-left: 0 !important;
+            .topSub_T{
+                width: 100% !important;
+            }
+        }
+    }
+}
+@media screen and (max-width:768px){
+    .topSub_B>.subMenuList2 {
+        ul {
+            display: flex;
+            align-items: baseline;
+
+            li {
+                height: inherit !important;
+
+                a {
+                    font-family: $lush;
+                    line-height: 8vh !important;
+                    color: #fff;
+                    font-size: 1.750em !important;//28px
+                    transition: 0.2s;
+                }
+
+                &:hover a {
+                    color: $green;
+                }
+            }
+
+            li.on a {
+                font-size: 3.43em;
+                color: $green;
+                background-image: url(../images/line.png);
+                background-repeat: no-repeat;
+                background-position: left bottom;
+            }
+        }
     }
 }

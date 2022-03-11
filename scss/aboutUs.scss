@@ -107,7 +107,7 @@ div.charityPot {
             margin-top: 3%;
             display: flex;
             flex-wrap: wrap;
-            justify-content: center;
+            justify-content: start;
             align-items: stretch;
 
             .txt {
@@ -172,12 +172,8 @@ div.charityPot {
                 }
             }
 
-            &>p.more {
-                margin-left: 4vh;
-                margin-top: 2vh;
-                width: 100%;
+            &>div.more {
                 text-align: start;
-                display: block;
                 @include font($notoSansKR, 0.875em, #707070);
                 line-height: 1.875em;
                 font-weight: 300;
@@ -193,7 +189,7 @@ div.charityPot {
     }
     div.more{
         display: flex;
-        justify-content: center;
+        padding: 0 4vh;
         margin: 3.75em 0;
         button{
             background-color: $green;
@@ -208,6 +204,20 @@ div.charityPot {
                 background-color: #3C6EBE;
                 color: #fff;
                 transition: all ease-in 0.2s;
+            }
+        }
+    }
+}
+@media screen and (max-width:768px){
+    section.articleWrap{
+        article{
+            flex-direction: column;
+            div,p{
+                width: 100% !important;
+            }
+            div.img{
+                border-left: none !important;
+                border-top: solid 1px #0f0d0d;
             }
         }
     }

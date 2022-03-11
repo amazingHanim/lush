@@ -139,9 +139,9 @@ div.charityPot section.articleWrap article {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
   -webkit-box-align: stretch;
       -ms-flex-align: stretch;
           align-items: stretch;
@@ -213,12 +213,8 @@ div.charityPot section.articleWrap article .img button {
   background-color: #fff;
 }
 
-div.charityPot section.articleWrap article > p.more {
-  margin-left: 4vh;
-  margin-top: 2vh;
-  width: 100%;
+div.charityPot section.articleWrap article > div.more {
   text-align: start;
-  display: block;
   font-family: "Noto Sans KR", sans-serif;
   font-size: 0.875em;
   color: #707070;
@@ -226,7 +222,7 @@ div.charityPot section.articleWrap article > p.more {
   font-weight: 300;
 }
 
-div.charityPot section.articleWrap article > p.more span {
+div.charityPot section.articleWrap article > div.more span {
   color: #707070;
   font-weight: 400;
 }
@@ -235,9 +231,7 @@ div.charityPot div.more {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  padding: 0 4vh;
   margin: 3.75em 0;
 }
 
@@ -257,4 +251,20 @@ div.charityPot div.more button:hover {
   color: #fff;
   -webkit-transition: all ease-in 0.2s;
   transition: all ease-in 0.2s;
+}
+
+@media screen and (max-width: 768px) {
+  section.articleWrap article {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  section.articleWrap article div, section.articleWrap article p {
+    width: 100% !important;
+  }
+  section.articleWrap article div.img {
+    border-left: none !important;
+    border-top: solid 1px #0f0d0d;
+  }
 }
