@@ -1041,6 +1041,7 @@
     .pMain {
         section {
             flex-direction: column !important;
+            padding-top: 6vh !important;
 
             .imageWrap {
                 width: 100%;
@@ -1335,6 +1336,7 @@
 }
 
 @media screen and (max-width:768px) {
+
     .pDisc {
         & section {
 

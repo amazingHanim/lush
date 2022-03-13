@@ -17,4 +17,14 @@ $(function () {
         $(this).toggle();
         $(this).prev().toggle();
     })
+});
+$(function(){
+    var $header_2 = $(".header_2"),
+        $hamBtn = $header_2.find(".hamburger");
+        $header_1 = $(".header_1");
+
+        $hamBtn.click("click",function(){
+            $header_1.toggleClass("on");
+            $hamBtn.toggleClass("on");
+        })
 })

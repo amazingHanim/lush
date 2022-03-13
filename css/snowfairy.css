@@ -1172,6 +1172,7 @@
     -webkit-box-direction: normal !important;
         -ms-flex-direction: column !important;
             flex-direction: column !important;
+    padding-top: 6vh !important;
   }
   .pMain section .imageWrap {
     width: 100%;

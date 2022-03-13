@@ -10,7 +10,7 @@
 
 /*font-family mixins*/
 /*font 믹신을 include할 때 (폰트)*/
-div.topSub > .topSub_B .details > ul {
+div.top > .topSub_B .details > ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -29,7 +29,7 @@ div.topSub > .topSub_B .details > ul {
   width: auto;
 }
 
-div.topSub > .topSub_B .details > ul li a {
+div.top > .topSub_B .details > ul li a {
   display: block;
   line-height: 5.55vh;
   -webkit-box-sizing: border-box;
@@ -42,22 +42,22 @@ div.topSub > .topSub_B .details > ul li a {
   font-size: 1em;
 }
 
-div.topSub > .topSub_B .details > ul li a:hover {
+div.top > .topSub_B .details > ul li a:hover {
   background-color: #3C6EBE;
   font-weight: bold;
 }
 
-div.topSub > .topSub_B .details > ul li.on a {
+div.top > .topSub_B .details > ul li.on a {
   background-color: #93ED51;
   color: #0f0d0d;
   font-weight: bold;
 }
 
-div.topSub > .topSub_B .filter {
+div.top > .topSub_B .filter {
   padding: 0 3.125vw;
 }
 
-div.topSub > .topSub_B .filter .filterTitle {
+div.top > .topSub_B .filter .filterTitle {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -66,13 +66,13 @@ div.topSub > .topSub_B .filter .filterTitle {
           justify-content: space-between;
 }
 
-div.topSub > .topSub_B .filter .filterTitle li {
+div.top > .topSub_B .filter .filterTitle li {
   color: #fff;
   line-height: 3.75em;
   cursor: pointer;
 }
 
-div.topSub > .topSub_B .filter .filterSlider {
+div.top > .topSub_B .filter .filterSlider {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -82,45 +82,45 @@ div.topSub > .topSub_B .filter .filterSlider {
   padding-bottom: 20px;
 }
 
-div.topSub > .topSub_B .filter .filterSlider > li h4 {
+div.top > .topSub_B .filter .filterSlider > li h4 {
   font-weight: bold;
   font-size: 1em;
   line-height: 2.45em;
 }
 
-div.topSub > .topSub_B .filter .filterSlider > li .filterDetails {
+div.top > .topSub_B .filter .filterSlider > li .filterDetails {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-div.topSub > .topSub_B .filter .filterSlider > li .filterDetails ul li::before {
+div.top > .topSub_B .filter .filterSlider > li .filterDetails ul li::before {
   content: '○ ';
 }
 
-div.topSub > .topSub_B .filter .filterSlider > li .filterDetails ul li.on::before {
+div.top > .topSub_B .filter .filterSlider > li .filterDetails ul li.on::before {
   content: '● ';
 }
 
-div.topSub > .topSub_B .filter .filterSlider > li .filterDetails ul li {
+div.top > .topSub_B .filter .filterSlider > li .filterDetails ul li {
   cursor: pointer;
   font-size: 0.875em;
   line-height: 2.45em;
 }
 
-div.topSub > .topSub_B .filter .filterSlider > li .filterDetails ul li.on {
+div.top > .topSub_B .filter .filterSlider > li .filterDetails ul li.on {
   color: #93ED51;
 }
 
-div.topSub > .topSub_B .filter .filterSlider > li .filterDetails ul li:hover {
+div.top > .topSub_B .filter .filterSlider > li .filterDetails ul li:hover {
   color: #93ED51;
 }
 
-div.topSub > .topSub_B .filter .filterSlider > li .filterDetails ul:not(:last-child) {
+div.top > .topSub_B .filter .filterSlider > li .filterDetails ul:not(:last-child) {
   margin-right: 3.125vw;
 }
 
-div.topSub > .topSub_B .filter .order {
+div.top > .topSub_B .filter .order {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -137,25 +137,25 @@ div.topSub > .topSub_B .filter .order {
   padding-bottom: 20px;
 }
 
-div.topSub > .topSub_B .filter .order li::before {
+div.top > .topSub_B .filter .order li::before {
   content: '○ ';
 }
 
-div.topSub > .topSub_B .filter .order li.on::before {
+div.top > .topSub_B .filter .order li.on::before {
   content: '● ';
 }
 
-div.topSub > .topSub_B .filter .order li {
+div.top > .topSub_B .filter .order li {
   cursor: pointer;
   font-size: 0.875em;
   line-height: 2.45em;
 }
 
-div.topSub > .topSub_B .filter .order li.on {
+div.top > .topSub_B .filter .order li.on {
   color: #93ED51;
 }
 
-div.topSub > .topSub_B .filter .order li:hover {
+div.top > .topSub_B .filter .order li:hover {
   color: #93ED51;
 }
 
@@ -228,6 +228,14 @@ div.topSub > .topSub_B .filter .order li:hover {
     color: #fff;
     -webkit-transition: all ease-in 0.2s;
     transition: all ease-in 0.2s;
+  }
+  body > div.top > .topSub_B .filter .filterSlider {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  body > div.top > .topSub_B .filter .filterSlider > li {
+    width: 100%;
+    margin-top: 5%;
   }
 }
 

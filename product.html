@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,10 +12,12 @@
     <script src="js/jquery-ui.min.js"></script>
     <script src="js/jquery-3.6.0.min.js"></script>
     <script src="js/product.js"></script>
+    <script src="js/common.js"></script>
     <script src="https://kit.fontawesome.com/43177ae168.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
-    <header>
+    <header class="header_1 header">
         <div class="logo">
             <img class="logo_w" src="images/Lush_Logo_W.png" alt="러쉬 로고">
             <img class="logo_b" src="images/Lush_Logo.png" alt="러쉬 로고">
@@ -64,7 +67,18 @@
             <li><a href="">Sign In</a></li>
         </ul>
     </header>
-    <div class="topSub">
+    <div class="top">
+        <header class="header_2 header">
+            <div class="logo">
+                <img class="logo_w" src="images/Lush_Logo_W.png" alt="러쉬 로고">
+                <a href="index.html"></a>
+            </div>
+            <div class="hamburger">
+                <span class="line l1"></span>
+                <span class="line l2"></span>
+                <span class="line l3"></span>
+            </div>
+        </header>
         <div class="topSub_T">
             <div class="location">
                 <span>
@@ -82,7 +96,9 @@
                 </ul>
                 <ul class="search">
                     <a href="">
-                        <li><p>Search & shop</p></li>
+                        <li>
+                            <p>Search & shop</p>
+                        </li>
                         <li><i class="fas fa-search"></i></li>
                     </a>
                 </ul>
@@ -97,8 +113,6 @@
                     <li><a href="">Shower</a></li>
                     <li><a href="">Body</a></li>
                     <li><a href="">Face</a></li>
-                </ul>
-                <ul>
                     <li><a href="">Hair</a></li>
                     <li><a href="">Makeup</a></li>
                     <li><a href="">Perfume</a></li>
@@ -120,7 +134,8 @@
             <div class="filter">
                 <ul class="filterTitle">
                     <li>Filter<span>&nbsp;+</span><span style="display:none">&nbsp;-</span></li>
-                    <li>추천순&nbsp;<span><i class="fas fa-angle-down"></i></span><span style="display:none"><i class="fas fa-angle-up"></i></span></li>
+                    <li>추천순&nbsp;<span><i class="fas fa-angle-down"></i></span><span style="display:none"><i
+                                class="fas fa-angle-up"></i></span></li>
                 </ul>
                 <ul class="filterSlider" style="display:none">
                     <li>
@@ -588,4 +603,5 @@
         </div>
     </div>
 </body>
+
 </html>

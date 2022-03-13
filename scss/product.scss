@@ -1,5 +1,5 @@
 @import "./V&M.scss";
-div.topSub{
+div.top{
     & > .topSub_B{
         .details{
             &>ul{
@@ -175,6 +175,15 @@ div.topSub{
             }
         }
     }
+    body>div.top > .topSub_B .filter .filterSlider{
+        flex-wrap: wrap;
+
+        &>li{
+            width: 100%;
+            margin-top: 5%;
+        }
+    }
+
 }
 @media screen and (max-width:768px){
     body .products{

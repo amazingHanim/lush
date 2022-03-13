@@ -147,6 +147,8 @@ div.campaign .scroll .txt p.stress {
 @media screen and (max-width: 1024px) {
   div.campaign div.fixed {
     width: 50%;
+    top: 6vh;
+    height: calc(100vh - 6vh);
   }
   div.campaign div.scroll {
     width: 50%;

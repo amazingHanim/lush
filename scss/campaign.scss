@@ -119,6 +119,8 @@ div.campaign {
     div.campaign{
         div.fixed{
             width: 50%;
+            top:6vh;
+            height: calc(100vh - 6vh);
             
         }
         div.scroll{
